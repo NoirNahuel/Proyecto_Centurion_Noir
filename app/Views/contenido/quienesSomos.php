@@ -31,7 +31,7 @@
                 </p>
             </div>
             <div class="col-md-6 text-center">
-                <img class="img-fluid rounded shadow-lg" src="<?php echo base_url("../assets/img/guitar_person.jpg");?>" alt="Misión y visión">
+                <img id="guitar-image" class="img-fluid rounded shadow-lg" src="<?php echo base_url("../assets/img/guitar_person.jpg");?>" alt="Misión y visión">
             </div>
         </div>
 

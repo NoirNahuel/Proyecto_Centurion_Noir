@@ -466,3 +466,9 @@ footer{
    border-radius: 100%;
    color: white;
   }
+
+  #guitar-image {
+    max-width: 350px;  /* Ajusta este valor como desees */
+    width: 100%;
+    height: auto;
+}

@@ -22,7 +22,7 @@
             <li class="mb-2 d-flex align-items-center justify-content-center justify-content-md-start">
             <address class="d-flex align-items-center gap-2">
           
-          Siempre junto a vos
+          Siempre junto a vos.
         </address>
             </li>
             
@@ -35,15 +35,15 @@
       <ul class="list-unstyled d-flex flex-column align-items-center align-items-md-start">
       <li class="mb-2">
             <i class="fas fa-envelope me-2"></i>
-            <a href="mailto:esteban.cent95@gmail.com" class="text-white text-decoration-none">GuitarCN@gmail.com</a>
+            <a href="mailto:esteban.cent95@gmail.com" class="text-white text-decoration-none">GuitarNCent@gmail.com</a>
           </li>
           <li class="mb-2">
           <i class="fab fa-facebook-f"></i>
-            <a href="https://es-la.facebook.com/" class="text-white text-decoration-none">GuitarCN</a>
+            <a href="https://es-la.facebook.com/" class="text-white text-decoration-none">GuitarNCent</a>
           </li>
           <li class="mb-2">
           <i class="fab fa-instagram"></i>
-            <a href="https://www.instagram.com/" class="text-white text-decoration-none">GuitarCN_2025</a>
+            <a href="https://www.instagram.com/" class="text-white text-decoration-none">GuitarNCent</a>
           </li>
           <li class="mb-2">
             <i class="fas fa-phone me-2"></i>

@@ -6,7 +6,7 @@ class ConsultaController extends BaseController
 {
     public function consulta()
     {
-        $data['titulo'] = 'Tienda GuitarCent';
+        $data['titulo'] = 'Tienda GuitarNCent';
     
         // Verificamos si se hizo un POST (form enviado)
         if ($this->request->getMethod() === 'post') {

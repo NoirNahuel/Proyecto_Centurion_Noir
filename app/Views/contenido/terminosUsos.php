@@ -49,7 +49,7 @@
     <div class="row">
         <div class="col-12 titulo-terminos "><br><br>
             <h2 class="titulo text-center " >Términos y condiciones</h2>
-            <p>Les damos la bienvenida a la página web de <span class="text-success">Guitar'N Cent</span>. Los términos y condiciones que se describen a continuación (en adelante, los "Términos y Condiciones de Uso" o las “Condiciones de Uso”) tienen por objeto regular el comportamiento de los usuarios en el sitio y las relaciones comerciales surgidas de esos comportamientos.</p>
+            <p>Les damos la bienvenida a la página web de <span class="text-success">Guitar N' Cent</span>. Los términos y condiciones que se describen a continuación (en adelante, los "Términos y Condiciones de Uso" o las “Condiciones de Uso”) tienen por objeto regular el comportamiento de los usuarios en el sitio y las relaciones comerciales surgidas de esos comportamientos.</p>
         </div>
     </div>
     <div class="row ">
@@ -67,9 +67,9 @@
                     data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">
                     <p class="text-center">
-                    Únicamente podrá comprar productos y servicios que estén disponibles para su venta y cuyos detalles aparezcan en <strong>GuitarNCent.com</strong>, destinados para uso personal, ya sea el suyo propio o el de los destinatarios para quienes compre los productos. <strong>Guitar'N Cent</strong> se reserva el derecho a rechazar cualquier pedido a su exclusiva discreción (por ejemplo, cuando se considere que el pedido tiene fines de reventa no autorizada).
+                    Únicamente podrá comprar productos y servicios que estén disponibles para su venta y cuyos detalles aparezcan en <strong>GuitarNCent.com</strong>, destinados para uso personal, ya sea el suyo propio o el de los destinatarios para quienes compre los productos. <strong>Guitar N' Cent</strong> se reserva el derecho a rechazar cualquier pedido a su exclusiva discreción (por ejemplo, cuando se considere que el pedido tiene fines de reventa no autorizada).
 
-Todos los detalles de los productos disponibles para la compra, incluyendo precios, se encuentran especificados en nuestro sitio web. Guitar'N Cent se compromete a mantener esta información lo más actualizada posible. No obstante, podría haber diferencias con la disponibilidad o precio real al momento de realizar su pedido.
+Todos los detalles de los productos disponibles para la compra, incluyendo precios, se encuentran especificados en nuestro sitio web. Guitar N' Cent se compromete a mantener esta información lo más actualizada posible. No obstante, podría haber diferencias con la disponibilidad o precio real al momento de realizar su pedido.
 
         </p>
                     </div>
@@ -91,7 +91,7 @@ Todos los detalles de los productos disponibles para la compra, incluyendo preci
 
 Al finalizar, deberá confirmar el pedido haciendo clic en el botón correspondiente. Esto constituirá una oferta vinculante de su parte.
 
-Posteriormente, <strong>Guitar'N Cent</strong> podrá enviarle un correo electrónico de confirmación de recepción del pedido. Este no implica una aceptación automática del mismo. La aceptación se concretará cuando reciba un segundo correo electrónico con la confirmación del envío de los productos solicitados.
+Posteriormente, <strong>Guitar N' Cent</strong> podrá enviarle un correo electrónico de confirmación de recepción del pedido. Este no implica una aceptación automática del mismo. La aceptación se concretará cuando reciba un segundo correo electrónico con la confirmación del envío de los productos solicitados.
 
 Nos reservamos el derecho a no procesar pedidos por motivos como:
 - Productos fuera de stock.
@@ -117,7 +117,7 @@ Los productos serán entregados en la dirección indicada por el cliente durante
 
 Una vez despachado el pedido, se le enviará un número de seguimiento para verificar el estado del envío. En caso de demoras o inconvenientes con la entrega, el cliente deberá comunicarse con nuestro equipo de atención al cliente dentro de los 5 días posteriores a la fecha estimada de entrega. 
 
-Guitar'N Cent no se responsabiliza por demoras causadas por factores externos como condiciones climáticas, huelgas u otros eventos fuera de nuestro control.
+Guitar N' Cent no se responsabiliza por demoras causadas por factores externos como condiciones climáticas, huelgas u otros eventos fuera de nuestro control.
 </p>
 
                     </div>
@@ -158,13 +158,13 @@ Si corresponde, reembolsaremos los gastos de envío presentando copia del recibo
                 <div id="flush-collapseFive" class="accordion-collapse collapse"
                     data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">
-                    <p class="text-center"> <strong>Guitar'N Cent</strong> se reserva el derecho de modificar o suspender el funcionamiento de <strong>GuitarNCent.com</strong> temporal o permanentemente, sin previo aviso.
+                    <p class="text-center"> <strong>Guitar N' Cent</strong> se reserva el derecho de modificar o suspender el funcionamiento de <strong>GuitarNCent.com</strong> temporal o permanentemente, sin previo aviso.
 
 Al continuar utilizando nuestros servicios después de cualquier cambio, usted acepta tácitamente dichas modificaciones. Le recomendamos revisar estos Términos y Condiciones con regularidad.
 
 En caso de que alguna disposición sea declarada inválida, las restantes conservarán su validez.
 
-Este acuerdo se regirá por las leyes vigentes del país donde se encuentre domiciliada <strong>Guitar'N Cent</strong>. En caso de disputa, se acudirá a los tribunales competentes de dicha jurisdicción.
+Este acuerdo se regirá por las leyes vigentes del país donde se encuentre domiciliada <strong>Guitar N' Cent</strong>. En caso de disputa, se acudirá a los tribunales competentes de dicha jurisdicción.
 
 </p>
                     </div>

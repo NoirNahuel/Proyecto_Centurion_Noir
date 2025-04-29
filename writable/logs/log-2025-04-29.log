@@ -544,3 +544,110 @@ INFO - 2025-04-29 10:21:52 --> Session: Class initialized using 'CodeIgniter\Ses
 INFO - 2025-04-29 10:22:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2025-04-29 10:23:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2025-04-29 10:23:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-04-29 20:22:03 --> CodeIgniter\Exceptions\FrameworkException: The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH\CodeIgniter.php on line 252.
+ 1 SYSTEMPATH\CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+ 2 SYSTEMPATH\CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 FCPATH\index.php(71): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2025-04-29 20:22:03 --> ErrorException: Uncaught Error: Class "Locale" not found in K:\xampp\htdocs\Proyecto_Centurion_Noir\system\Helpers\number_helper.php:137
+Stack trace:
+#0 K:\xampp\htdocs\Proyecto_Centurion_Noir\system\Helpers\number_helper.php(56): format_number(4.0, 2, NULL, Array)
+#1 K:\xampp\htdocs\Proyecto_Centurion_Noir\system\Debug\BaseExceptionHandler.php(152): number_to_size(4.0, 2)
+#2 K:\xampp\htdocs\Proyecto_Centurion_Noir\app\Views\errors\html\error_exception.php(390): CodeIgniter\Debug\BaseExceptionHandler::describeMemory(4194304)
+#3 K:\xampp\htdocs\Proyecto_Centurion_Noir\system\Debug\BaseExceptionHandler.php(258): include('K:\\xampp\\htdocs...')
+#4 K:\xampp\htdocs\Proyecto_Centurion_Noir\system\Debug\BaseExceptionHandler.php(261): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#5 K:\xampp\htdocs\Proyecto_Centurion_Noir\system\Debug\ExceptionHandler.php(112): CodeIgniter\Debug\BaseExceptionHandler->render(Object(CodeIgniter\Exceptions\FrameworkException), 500, 'K:\\xampp\\htdocs...')
+#6 K:\xampp\htdocs\Proyecto_Centurion_Noir\system\Debug\Exceptions.php(156): CodeIgniter\Debug\ExceptionHandler->handle(Object(CodeIgniter\Exceptions\FrameworkException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 500, 1)
+#7 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\FrameworkException))
+#8 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\FrameworkException
+The framework needs the following extension(s) installed and loaded: intl.
+#0 K:\xampp\htdocs\Proyecto_Centurion_Noir\system\CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 K:\xampp\htdocs\Proyecto_Centurion_Noir\system\CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 K:\xampp\htdocs\Proyecto_Centurion_Noir\index.php(71): CodeIgniter\CodeIgniter->initialize()
+#3 {main}
+in SYSTEMPATH\Helpers\number_helper.php on line 137.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-04-29 20:26:17 --> CodeIgniter\Exceptions\FrameworkException: The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH\CodeIgniter.php on line 252.
+ 1 SYSTEMPATH\CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+ 2 SYSTEMPATH\CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 FCPATH\index.php(71): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2025-04-29 20:26:17 --> ErrorException: Uncaught Error: Class "Locale" not found in K:\xampp\htdocs\Proyecto_Centurion_Noir\system\Helpers\number_helper.php:137
+Stack trace:
+#0 K:\xampp\htdocs\Proyecto_Centurion_Noir\system\Helpers\number_helper.php(56): format_number(4.0, 2, NULL, Array)
+#1 K:\xampp\htdocs\Proyecto_Centurion_Noir\system\Debug\BaseExceptionHandler.php(152): number_to_size(4.0, 2)
+#2 K:\xampp\htdocs\Proyecto_Centurion_Noir\app\Views\errors\html\error_exception.php(390): CodeIgniter\Debug\BaseExceptionHandler::describeMemory(4194304)
+#3 K:\xampp\htdocs\Proyecto_Centurion_Noir\system\Debug\BaseExceptionHandler.php(258): include('K:\\xampp\\htdocs...')
+#4 K:\xampp\htdocs\Proyecto_Centurion_Noir\system\Debug\BaseExceptionHandler.php(261): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#5 K:\xampp\htdocs\Proyecto_Centurion_Noir\system\Debug\ExceptionHandler.php(112): CodeIgniter\Debug\BaseExceptionHandler->render(Object(CodeIgniter\Exceptions\FrameworkException), 500, 'K:\\xampp\\htdocs...')
+#6 K:\xampp\htdocs\Proyecto_Centurion_Noir\system\Debug\Exceptions.php(156): CodeIgniter\Debug\ExceptionHandler->handle(Object(CodeIgniter\Exceptions\FrameworkException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 500, 1)
+#7 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\FrameworkException))
+#8 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\FrameworkException
+The framework needs the following extension(s) installed and loaded: intl.
+#0 K:\xampp\htdocs\Proyecto_Centurion_Noir\system\CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 K:\xampp\htdocs\Proyecto_Centurion_Noir\system\CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 K:\xampp\htdocs\Proyecto_Centurion_Noir\index.php(71): CodeIgniter\CodeIgniter->initialize()
+#3 {main}
+in SYSTEMPATH\Helpers\number_helper.php on line 137.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-04-29 20:34:46 --> CodeIgniter\Exceptions\FrameworkException: The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH\CodeIgniter.php on line 252.
+ 1 SYSTEMPATH\CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+ 2 SYSTEMPATH\CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 FCPATH\index.php(71): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2025-04-29 20:34:46 --> ErrorException: Uncaught Error: Class "Locale" not found in K:\xampp\htdocs\Proyecto_Centurion_Noir\system\Helpers\number_helper.php:137
+Stack trace:
+#0 K:\xampp\htdocs\Proyecto_Centurion_Noir\system\Helpers\number_helper.php(56): format_number(4.0, 2, NULL, Array)
+#1 K:\xampp\htdocs\Proyecto_Centurion_Noir\system\Debug\BaseExceptionHandler.php(152): number_to_size(4.0, 2)
+#2 K:\xampp\htdocs\Proyecto_Centurion_Noir\app\Views\errors\html\error_exception.php(390): CodeIgniter\Debug\BaseExceptionHandler::describeMemory(4194304)
+#3 K:\xampp\htdocs\Proyecto_Centurion_Noir\system\Debug\BaseExceptionHandler.php(258): include('K:\\xampp\\htdocs...')
+#4 K:\xampp\htdocs\Proyecto_Centurion_Noir\system\Debug\BaseExceptionHandler.php(261): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#5 K:\xampp\htdocs\Proyecto_Centurion_Noir\system\Debug\ExceptionHandler.php(112): CodeIgniter\Debug\BaseExceptionHandler->render(Object(CodeIgniter\Exceptions\FrameworkException), 500, 'K:\\xampp\\htdocs...')
+#6 K:\xampp\htdocs\Proyecto_Centurion_Noir\system\Debug\Exceptions.php(156): CodeIgniter\Debug\ExceptionHandler->handle(Object(CodeIgniter\Exceptions\FrameworkException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 500, 1)
+#7 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\FrameworkException))
+#8 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\FrameworkException
+The framework needs the following extension(s) installed and loaded: intl.
+#0 K:\xampp\htdocs\Proyecto_Centurion_Noir\system\CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 K:\xampp\htdocs\Proyecto_Centurion_Noir\system\CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 K:\xampp\htdocs\Proyecto_Centurion_Noir\index.php(71): CodeIgniter\CodeIgniter->initialize()
+#3 {main}
+in SYSTEMPATH\Helpers\number_helper.php on line 137.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2025-04-29 15:36:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-29 15:38:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-29 15:39:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-29 15:53:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-29 15:54:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-29 15:54:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-29 15:55:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-29 16:01:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-29 16:02:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-29 16:03:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-29 16:04:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-29 16:04:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-29 16:04:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-29 16:05:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-29 16:07:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-29 16:07:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-29 16:13:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-29 16:13:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-29 16:13:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-29 16:15:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-29 16:15:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-29 16:15:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-29 16:15:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-29 16:15:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-29 20:18:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-29 20:18:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-29 20:19:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-29 20:20:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-29 20:23:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
