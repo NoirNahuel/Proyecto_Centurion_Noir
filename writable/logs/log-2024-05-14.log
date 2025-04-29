@@ -1,0 +1,36 @@
+CRITICAL - 2024-05-14 10:56:01 --> ParseError: syntax error, unexpected token "]"
+in APPPATH\Views\contenido\registrarse.php on line 11.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('contenido/registrarse', [], true)
+ 3 APPPATH\Controllers\Home.php(41): view('contenido/registrarse')
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->registrarse()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-14 10:56:06 --> ParseError: syntax error, unexpected token "]"
+in APPPATH\Views\contenido\registrarse.php on line 11.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('contenido/registrarse', [], true)
+ 3 APPPATH\Controllers\Home.php(41): view('contenido/registrarse')
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->registrarse()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-14 10:56:17 --> ParseError: syntax error, unexpected token "]"
+in APPPATH\Views\contenido\registrarse.php on line 11.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('contenido/registrarse', [], true)
+ 3 APPPATH\Controllers\Home.php(41): view('contenido/registrarse')
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->registrarse()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-14 10:56:22 --> ParseError: syntax error, unexpected token "]"
+in APPPATH\Views\contenido\registrarse.php on line 11.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('contenido/registrarse', [], true)
+ 3 APPPATH\Controllers\Home.php(41): view('contenido/registrarse')
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->registrarse()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()

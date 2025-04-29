@@ -1,0 +1,1094 @@
+ERROR - 2024-06-13 00:08:24 --> mysqli_sql_exception: Unknown column 'id' in 'order clause' in C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Proyecto_Centurion_Esteban\app\Controllers\producto_controller.php(37): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(943): App\Controllers\producto_controller->alta_producto()
+#8 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+#9 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Proyecto_Centurion_Esteban\index.php(84): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-06-13 00:08:24 --> Error: Call to a member function getResult() on bool
+in SYSTEMPATH\Model.php on line 244.
+ 1 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 2 APPPATH\Controllers\producto_controller.php(37): CodeIgniter\BaseModel->findAll()
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->alta_producto()
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-13 00:08:25 --> mysqli_sql_exception: Unknown column 'id' in 'order clause' in C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Proyecto_Centurion_Esteban\app\Controllers\producto_controller.php(37): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(943): App\Controllers\producto_controller->alta_producto()
+#8 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+#9 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Proyecto_Centurion_Esteban\index.php(84): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-06-13 00:08:25 --> Error: Call to a member function getResult() on bool
+in SYSTEMPATH\Model.php on line 244.
+ 1 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 2 APPPATH\Controllers\producto_controller.php(37): CodeIgniter\BaseModel->findAll()
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->alta_producto()
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-13 00:08:27 --> mysqli_sql_exception: Unknown column 'id' in 'order clause' in C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Proyecto_Centurion_Esteban\app\Controllers\producto_controller.php(37): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(943): App\Controllers\producto_controller->alta_producto()
+#8 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+#9 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Proyecto_Centurion_Esteban\index.php(84): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-06-13 00:08:27 --> Error: Call to a member function getResult() on bool
+in SYSTEMPATH\Model.php on line 244.
+ 1 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 2 APPPATH\Controllers\producto_controller.php(37): CodeIgniter\BaseModel->findAll()
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->alta_producto()
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-13 00:08:28 --> mysqli_sql_exception: Unknown column 'id' in 'order clause' in C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Proyecto_Centurion_Esteban\app\Controllers\producto_controller.php(37): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(943): App\Controllers\producto_controller->alta_producto()
+#8 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+#9 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Proyecto_Centurion_Esteban\index.php(84): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-06-13 00:08:28 --> Error: Call to a member function getResult() on bool
+in SYSTEMPATH\Model.php on line 244.
+ 1 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 2 APPPATH\Controllers\producto_controller.php(37): CodeIgniter\BaseModel->findAll()
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->alta_producto()
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-13 00:08:30 --> mysqli_sql_exception: Unknown column 'id' in 'order clause' in C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Proyecto_Centurion_Esteban\app\Controllers\producto_controller.php(37): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(943): App\Controllers\producto_controller->alta_producto()
+#8 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+#9 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Proyecto_Centurion_Esteban\index.php(84): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-06-13 00:08:30 --> Error: Call to a member function getResult() on bool
+in SYSTEMPATH\Model.php on line 244.
+ 1 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 2 APPPATH\Controllers\producto_controller.php(37): CodeIgniter\BaseModel->findAll()
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->alta_producto()
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-13 00:08:32 --> mysqli_sql_exception: Unknown column 'id' in 'order clause' in C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Proyecto_Centurion_Esteban\app\Controllers\producto_controller.php(37): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(943): App\Controllers\producto_controller->alta_producto()
+#8 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+#9 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Proyecto_Centurion_Esteban\index.php(84): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-06-13 00:08:32 --> Error: Call to a member function getResult() on bool
+in SYSTEMPATH\Model.php on line 244.
+ 1 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 2 APPPATH\Controllers\producto_controller.php(37): CodeIgniter\BaseModel->findAll()
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->alta_producto()
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-13 00:08:33 --> mysqli_sql_exception: Unknown column 'id' in 'order clause' in C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Proyecto_Centurion_Esteban\app\Controllers\producto_controller.php(37): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(943): App\Controllers\producto_controller->alta_producto()
+#8 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+#9 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Proyecto_Centurion_Esteban\index.php(84): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-06-13 00:08:33 --> Error: Call to a member function getResult() on bool
+in SYSTEMPATH\Model.php on line 244.
+ 1 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 2 APPPATH\Controllers\producto_controller.php(37): CodeIgniter\BaseModel->findAll()
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->alta_producto()
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-13 00:11:29 --> mysqli_sql_exception: Unknown column 'id' in 'order clause' in C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Proyecto_Centurion_Esteban\app\Controllers\producto_controller.php(37): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(943): App\Controllers\producto_controller->alta_producto()
+#8 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+#9 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Proyecto_Centurion_Esteban\index.php(84): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-06-13 00:11:29 --> Error: Call to a member function getResult() on bool
+in SYSTEMPATH\Model.php on line 244.
+ 1 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 2 APPPATH\Controllers\producto_controller.php(37): CodeIgniter\BaseModel->findAll()
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->alta_producto()
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-13 00:11:30 --> mysqli_sql_exception: Unknown column 'id' in 'order clause' in C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Proyecto_Centurion_Esteban\app\Controllers\producto_controller.php(37): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(943): App\Controllers\producto_controller->alta_producto()
+#8 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+#9 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Proyecto_Centurion_Esteban\index.php(84): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-06-13 00:11:30 --> Error: Call to a member function getResult() on bool
+in SYSTEMPATH\Model.php on line 244.
+ 1 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 2 APPPATH\Controllers\producto_controller.php(37): CodeIgniter\BaseModel->findAll()
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->alta_producto()
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-13 00:11:30 --> mysqli_sql_exception: Unknown column 'id' in 'order clause' in C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Proyecto_Centurion_Esteban\app\Controllers\producto_controller.php(37): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(943): App\Controllers\producto_controller->alta_producto()
+#8 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+#9 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Proyecto_Centurion_Esteban\index.php(84): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-06-13 00:11:30 --> Error: Call to a member function getResult() on bool
+in SYSTEMPATH\Model.php on line 244.
+ 1 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 2 APPPATH\Controllers\producto_controller.php(37): CodeIgniter\BaseModel->findAll()
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->alta_producto()
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-13 00:11:30 --> mysqli_sql_exception: Unknown column 'id' in 'order clause' in C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Proyecto_Centurion_Esteban\app\Controllers\producto_controller.php(37): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(943): App\Controllers\producto_controller->alta_producto()
+#8 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+#9 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Proyecto_Centurion_Esteban\index.php(84): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-06-13 00:11:30 --> Error: Call to a member function getResult() on bool
+in SYSTEMPATH\Model.php on line 244.
+ 1 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 2 APPPATH\Controllers\producto_controller.php(37): CodeIgniter\BaseModel->findAll()
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->alta_producto()
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-13 00:11:30 --> mysqli_sql_exception: Unknown column 'id' in 'order clause' in C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Proyecto_Centurion_Esteban\app\Controllers\producto_controller.php(37): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(943): App\Controllers\producto_controller->alta_producto()
+#8 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+#9 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Proyecto_Centurion_Esteban\index.php(84): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-06-13 00:11:30 --> Error: Call to a member function getResult() on bool
+in SYSTEMPATH\Model.php on line 244.
+ 1 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 2 APPPATH\Controllers\producto_controller.php(37): CodeIgniter\BaseModel->findAll()
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->alta_producto()
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-13 00:11:31 --> mysqli_sql_exception: Unknown column 'id' in 'order clause' in C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Proyecto_Centurion_Esteban\app\Controllers\producto_controller.php(37): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(943): App\Controllers\producto_controller->alta_producto()
+#8 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+#9 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Proyecto_Centurion_Esteban\index.php(84): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-06-13 00:11:31 --> Error: Call to a member function getResult() on bool
+in SYSTEMPATH\Model.php on line 244.
+ 1 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 2 APPPATH\Controllers\producto_controller.php(37): CodeIgniter\BaseModel->findAll()
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->alta_producto()
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-13 00:11:31 --> mysqli_sql_exception: Unknown column 'id' in 'order clause' in C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Proyecto_Centurion_Esteban\app\Controllers\producto_controller.php(37): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(943): App\Controllers\producto_controller->alta_producto()
+#8 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+#9 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Proyecto_Centurion_Esteban\index.php(84): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-06-13 00:11:31 --> Error: Call to a member function getResult() on bool
+in SYSTEMPATH\Model.php on line 244.
+ 1 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 2 APPPATH\Controllers\producto_controller.php(37): CodeIgniter\BaseModel->findAll()
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->alta_producto()
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-13 00:11:31 --> mysqli_sql_exception: Unknown column 'id' in 'order clause' in C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Proyecto_Centurion_Esteban\app\Controllers\producto_controller.php(37): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(943): App\Controllers\producto_controller->alta_producto()
+#8 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+#9 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Proyecto_Centurion_Esteban\index.php(84): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-06-13 00:11:31 --> Error: Call to a member function getResult() on bool
+in SYSTEMPATH\Model.php on line 244.
+ 1 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 2 APPPATH\Controllers\producto_controller.php(37): CodeIgniter\BaseModel->findAll()
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->alta_producto()
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-13 00:11:31 --> mysqli_sql_exception: Unknown column 'id' in 'order clause' in C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Proyecto_Centurion_Esteban\app\Controllers\producto_controller.php(37): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(943): App\Controllers\producto_controller->alta_producto()
+#8 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+#9 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Proyecto_Centurion_Esteban\index.php(84): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-06-13 00:11:31 --> Error: Call to a member function getResult() on bool
+in SYSTEMPATH\Model.php on line 244.
+ 1 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 2 APPPATH\Controllers\producto_controller.php(37): CodeIgniter\BaseModel->findAll()
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->alta_producto()
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-13 00:11:31 --> mysqli_sql_exception: Unknown column 'id' in 'order clause' in C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Proyecto_Centurion_Esteban\app\Controllers\producto_controller.php(37): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(943): App\Controllers\producto_controller->alta_producto()
+#8 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+#9 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Proyecto_Centurion_Esteban\index.php(84): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-06-13 00:11:31 --> Error: Call to a member function getResult() on bool
+in SYSTEMPATH\Model.php on line 244.
+ 1 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 2 APPPATH\Controllers\producto_controller.php(37): CodeIgniter\BaseModel->findAll()
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->alta_producto()
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-13 00:11:31 --> mysqli_sql_exception: Unknown column 'id' in 'order clause' in C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Proyecto_Centurion_Esteban\app\Controllers\producto_controller.php(37): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(943): App\Controllers\producto_controller->alta_producto()
+#8 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+#9 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Proyecto_Centurion_Esteban\index.php(84): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2024-06-13 00:11:31 --> mysqli_sql_exception: Unknown column 'id' in 'order clause' in C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Proyecto_Centurion_Esteban\app\Controllers\producto_controller.php(37): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(943): App\Controllers\producto_controller->alta_producto()
+#8 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+#9 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Proyecto_Centurion_Esteban\index.php(84): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-06-13 00:11:31 --> Error: Call to a member function getResult() on bool
+in SYSTEMPATH\Model.php on line 244.
+ 1 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 2 APPPATH\Controllers\producto_controller.php(37): CodeIgniter\BaseModel->findAll()
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->alta_producto()
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-13 00:11:31 --> Error: Call to a member function getResult() on bool
+in SYSTEMPATH\Model.php on line 244.
+ 1 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 2 APPPATH\Controllers\producto_controller.php(37): CodeIgniter\BaseModel->findAll()
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->alta_producto()
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-13 00:11:32 --> mysqli_sql_exception: Unknown column 'id' in 'order clause' in C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Proyecto_Centurion_Esteban\app\Controllers\producto_controller.php(37): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(943): App\Controllers\producto_controller->alta_producto()
+#8 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+#9 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Proyecto_Centurion_Esteban\index.php(84): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-06-13 00:11:32 --> Error: Call to a member function getResult() on bool
+in SYSTEMPATH\Model.php on line 244.
+ 1 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 2 APPPATH\Controllers\producto_controller.php(37): CodeIgniter\BaseModel->findAll()
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->alta_producto()
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-13 00:11:32 --> mysqli_sql_exception: Unknown column 'id' in 'order clause' in C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Proyecto_Centurion_Esteban\app\Controllers\producto_controller.php(37): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(943): App\Controllers\producto_controller->alta_producto()
+#8 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+#9 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Proyecto_Centurion_Esteban\index.php(84): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-06-13 00:11:32 --> Error: Call to a member function getResult() on bool
+in SYSTEMPATH\Model.php on line 244.
+ 1 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 2 APPPATH\Controllers\producto_controller.php(37): CodeIgniter\BaseModel->findAll()
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->alta_producto()
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-13 00:11:32 --> mysqli_sql_exception: Unknown column 'id' in 'order clause' in C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Proyecto_Centurion_Esteban\app\Controllers\producto_controller.php(37): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(943): App\Controllers\producto_controller->alta_producto()
+#8 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+#9 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Proyecto_Centurion_Esteban\index.php(84): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-06-13 00:11:32 --> Error: Call to a member function getResult() on bool
+in SYSTEMPATH\Model.php on line 244.
+ 1 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 2 APPPATH\Controllers\producto_controller.php(37): CodeIgniter\BaseModel->findAll()
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->alta_producto()
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-13 00:11:32 --> mysqli_sql_exception: Unknown column 'id' in 'order clause' in C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Proyecto_Centurion_Esteban\app\Controllers\producto_controller.php(37): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(943): App\Controllers\producto_controller->alta_producto()
+#8 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+#9 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Proyecto_Centurion_Esteban\index.php(84): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-06-13 00:11:32 --> Error: Call to a member function getResult() on bool
+in SYSTEMPATH\Model.php on line 244.
+ 1 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 2 APPPATH\Controllers\producto_controller.php(37): CodeIgniter\BaseModel->findAll()
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->alta_producto()
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-13 00:11:34 --> mysqli_sql_exception: Unknown column 'id' in 'order clause' in C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Proyecto_Centurion_Esteban\app\Controllers\producto_controller.php(37): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(943): App\Controllers\producto_controller->alta_producto()
+#8 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+#9 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Proyecto_Centurion_Esteban\index.php(84): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-06-13 00:11:34 --> Error: Call to a member function getResult() on bool
+in SYSTEMPATH\Model.php on line 244.
+ 1 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 2 APPPATH\Controllers\producto_controller.php(37): CodeIgniter\BaseModel->findAll()
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->alta_producto()
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-13 00:14:12 --> mysqli_sql_exception: Unknown column 'id' in 'order clause' in C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Proyecto_Centurion_Esteban\app\Controllers\producto_controller.php(37): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(943): App\Controllers\producto_controller->alta_producto()
+#8 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+#9 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Proyecto_Centurion_Esteban\index.php(84): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-06-13 00:14:12 --> Error: Call to a member function getResult() on bool
+in SYSTEMPATH\Model.php on line 244.
+ 1 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 2 APPPATH\Controllers\producto_controller.php(37): CodeIgniter\BaseModel->findAll()
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->alta_producto()
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-13 00:15:16 --> Error: Class "App\Controllers\productosModel" not found
+in APPPATH\Controllers\Home.php on line 33.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->alta_producto()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-13 00:15:17 --> Error: Class "App\Controllers\productosModel" not found
+in APPPATH\Controllers\Home.php on line 33.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->alta_producto()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-13 00:15:17 --> Error: Class "App\Controllers\productosModel" not found
+in APPPATH\Controllers\Home.php on line 33.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->alta_producto()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-13 00:15:17 --> Error: Class "App\Controllers\productosModel" not found
+in APPPATH\Controllers\Home.php on line 33.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->alta_producto()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-13 00:15:18 --> Error: Class "App\Controllers\productosModel" not found
+in APPPATH\Controllers\Home.php on line 33.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->alta_producto()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-13 00:15:19 --> Error: Class "App\Controllers\productosModel" not found
+in APPPATH\Controllers\Home.php on line 33.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->alta_producto()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-13 00:15:22 --> Error: Class "App\Controllers\productosModel" not found
+in APPPATH\Controllers\Home.php on line 33.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->alta_producto()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-13 00:15:24 --> Error: Class "App\Controllers\productosModel" not found
+in APPPATH\Controllers\Home.php on line 33.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->alta_producto()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-13 00:15:26 --> Error: Class "App\Controllers\productosModel" not found
+in APPPATH\Controllers\Home.php on line 33.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->alta_producto()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-13 00:15:28 --> Error: Class "App\Controllers\productosModel" not found
+in APPPATH\Controllers\Home.php on line 33.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->alta_producto()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-13 00:15:31 --> Error: Class "App\Controllers\productosModel" not found
+in APPPATH\Controllers\Home.php on line 33.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->alta_producto()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-13 01:48:36 --> Error: Class "App\Controllers\productosModel" not found
+in APPPATH\Controllers\Home.php on line 33.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->alta_producto()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-13 02:05:28 --> mysqli_sql_exception: Unknown column 'id' in 'order clause' in C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Proyecto_Centurion_Esteban\app\Controllers\Home.php(37): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(943): App\Controllers\Home->alta_producto()
+#8 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Proyecto_Centurion_Esteban\index.php(84): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2024-06-13 02:05:28 --> mysqli_sql_exception: Unknown column 'id' in 'order clause' in C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Proyecto_Centurion_Esteban\app\Controllers\Home.php(37): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(943): App\Controllers\Home->alta_producto()
+#8 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Proyecto_Centurion_Esteban\index.php(84): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-06-13 02:05:28 --> Error: Call to a member function getResult() on bool
+in SYSTEMPATH\Model.php on line 244.
+ 1 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 2 APPPATH\Controllers\Home.php(37): CodeIgniter\BaseModel->findAll()
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->alta_producto()
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-13 02:05:28 --> Error: Call to a member function getResult() on bool
+in SYSTEMPATH\Model.php on line 244.
+ 1 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 2 APPPATH\Controllers\Home.php(37): CodeIgniter\BaseModel->findAll()
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->alta_producto()
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-13 02:05:31 --> mysqli_sql_exception: Unknown column 'id' in 'order clause' in C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Proyecto_Centurion_Esteban\app\Controllers\Home.php(37): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(943): App\Controllers\Home->alta_producto()
+#8 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Proyecto_Centurion_Esteban\index.php(84): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-06-13 02:05:31 --> Error: Call to a member function getResult() on bool
+in SYSTEMPATH\Model.php on line 244.
+ 1 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 2 APPPATH\Controllers\Home.php(37): CodeIgniter\BaseModel->findAll()
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->alta_producto()
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-13 02:05:33 --> mysqli_sql_exception: Unknown column 'id' in 'order clause' in C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Proyecto_Centurion_Esteban\app\Controllers\Home.php(37): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(943): App\Controllers\Home->alta_producto()
+#8 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Proyecto_Centurion_Esteban\index.php(84): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-06-13 02:05:33 --> Error: Call to a member function getResult() on bool
+in SYSTEMPATH\Model.php on line 244.
+ 1 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 2 APPPATH\Controllers\Home.php(37): CodeIgniter\BaseModel->findAll()
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->alta_producto()
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-13 02:23:54 --> mysqli_sql_exception: Unknown column 'id' in 'order clause' in C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Proyecto_Centurion_Esteban\app\Controllers\producto_controller.php(17): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(943): App\Controllers\producto_controller->alta_producto()
+#8 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+#9 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Proyecto_Centurion_Esteban\index.php(84): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-06-13 02:23:54 --> Error: Call to a member function getResult() on bool
+in SYSTEMPATH\Model.php on line 244.
+ 1 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 2 APPPATH\Controllers\producto_controller.php(17): CodeIgniter\BaseModel->findAll()
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->alta_producto()
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-13 02:24:07 --> ErrorException: Undefined variable $titulo
+in APPPATH\Views\plantillas\head.php on line 6.
+ 1 APPPATH\Views\plantillas\head.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $titulo', 'C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\plantillas\\head.php', 6)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\plantillas\\head.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('plantillas/head', [], true)
+ 5 APPPATH\Controllers\producto_controller.php(17): view('plantillas/head')
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->alta_producto()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-13 02:24:07 --> ErrorException: Undefined variable $titulo
+in APPPATH\Views\plantillas\head.php on line 6.
+ 1 APPPATH\Views\plantillas\head.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $titulo', 'C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\plantillas\\head.php', 6)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\plantillas\\head.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('plantillas/head', [], true)
+ 5 APPPATH\Controllers\producto_controller.php(17): view('plantillas/head')
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->alta_producto()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-13 02:24:07 --> ErrorException: Undefined variable $titulo
+in APPPATH\Views\plantillas\head.php on line 6.
+ 1 APPPATH\Views\plantillas\head.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $titulo', 'C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\plantillas\\head.php', 6)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\plantillas\\head.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('plantillas/head', [], true)
+ 5 APPPATH\Controllers\producto_controller.php(17): view('plantillas/head')
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->alta_producto()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-13 02:24:11 --> ErrorException: Undefined variable $titulo
+in APPPATH\Views\plantillas\head.php on line 6.
+ 1 APPPATH\Views\plantillas\head.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $titulo', 'C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\plantillas\\head.php', 6)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\plantillas\\head.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('plantillas/head', [], true)
+ 5 APPPATH\Controllers\producto_controller.php(17): view('plantillas/head')
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->alta_producto()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-13 02:24:26 --> ErrorException: Undefined variable $titulo
+in APPPATH\Views\plantillas\head.php on line 6.
+ 1 APPPATH\Views\plantillas\head.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $titulo', 'C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\plantillas\\head.php', 6)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\plantillas\\head.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('plantillas/head', [], true)
+ 5 APPPATH\Controllers\producto_controller.php(17): view('plantillas/head')
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->alta_producto()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-13 02:24:26 --> ErrorException: Undefined variable $titulo
+in APPPATH\Views\plantillas\head.php on line 6.
+ 1 APPPATH\Views\plantillas\head.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $titulo', 'C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\plantillas\\head.php', 6)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\plantillas\\head.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('plantillas/head', [], true)
+ 5 APPPATH\Controllers\producto_controller.php(17): view('plantillas/head')
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->alta_producto()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-13 02:24:26 --> ErrorException: Undefined variable $titulo
+in APPPATH\Views\plantillas\head.php on line 6.
+ 1 APPPATH\Views\plantillas\head.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $titulo', 'C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\plantillas\\head.php', 6)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\plantillas\\head.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('plantillas/head', [], true)
+ 5 APPPATH\Controllers\producto_controller.php(17): view('plantillas/head')
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->alta_producto()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-13 02:24:26 --> ErrorException: Undefined variable $titulo
+in APPPATH\Views\plantillas\head.php on line 6.
+ 1 APPPATH\Views\plantillas\head.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $titulo', 'C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\plantillas\\head.php', 6)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\plantillas\\head.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('plantillas/head', [], true)
+ 5 APPPATH\Controllers\producto_controller.php(17): view('plantillas/head')
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->alta_producto()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-13 02:24:27 --> ErrorException: Undefined variable $titulo
+in APPPATH\Views\plantillas\head.php on line 6.
+ 1 APPPATH\Views\plantillas\head.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $titulo', 'C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\plantillas\\head.php', 6)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\plantillas\\head.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('plantillas/head', [], true)
+ 5 APPPATH\Controllers\producto_controller.php(17): view('plantillas/head')
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->alta_producto()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-13 02:24:27 --> ErrorException: Undefined variable $titulo
+in APPPATH\Views\plantillas\head.php on line 6.
+ 1 APPPATH\Views\plantillas\head.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $titulo', 'C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\plantillas\\head.php', 6)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\plantillas\\head.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('plantillas/head', [], true)
+ 5 APPPATH\Controllers\producto_controller.php(17): view('plantillas/head')
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->alta_producto()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-13 02:24:35 --> ErrorException: Undefined variable $titulo
+in APPPATH\Views\plantillas\head.php on line 6.
+ 1 APPPATH\Views\plantillas\head.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $titulo', 'C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\plantillas\\head.php', 6)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\plantillas\\head.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('plantillas/head', [], true)
+ 5 APPPATH\Controllers\producto_controller.php(16): view('plantillas/head')
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->alta_producto()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-13 02:24:35 --> ErrorException: Undefined variable $titulo
+in APPPATH\Views\plantillas\head.php on line 6.
+ 1 APPPATH\Views\plantillas\head.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $titulo', 'C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\plantillas\\head.php', 6)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\plantillas\\head.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('plantillas/head', [], true)
+ 5 APPPATH\Controllers\producto_controller.php(16): view('plantillas/head')
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->alta_producto()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-13 02:24:35 --> ErrorException: Undefined variable $titulo
+in APPPATH\Views\plantillas\head.php on line 6.
+ 1 APPPATH\Views\plantillas\head.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $titulo', 'C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\plantillas\\head.php', 6)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\plantillas\\head.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('plantillas/head', [], true)
+ 5 APPPATH\Controllers\producto_controller.php(16): view('plantillas/head')
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->alta_producto()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-13 02:24:36 --> ErrorException: Undefined variable $titulo
+in APPPATH\Views\plantillas\head.php on line 6.
+ 1 APPPATH\Views\plantillas\head.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $titulo', 'C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\plantillas\\head.php', 6)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\plantillas\\head.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('plantillas/head', [], true)
+ 5 APPPATH\Controllers\producto_controller.php(16): view('plantillas/head')
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->alta_producto()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-13 02:24:36 --> ErrorException: Undefined variable $titulo
+in APPPATH\Views\plantillas\head.php on line 6.
+ 1 APPPATH\Views\plantillas\head.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $titulo', 'C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\plantillas\\head.php', 6)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\plantillas\\head.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('plantillas/head', [], true)
+ 5 APPPATH\Controllers\producto_controller.php(16): view('plantillas/head')
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->alta_producto()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-13 02:24:36 --> ErrorException: Undefined variable $titulo
+in APPPATH\Views\plantillas\head.php on line 6.
+ 1 APPPATH\Views\plantillas\head.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $titulo', 'C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\plantillas\\head.php', 6)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\plantillas\\head.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('plantillas/head', [], true)
+ 5 APPPATH\Controllers\producto_controller.php(16): view('plantillas/head')
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->alta_producto()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-13 02:24:38 --> ErrorException: Undefined variable $titulo
+in APPPATH\Views\plantillas\head.php on line 6.
+ 1 APPPATH\Views\plantillas\head.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $titulo', 'C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\plantillas\\head.php', 6)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\plantillas\\head.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('plantillas/head', [], true)
+ 5 APPPATH\Controllers\producto_controller.php(16): view('plantillas/head')
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->alta_producto()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-13 02:24:45 --> ErrorException: Undefined variable $titulo
+in APPPATH\Views\plantillas\head.php on line 6.
+ 1 APPPATH\Views\plantillas\head.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $titulo', 'C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\plantillas\\head.php', 6)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\plantillas\\head.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('plantillas/head', [], true)
+ 5 APPPATH\Controllers\producto_controller.php(15): view('plantillas/head')
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->alta_producto()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-13 02:24:46 --> ErrorException: Undefined variable $titulo
+in APPPATH\Views\plantillas\head.php on line 6.
+ 1 APPPATH\Views\plantillas\head.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $titulo', 'C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\plantillas\\head.php', 6)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\plantillas\\head.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('plantillas/head', [], true)
+ 5 APPPATH\Controllers\producto_controller.php(15): view('plantillas/head')
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->alta_producto()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-13 02:24:46 --> ErrorException: Undefined variable $titulo
+in APPPATH\Views\plantillas\head.php on line 6.
+ 1 APPPATH\Views\plantillas\head.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $titulo', 'C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\plantillas\\head.php', 6)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\plantillas\\head.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('plantillas/head', [], true)
+ 5 APPPATH\Controllers\producto_controller.php(15): view('plantillas/head')
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->alta_producto()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-13 02:24:48 --> ErrorException: Undefined variable $titulo
+in APPPATH\Views\plantillas\head.php on line 6.
+ 1 APPPATH\Views\plantillas\head.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $titulo', 'C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\plantillas\\head.php', 6)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\plantillas\\head.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('plantillas/head', [], true)
+ 5 APPPATH\Controllers\producto_controller.php(15): view('plantillas/head')
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->alta_producto()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-13 02:27:24 --> Error: Class "App\Controllers\categoria_model" not found
+in APPPATH\Controllers\producto_controller.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->alta_producto()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-13 02:34:32 --> ErrorException: Undefined array key "categorias"
+in APPPATH\Views\contenido\Gestion_producto\alta_producto_view.php on line 53.
+ 1 APPPATH\Views\contenido\Gestion_producto\alta_producto_view.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "categorias"', 'C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\contenido\\Gestion_producto\\alta_producto_view.php', 53)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\contenido\\Gestion_producto\\alta_producto_view.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('contenido/Gestion_producto/alta_producto_view', [], true)
+ 5 APPPATH\Controllers\producto_controller.php(17): view('contenido/Gestion_producto/alta_producto_view')
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->alta_producto()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-13 04:35:37 --> ErrorException: Undefined array key "categorias"
+in APPPATH\Views\contenido\Gestion_producto\alta_producto_view.php on line 53.
+ 1 APPPATH\Views\contenido\Gestion_producto\alta_producto_view.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "categorias"', 'C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\contenido\\Gestion_producto\\alta_producto_view.php', 53)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\contenido\\Gestion_producto\\alta_producto_view.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('contenido/Gestion_producto/alta_producto_view', [], true)
+ 5 APPPATH\Controllers\producto_controller.php(17): view('contenido/Gestion_producto/alta_producto_view')
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->alta_producto()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-13 04:41:15 --> ParseError: syntax error, unexpected token "else"
+in APPPATH\Views\plantillas\nav.php on line 51.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('plantillas/nav', [], true)
+ 3 APPPATH\Controllers\producto_controller.php(17): view('plantillas/nav')
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->alta_producto()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-13 04:41:15 --> ParseError: syntax error, unexpected token "else"
+in APPPATH\Views\plantillas\nav.php on line 51.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('plantillas/nav', [], true)
+ 3 APPPATH\Controllers\producto_controller.php(17): view('plantillas/nav')
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->alta_producto()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-13 04:41:15 --> ParseError: syntax error, unexpected token "else"
+in APPPATH\Views\plantillas\nav.php on line 51.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('plantillas/nav', [], true)
+ 3 APPPATH\Controllers\producto_controller.php(17): view('plantillas/nav')
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->alta_producto()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-13 04:41:15 --> ParseError: syntax error, unexpected token "else"
+in APPPATH\Views\plantillas\nav.php on line 51.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('plantillas/nav', [], true)
+ 3 APPPATH\Controllers\producto_controller.php(17): view('plantillas/nav')
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->alta_producto()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-13 04:41:15 --> ParseError: syntax error, unexpected token "else"
+in APPPATH\Views\plantillas\nav.php on line 51.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('plantillas/nav', [], true)
+ 3 APPPATH\Controllers\producto_controller.php(17): view('plantillas/nav')
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->alta_producto()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-13 05:30:31 --> Error: Class "ConfiglServices" not found
+in APPPATH\Controllers\login_controller.php on line 9.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\login_controller->buscar_usuario()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\login_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-13 05:32:03 --> Error: Class "ConfiglServices" not found
+in APPPATH\Controllers\login_controller.php on line 9.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\login_controller->buscar_usuario()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\login_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-13 05:34:04 --> Error: Call to a member function getErrors() on bool
+in APPPATH\Controllers\login_controller.php on line 37.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\login_controller->buscar_usuario()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\login_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-13 05:35:31 --> Error: Call to a member function getErrors() on bool
+in APPPATH\Controllers\login_controller.php on line 37.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\login_controller->buscar_usuario()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\login_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-13 05:44:16 --> Error: Call to a member function getErrors() on bool
+in APPPATH\Controllers\login_controller.php on line 37.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\login_controller->buscar_usuario()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\login_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-13 05:47:12 --> Error: Call to a member function getErrors() on bool
+in APPPATH\Controllers\login_controller.php on line 37.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\login_controller->buscar_usuario()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\login_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-13 07:21:36 --> ErrorException: Undefined array key "categorias"
+in APPPATH\Views\contenido\Gestion_producto\alta_producto_view.php on line 53.
+ 1 APPPATH\Views\contenido\Gestion_producto\alta_producto_view.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "categorias"', 'C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\contenido\\Gestion_producto\\alta_producto_view.php', 53)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\contenido\\Gestion_producto\\alta_producto_view.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('contenido/Gestion_producto/alta_producto_view', [], true)
+ 5 APPPATH\Controllers\producto_controller.php(17): view('contenido/Gestion_producto/alta_producto_view')
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->alta_producto()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-13 11:19:31 --> mysqli_sql_exception: Unknown database 'alegre_sebastian'
+in APPPATH\Views\contenido\CRUD_usuarios.php on line 34.
+ 1 APPPATH\Views\contenido\CRUD_usuarios.php(34): mysqli->__construct('127.0.0.1', 'root', Object(SensitiveParameterValue), 'alegre_sebastian')
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\contenido\\CRUD_usuarios.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('contenido/CRUD_usuarios', [], true)
+ 5 APPPATH\Controllers\Home.php(61): view('contenido/CRUD_usuarios')
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->crud_usuarios()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,11 @@
+CRITICAL - 2024-04-17 00:37:06 --> ErrorException: Undefined variable $titulo
+in APPPATH\Views\plantillas\head.php on line 6.
+ 1 APPPATH\Views\plantillas\head.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $titulo', 'C:\\xampp\\htdocs\\Proyecto1_Centurion_Esteban\\app\\Views\\plantillas\\head.php', 6)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\Proyecto1_Centurion_Esteban\\app\\Views\\plantillas\\head.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('plantillas/head', [], true)
+ 5 APPPATH\Controllers\Home.php(13): view('plantillas/head', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->somos()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

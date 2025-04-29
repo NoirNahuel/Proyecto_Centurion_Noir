@@ -1,0 +1,34 @@
+CRITICAL - 2024-04-16 03:13:56 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "alt="
+in SYSTEMPATH\Router\Router.php on line 704.
+ 1 SYSTEMPATH\Router\Router.php(195): CodeIgniter\Router\Router->checkDisallowedChars('alt=')
+ 2 SYSTEMPATH\CodeIgniter.php(825): CodeIgniter\Router\Router->handle('alt=')
+ 3 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-16 10:25:49 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "plantillas/nav, $data.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('plantillas/nav, $data.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('plantillas/nav, $data', [], true)
+ 3 APPPATH\Controllers\Home.php(13): view('plantillas/nav, $data')
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->ver()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-16 10:27:26 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "plantillas/head, $data.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('plantillas/head, $data.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('plantillas/head, $data', [], true)
+ 3 APPPATH\Controllers\Home.php(13): view('plantillas/head, $data')
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->ver()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-16 10:28:00 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "plantillas/head, $data.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('plantillas/head, $data.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('plantillas/head, $data', [], true)
+ 3 APPPATH\Controllers\Home.php(14): view('plantillas/head, $data')
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->ver()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

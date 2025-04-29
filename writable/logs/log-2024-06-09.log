@@ -1,0 +1,445 @@
+CRITICAL - 2024-06-09 13:25:57 --> TypeError: CodeIgniter\Validation\Validation::setRules(): Argument #1 ($rules) must be of type array, bool given, called in C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Controller.php on line 198
+in SYSTEMPATH\Validation\Validation.php on line 576.
+ 1 SYSTEMPATH\Controller.php(198): CodeIgniter\Validation\Validation->setRules(false, [])
+ 2 SYSTEMPATH\Controller.php(152): CodeIgniter\Controller->setValidator(false, [])
+ 3 APPPATH\Controllers\registrarse_controller.php(71): CodeIgniter\Controller->validate(false)
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\registrarse_controller->validation()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-09 13:48:39 --> TypeError: CodeIgniter\Validation\Validation::setRules(): Argument #1 ($rules) must be of type array, bool given, called in C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Controller.php on line 198
+in SYSTEMPATH\Validation\Validation.php on line 576.
+ 1 SYSTEMPATH\Controller.php(198): CodeIgniter\Validation\Validation->setRules(false, [])
+ 2 SYSTEMPATH\Controller.php(152): CodeIgniter\Controller->setValidator(false, [])
+ 3 APPPATH\Controllers\registrarse_controller.php(71): CodeIgniter\Controller->validate(false)
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\registrarse_controller->validation()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-09 13:55:48 --> TypeError: CodeIgniter\Validation\Validation::setRules(): Argument #1 ($rules) must be of type array, bool given, called in C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Controller.php on line 198
+in SYSTEMPATH\Validation\Validation.php on line 576.
+ 1 SYSTEMPATH\Controller.php(198): CodeIgniter\Validation\Validation->setRules(false, [])
+ 2 SYSTEMPATH\Controller.php(152): CodeIgniter\Controller->setValidator(false, [])
+ 3 APPPATH\Controllers\registrarse_controller.php(71): CodeIgniter\Controller->validate(false)
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\registrarse_controller->validation()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-09 14:00:22 --> CodeIgniter\Validation\Exceptions\ValidationException: "El apellido es requerido" is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 336.
+ 1 SYSTEMPATH\Validation\Validation.php(336): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('El apellido es requerido')
+ 2 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('apellido', 'apellido', '', [...], [...])
+ 3 SYSTEMPATH\Controller.php(154): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\registrarse_controller.php(32): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\registrarse_controller->validation()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-09 14:01:08 --> TypeError: CodeIgniter\Validation\Validation::setRules(): Argument #1 ($rules) must be of type array, bool given, called in C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Controller.php on line 198
+in SYSTEMPATH\Validation\Validation.php on line 576.
+ 1 SYSTEMPATH\Controller.php(198): CodeIgniter\Validation\Validation->setRules(false, [])
+ 2 SYSTEMPATH\Controller.php(152): CodeIgniter\Controller->setValidator(false, [])
+ 3 APPPATH\Controllers\registrarse_controller.php(47): CodeIgniter\Controller->validate(false)
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\registrarse_controller->validation()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-09 14:01:55 --> TypeError: CodeIgniter\Validation\Validation::setRules(): Argument #1 ($rules) must be of type array, bool given, called in C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Controller.php on line 198
+in SYSTEMPATH\Validation\Validation.php on line 576.
+ 1 SYSTEMPATH\Controller.php(198): CodeIgniter\Validation\Validation->setRules(false, [])
+ 2 SYSTEMPATH\Controller.php(152): CodeIgniter\Controller->setValidator(false, [])
+ 3 APPPATH\Controllers\registrarse_controller.php(45): CodeIgniter\Controller->validate(false)
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\registrarse_controller->validation()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-09 14:15:05 --> TypeError: CodeIgniter\Validation\Validation::setRules(): Argument #1 ($rules) must be of type array, bool given, called in C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Controller.php on line 198
+in SYSTEMPATH\Validation\Validation.php on line 576.
+ 1 SYSTEMPATH\Controller.php(198): CodeIgniter\Validation\Validation->setRules(false, [])
+ 2 SYSTEMPATH\Controller.php(152): CodeIgniter\Controller->setValidator(false, [])
+ 3 APPPATH\Controllers\registrarse_controller.php(59): CodeIgniter\Controller->validate(false)
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\registrarse_controller->validation()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-09 14:19:50 --> Error: Call to undefined function App\Controllers\setRules()
+in APPPATH\Controllers\registrarse_controller.php on line 32.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\registrarse_controller->validation()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-09 14:20:51 --> TypeError: CodeIgniter\Validation\Validation::setRules(): Argument #1 ($rules) must be of type array, bool given, called in C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Controller.php on line 198
+in SYSTEMPATH\Validation\Validation.php on line 576.
+ 1 SYSTEMPATH\Controller.php(198): CodeIgniter\Validation\Validation->setRules(false, [])
+ 2 SYSTEMPATH\Controller.php(152): CodeIgniter\Controller->setValidator(false, [])
+ 3 APPPATH\Controllers\registrarse_controller.php(60): CodeIgniter\Controller->validate(false)
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\registrarse_controller->validation()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-09 15:47:58 --> Error: Call to undefined function App\Controllers\setRules()
+in APPPATH\Controllers\registrarse_controller.php on line 33.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\registrarse_controller->validation()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-09 15:50:42 --> Error: Call to undefined function App\Controllers\setRules()
+in APPPATH\Controllers\registrarse_controller.php on line 33.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\registrarse_controller->validation()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-09 16:15:24 --> Error: Call to undefined function App\Controllers\setRules()
+in APPPATH\Controllers\registrarse_controller.php on line 33.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\registrarse_controller->validation()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-09 16:17:23 --> Error: Call to a member function run() on array
+in APPPATH\Controllers\registrarse_controller.php on line 44.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\registrarse_controller->validation()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-09 16:17:37 --> Error: Call to a member function run() on array
+in APPPATH\Controllers\registrarse_controller.php on line 43.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\registrarse_controller->validation()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-09 16:18:14 --> ErrorException: Undefined variable $validation
+in APPPATH\Controllers\registrarse_controller.php on line 43.
+ 1 APPPATH\Controllers\registrarse_controller.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $validation', 'C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Controllers\\registrarse_controller.php', 43)
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\registrarse_controller->validation()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-09 16:36:40 --> CodeIgniter\Validation\Exceptions\ValidationException: "max_lenght" is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 336.
+ 1 SYSTEMPATH\Validation\Validation.php(336): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('max_lenght')
+ 2 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('nombre', 'nombre', 'Esteban Agustín', [...], [...])
+ 3 SYSTEMPATH\Controller.php(154): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\registrarse_controller.php(46): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\registrarse_controller->validation()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-09 16:39:34 --> TypeError: CodeIgniter\Validation\Validation::setRules(): Argument #1 ($rules) must be of type array, bool given, called in C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Controller.php on line 198
+in SYSTEMPATH\Validation\Validation.php on line 576.
+ 1 SYSTEMPATH\Controller.php(198): CodeIgniter\Validation\Validation->setRules(false, [])
+ 2 SYSTEMPATH\Controller.php(152): CodeIgniter\Controller->setValidator(false, [])
+ 3 APPPATH\Controllers\registrarse_controller.php(46): CodeIgniter\Controller->validate(false)
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\registrarse_controller->validation()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-09 16:47:43 --> CodeIgniter\Validation\Exceptions\ValidationException: "max_lenght" is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 336.
+ 1 SYSTEMPATH\Validation\Validation.php(336): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('max_lenght')
+ 2 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('apellido', 'apellido', 'Centurión', [...], [...])
+ 3 SYSTEMPATH\Controller.php(154): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\registrarse_controller.php(32): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\registrarse_controller->validation()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-09 16:47:51 --> CodeIgniter\Validation\Exceptions\ValidationException: "max_lenght" is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 336.
+ 1 SYSTEMPATH\Validation\Validation.php(336): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('max_lenght')
+ 2 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('apellido', 'apellido', 'Centurión', [...], [...])
+ 3 SYSTEMPATH\Controller.php(154): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\registrarse_controller.php(32): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\registrarse_controller->validation()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-09 16:50:47 --> CodeIgniter\Validation\Exceptions\ValidationException: "max_lenght" is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 336.
+ 1 SYSTEMPATH\Validation\Validation.php(336): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('max_lenght')
+ 2 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('nombre', 'nombre', 'Esteban Agustín', [...], [...])
+ 3 SYSTEMPATH\Controller.php(154): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\registrarse_controller.php(32): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\registrarse_controller->validation()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-09 17:04:44 --> CodeIgniter\Validation\Exceptions\ValidationException: "max_lenght" is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 336.
+ 1 SYSTEMPATH\Validation\Validation.php(336): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('max_lenght')
+ 2 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('nombre', 'nombre', 'Esteban Agustín', [...], [...])
+ 3 SYSTEMPATH\Controller.php(154): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\registrarse_controller.php(32): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\registrarse_controller->validation()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-09 17:06:18 --> CodeIgniter\Validation\Exceptions\ValidationException: "max_lenght" is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 336.
+ 1 SYSTEMPATH\Validation\Validation.php(336): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('max_lenght')
+ 2 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('nombre', 'nombre', 'Esteban Agustín', [...], [...])
+ 3 SYSTEMPATH\Controller.php(154): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\registrarse_controller.php(32): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\registrarse_controller->validation()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-09 17:07:11 --> CodeIgniter\Validation\Exceptions\ValidationException: "max_lenght" is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 336.
+ 1 SYSTEMPATH\Validation\Validation.php(336): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('max_lenght')
+ 2 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('nombre', 'nombre', 'Esteban Agustín', [...], [...])
+ 3 SYSTEMPATH\Controller.php(154): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\registrarse_controller.php(32): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\registrarse_controller->validation()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-09 17:07:30 --> CodeIgniter\Validation\Exceptions\ValidationException: "max_lenght" is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 336.
+ 1 SYSTEMPATH\Validation\Validation.php(336): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('max_lenght')
+ 2 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('nombre', 'nombre', 'Esteban Agustín', [...], [...])
+ 3 SYSTEMPATH\Controller.php(154): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\registrarse_controller.php(32): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\registrarse_controller->validation()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-09 17:07:46 --> CodeIgniter\Validation\Exceptions\ValidationException: "max_lenght" is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 336.
+ 1 SYSTEMPATH\Validation\Validation.php(336): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('max_lenght')
+ 2 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('nombre', 'nombre', 'Esteban Agustín', [...], [...])
+ 3 SYSTEMPATH\Controller.php(154): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\registrarse_controller.php(32): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\registrarse_controller->validation()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-09 17:08:05 --> CodeIgniter\Validation\Exceptions\ValidationException: "max_lenght" is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 336.
+ 1 SYSTEMPATH\Validation\Validation.php(336): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('max_lenght')
+ 2 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('nombre', 'nombre', 'Esteban Agustín', [...], [...])
+ 3 SYSTEMPATH\Controller.php(154): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\registrarse_controller.php(32): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\registrarse_controller->validation()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-09 17:09:18 --> CodeIgniter\Validation\Exceptions\ValidationException: "max_lenght" is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 336.
+ 1 SYSTEMPATH\Validation\Validation.php(336): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('max_lenght')
+ 2 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('nombre', 'nombre', 'Esteban Agustín', [...], [...])
+ 3 SYSTEMPATH\Controller.php(154): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\registrarse_controller.php(32): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\registrarse_controller->validation()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-09 17:16:49 --> Error: Call to undefined function App\Controllers\setRules()
+in APPPATH\Controllers\registrarse_controller.php on line 33.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\registrarse_controller->validation()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-09 17:19:48 --> Error: Call to undefined function App\Controllers\setRules()
+in APPPATH\Controllers\registrarse_controller.php on line 33.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\registrarse_controller->validation()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-09 17:22:03 --> Error: Call to undefined function App\Controllers\setRules()
+in APPPATH\Controllers\registrarse_controller.php on line 33.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\registrarse_controller->validation()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-09 17:26:37 --> Error: Call to undefined function App\Controllers\setRule()
+in APPPATH\Controllers\registrarse_controller.php on line 33.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\registrarse_controller->validation()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-09 17:27:28 --> Error: Call to undefined function App\Controllers\setRule()
+in APPPATH\Controllers\registrarse_controller.php on line 33.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\registrarse_controller->validation()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-09 17:28:04 --> Error: Call to undefined function App\Controllers\services()
+in APPPATH\Controllers\registrarse_controller.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\registrarse_controller->validation()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-09 17:28:15 --> Error: Call to undefined function App\Controllers\services()
+in APPPATH\Controllers\registrarse_controller.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\registrarse_controller->validation()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-09 17:38:18 --> CodeIgniter\Validation\Exceptions\ValidationException: "max_lenght" is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 336.
+ 1 SYSTEMPATH\Validation\Validation.php(336): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('max_lenght')
+ 2 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('nombre', 'nombre', 'Esteban Agustín', [...], [...])
+ 3 SYSTEMPATH\Controller.php(154): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\registrarse_controller.php(32): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\registrarse_controller->validation()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-09 18:02:17 --> CodeIgniter\Validation\Exceptions\ValidationException: "max_lenght" is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 336.
+ 1 SYSTEMPATH\Validation\Validation.php(336): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('max_lenght')
+ 2 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('nombre', 'nombre', 'Esteban Agustín', [...], [...])
+ 3 SYSTEMPATH\Controller.php(154): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\registrarse_controller.php(32): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\registrarse_controller->validation()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-09 19:01:20 --> CodeIgniter\Validation\Exceptions\ValidationException: "max_lenght" is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 336.
+ 1 SYSTEMPATH\Validation\Validation.php(336): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('max_lenght')
+ 2 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('nombre', 'nombre', 'Esteban Agustín', [...], [...])
+ 3 SYSTEMPATH\Controller.php(154): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\registrarse_controller.php(32): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\registrarse_controller->validation()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-09 19:01:57 --> CodeIgniter\Validation\Exceptions\ValidationException: "max_lenght" is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 336.
+ 1 SYSTEMPATH\Validation\Validation.php(336): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('max_lenght')
+ 2 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('nombre', 'nombre', 'Esteban Agustín', [...], [...])
+ 3 SYSTEMPATH\Controller.php(154): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\registrarse_controller.php(32): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\registrarse_controller->validation()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-09 22:20:39 --> CodeIgniter\Validation\Exceptions\ValidationException: "max_lenght" is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 336.
+ 1 SYSTEMPATH\Validation\Validation.php(336): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('max_lenght')
+ 2 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('nombre', 'nombre', 'Esteban Agustín', [...], [...])
+ 3 SYSTEMPATH\Controller.php(154): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\registrarse_controller.php(32): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\registrarse_controller->validation()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-09 22:20:39 --> CodeIgniter\Validation\Exceptions\ValidationException: "max_lenght" is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 336.
+ 1 SYSTEMPATH\Validation\Validation.php(336): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('max_lenght')
+ 2 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('nombre', 'nombre', 'Esteban Agustín', [...], [...])
+ 3 SYSTEMPATH\Controller.php(154): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\registrarse_controller.php(32): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\registrarse_controller->validation()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-09 22:20:48 --> CodeIgniter\Validation\Exceptions\ValidationException: "max_lenght" is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 336.
+ 1 SYSTEMPATH\Validation\Validation.php(336): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('max_lenght')
+ 2 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('nombre', 'nombre', 'Esteban Agustín', [...], [...])
+ 3 SYSTEMPATH\Controller.php(154): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\registrarse_controller.php(32): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\registrarse_controller->validation()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-09 22:36:31 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), 'proyectocenturi...', 3306, '', 0)
+#1 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique('esteban.cent95@...', 'email', Array, NULL, 'email')
+#6 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('email', 'correo electr\xC3\xB3...', 'esteban.cent95@...', Array, Array)
+#7 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Controller.php(154): CodeIgniter\Validation\Validation->run()
+#8 C:\xampp\htdocs\Proyecto_Centurion_Esteban\app\Controllers\registrarse_controller.php(32): CodeIgniter\Controller->validate(Array)
+#9 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(943): App\Controllers\registrarse_controller->validation()
+#10 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+#11 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\Proyecto_Centurion_Esteban\index.php(84): CodeIgniter\CodeIgniter->run()
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique('esteban.cent95@...', 'email', Array, NULL, 'email')
+#5 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('email', 'correo electr\xC3\xB3...', 'esteban.cent95@...', Array, Array)
+#6 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Controller.php(154): CodeIgniter\Validation\Validation->run()
+#7 C:\xampp\htdocs\Proyecto_Centurion_Esteban\app\Controllers\registrarse_controller.php(32): CodeIgniter\Controller->validate(Array)
+#8 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(943): App\Controllers\registrarse_controller->validation()
+#9 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+#10 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\Proyecto_Centurion_Esteban\index.php(84): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-06-09 22:36:31 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `registrarse`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique('esteban.cent95@gmail.com', 'email', [...], null, 'email')
+ 5 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('email', 'correo electrónico', 'esteban.cent95@gmail.com', [...], [...])
+ 6 SYSTEMPATH\Controller.php(154): CodeIgniter\Validation\Validation->run()
+ 7 APPPATH\Controllers\registrarse_controller.php(32): CodeIgniter\Controller->validate([...])
+ 8 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\registrarse_controller->validation()
+ 9 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-09 22:43:07 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), 'proyectocenturi...', 3306, '', 0)
+#1 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique('esteban.cent95@...', 'email', Array, NULL, 'email')
+#6 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('email', 'correo electr\xC3\xB3...', 'esteban.cent95@...', Array, Array)
+#7 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Controller.php(154): CodeIgniter\Validation\Validation->run()
+#8 C:\xampp\htdocs\Proyecto_Centurion_Esteban\app\Controllers\registrarse_controller.php(32): CodeIgniter\Controller->validate(Array)
+#9 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(943): App\Controllers\registrarse_controller->validation()
+#10 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+#11 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\Proyecto_Centurion_Esteban\index.php(84): CodeIgniter\CodeIgniter->run()
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique('esteban.cent95@...', 'email', Array, NULL, 'email')
+#5 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('email', 'correo electr\xC3\xB3...', 'esteban.cent95@...', Array, Array)
+#6 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Controller.php(154): CodeIgniter\Validation\Validation->run()
+#7 C:\xampp\htdocs\Proyecto_Centurion_Esteban\app\Controllers\registrarse_controller.php(32): CodeIgniter\Controller->validate(Array)
+#8 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(943): App\Controllers\registrarse_controller->validation()
+#9 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+#10 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\Proyecto_Centurion_Esteban\index.php(84): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-06-09 22:43:07 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `registrarse`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique('esteban.cent95@gmail.com', 'email', [...], null, 'email')
+ 5 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('email', 'correo electrónico', 'esteban.cent95@gmail.com', [...], [...])
+ 6 SYSTEMPATH\Controller.php(154): CodeIgniter\Validation\Validation->run()
+ 7 APPPATH\Controllers\registrarse_controller.php(32): CodeIgniter\Controller->validate([...])
+ 8 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\registrarse_controller->validation()
+ 9 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()

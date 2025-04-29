@@ -1,0 +1,360 @@
+CRITICAL - 2024-05-29 23:12:56 --> TypeError: CodeIgniter\Validation\Validation::setRules(): Argument #1 ($rules) must be of type array, CodeIgniter\Validation\Validation given, called in C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Controller.php on line 198
+in SYSTEMPATH\Validation\Validation.php on line 576.
+ 1 SYSTEMPATH\Controller.php(198): CodeIgniter\Validation\Validation->setRules(Object(CodeIgniter\Validation\Validation), [])
+ 2 SYSTEMPATH\Controller.php(152): CodeIgniter\Controller->setValidator(Object(CodeIgniter\Validation\Validation), [])
+ 3 APPPATH\Controllers\registrarse_controller.php(35): CodeIgniter\Controller->validate(Object(CodeIgniter\Validation\Validation))
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\registrarse_controller->validation()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-29 23:18:40 --> ErrorException: Undefined variable $userRegistro
+in APPPATH\Controllers\registrarse_controller.php on line 22.
+ 1 APPPATH\Controllers\registrarse_controller.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userRegistro', 'C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Controllers\\registrarse_controller.php', 22)
+ 2 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\registrarse_controller->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-29 23:18:42 --> ErrorException: Undefined variable $userRegistro
+in APPPATH\Controllers\registrarse_controller.php on line 22.
+ 1 APPPATH\Controllers\registrarse_controller.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userRegistro', 'C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Controllers\\registrarse_controller.php', 22)
+ 2 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\registrarse_controller->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-29 23:30:00 --> ErrorException: Undefined variable $userRegistro
+in APPPATH\Controllers\registrarse_controller.php on line 22.
+ 1 APPPATH\Controllers\registrarse_controller.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userRegistro', 'C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Controllers\\registrarse_controller.php', 22)
+ 2 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\registrarse_controller->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-29 23:30:02 --> ErrorException: Undefined variable $userRegistro
+in APPPATH\Controllers\registrarse_controller.php on line 22.
+ 1 APPPATH\Controllers\registrarse_controller.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userRegistro', 'C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Controllers\\registrarse_controller.php', 22)
+ 2 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\registrarse_controller->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-29 23:31:09 --> TypeError: CodeIgniter\Validation\Validation::setRules(): Argument #1 ($rules) must be of type array, CodeIgniter\Validation\Validation given, called in C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Controller.php on line 198
+in SYSTEMPATH\Validation\Validation.php on line 576.
+ 1 SYSTEMPATH\Controller.php(198): CodeIgniter\Validation\Validation->setRules(Object(CodeIgniter\Validation\Validation), [])
+ 2 SYSTEMPATH\Controller.php(152): CodeIgniter\Controller->setValidator(Object(CodeIgniter\Validation\Validation), [])
+ 3 APPPATH\Controllers\registrarse_controller.php(38): CodeIgniter\Controller->validate(Object(CodeIgniter\Validation\Validation))
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\registrarse_controller->validation()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-29 23:31:50 --> CodeIgniter\Validation\Exceptions\ValidationException: "max_lenght" is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 336.
+ 1 SYSTEMPATH\Validation\Validation.php(336): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('max_lenght')
+ 2 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('nombre', 'nombre', 'Esteban Agustín', [...], [...])
+ 3 SYSTEMPATH\Controller.php(154): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\registrarse_controller.php(38): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\registrarse_controller->validation()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-29 23:39:17 --> ParseError: syntax error, unexpected end of file, expecting "elseif" or "else" or "endif"
+in APPPATH\Views\contenido\registrarse.php on line 73.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('contenido/registrarse', [], true)
+ 3 APPPATH\Controllers\registrarse_controller.php(22): view('contenido/registrarse')
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\registrarse_controller->registrarse()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-29 23:39:20 --> ParseError: syntax error, unexpected end of file, expecting "elseif" or "else" or "endif"
+in APPPATH\Views\contenido\registrarse.php on line 73.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('contenido/registrarse', [], true)
+ 3 APPPATH\Controllers\registrarse_controller.php(22): view('contenido/registrarse')
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\registrarse_controller->registrarse()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-29 23:39:23 --> ParseError: syntax error, unexpected end of file, expecting "elseif" or "else" or "endif"
+in APPPATH\Views\contenido\registrarse.php on line 73.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('contenido/registrarse', [], true)
+ 3 APPPATH\Controllers\registrarse_controller.php(22): view('contenido/registrarse')
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\registrarse_controller->registrarse()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-29 23:45:00 --> ErrorException: Undefined variable $userRegistro
+in APPPATH\Controllers\registrarse_controller.php on line 22.
+ 1 APPPATH\Controllers\registrarse_controller.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userRegistro', 'C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Controllers\\registrarse_controller.php', 22)
+ 2 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\registrarse_controller->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-29 23:45:01 --> ErrorException: Undefined variable $userRegistro
+in APPPATH\Controllers\registrarse_controller.php on line 22.
+ 1 APPPATH\Controllers\registrarse_controller.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userRegistro', 'C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Controllers\\registrarse_controller.php', 22)
+ 2 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\registrarse_controller->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-29 23:45:02 --> ErrorException: Undefined variable $userRegistro
+in APPPATH\Controllers\registrarse_controller.php on line 22.
+ 1 APPPATH\Controllers\registrarse_controller.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userRegistro', 'C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Controllers\\registrarse_controller.php', 22)
+ 2 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\registrarse_controller->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-29 23:45:02 --> ErrorException: Undefined variable $userRegistro
+in APPPATH\Controllers\registrarse_controller.php on line 22.
+ 1 APPPATH\Controllers\registrarse_controller.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userRegistro', 'C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Controllers\\registrarse_controller.php', 22)
+ 2 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\registrarse_controller->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-29 23:46:33 --> Error: Class "App\Controllers\UsuarioModel" not found
+in APPPATH\Controllers\registrarse_controller.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\registrarse_controller->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-29 23:47:19 --> ParseError: syntax error, unexpected end of file, expecting "elseif" or "else" or "endif"
+in APPPATH\Views\contenido\registrarse.php on line 73.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('contenido/registrarse', [], true)
+ 3 APPPATH\Controllers\registrarse_controller.php(22): view('contenido/registrarse')
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\registrarse_controller->registrarse()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-29 23:47:20 --> ParseError: syntax error, unexpected end of file, expecting "elseif" or "else" or "endif"
+in APPPATH\Views\contenido\registrarse.php on line 73.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('contenido/registrarse', [], true)
+ 3 APPPATH\Controllers\registrarse_controller.php(22): view('contenido/registrarse')
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\registrarse_controller->registrarse()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-29 23:48:24 --> ParseError: syntax error, unexpected end of file, expecting "elseif" or "else" or "endif"
+in APPPATH\Views\contenido\registrarse.php on line 73.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('contenido/registrarse', [], true)
+ 3 APPPATH\Controllers\registrarse_controller.php(22): view('contenido/registrarse')
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\registrarse_controller->registrarse()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-29 23:48:24 --> ParseError: syntax error, unexpected end of file, expecting "elseif" or "else" or "endif"
+in APPPATH\Views\contenido\registrarse.php on line 73.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('contenido/registrarse', [], true)
+ 3 APPPATH\Controllers\registrarse_controller.php(22): view('contenido/registrarse')
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\registrarse_controller->registrarse()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-29 23:48:25 --> ParseError: syntax error, unexpected end of file, expecting "elseif" or "else" or "endif"
+in APPPATH\Views\contenido\registrarse.php on line 73.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('contenido/registrarse', [], true)
+ 3 APPPATH\Controllers\registrarse_controller.php(22): view('contenido/registrarse')
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\registrarse_controller->registrarse()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-29 23:48:25 --> ParseError: syntax error, unexpected end of file, expecting "elseif" or "else" or "endif"
+in APPPATH\Views\contenido\registrarse.php on line 73.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('contenido/registrarse', [], true)
+ 3 APPPATH\Controllers\registrarse_controller.php(22): view('contenido/registrarse')
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\registrarse_controller->registrarse()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-29 23:48:26 --> ParseError: syntax error, unexpected end of file, expecting "elseif" or "else" or "endif"
+in APPPATH\Views\contenido\registrarse.php on line 73.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('contenido/registrarse', [], true)
+ 3 APPPATH\Controllers\registrarse_controller.php(22): view('contenido/registrarse')
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\registrarse_controller->registrarse()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-29 23:48:42 --> ParseError: syntax error, unexpected end of file, expecting "elseif" or "else" or "endif"
+in APPPATH\Views\contenido\registrarse.php on line 73.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('contenido/registrarse', [], true)
+ 3 APPPATH\Controllers\registrarse_controller.php(22): view('contenido/registrarse')
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\registrarse_controller->registrarse()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-29 23:49:08 --> ParseError: syntax error, unexpected end of file, expecting "elseif" or "else" or "endif"
+in APPPATH\Views\contenido\registrarse.php on line 73.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('contenido/registrarse', [], true)
+ 3 APPPATH\Controllers\registrarse_controller.php(22): view('contenido/registrarse')
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\registrarse_controller->registrarse()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-29 23:49:09 --> ParseError: syntax error, unexpected end of file, expecting "elseif" or "else" or "endif"
+in APPPATH\Views\contenido\registrarse.php on line 73.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('contenido/registrarse', [], true)
+ 3 APPPATH\Controllers\registrarse_controller.php(22): view('contenido/registrarse')
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\registrarse_controller->registrarse()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-29 23:49:10 --> ParseError: syntax error, unexpected end of file, expecting "elseif" or "else" or "endif"
+in APPPATH\Views\contenido\registrarse.php on line 73.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('contenido/registrarse', [], true)
+ 3 APPPATH\Controllers\registrarse_controller.php(22): view('contenido/registrarse')
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\registrarse_controller->registrarse()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-29 23:49:14 --> ParseError: syntax error, unexpected end of file, expecting "elseif" or "else" or "endif"
+in APPPATH\Views\contenido\registrarse.php on line 73.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('contenido/registrarse', [], true)
+ 3 APPPATH\Controllers\registrarse_controller.php(22): view('contenido/registrarse')
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\registrarse_controller->registrarse()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-29 23:49:34 --> ParseError: syntax error, unexpected end of file, expecting "elseif" or "else" or "endif"
+in APPPATH\Views\contenido\registrarse.php on line 73.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('contenido/registrarse', [], true)
+ 3 APPPATH\Controllers\registrarse_controller.php(22): view('contenido/registrarse')
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\registrarse_controller->registrarse()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-29 23:50:00 --> ParseError: syntax error, unexpected end of file, expecting "elseif" or "else" or "endif"
+in APPPATH\Views\contenido\registrarse.php on line 73.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('contenido/registrarse', [], true)
+ 3 APPPATH\Controllers\registrarse_controller.php(22): view('contenido/registrarse')
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\registrarse_controller->registrarse()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-29 23:50:02 --> ParseError: syntax error, unexpected end of file, expecting "elseif" or "else" or "endif"
+in APPPATH\Views\contenido\registrarse.php on line 73.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('contenido/registrarse', [], true)
+ 3 APPPATH\Controllers\registrarse_controller.php(22): view('contenido/registrarse')
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\registrarse_controller->registrarse()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-29 23:50:21 --> ParseError: syntax error, unexpected end of file, expecting "elseif" or "else" or "endif"
+in APPPATH\Views\contenido\registrarse.php on line 73.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('contenido/registrarse', [], true)
+ 3 APPPATH\Controllers\registrarse_controller.php(22): view('contenido/registrarse')
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\registrarse_controller->registrarse()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-29 23:50:23 --> ParseError: syntax error, unexpected end of file, expecting "elseif" or "else" or "endif"
+in APPPATH\Views\contenido\registrarse.php on line 73.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('contenido/registrarse', [], true)
+ 3 APPPATH\Controllers\registrarse_controller.php(22): view('contenido/registrarse')
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\registrarse_controller->registrarse()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-29 23:50:31 --> ParseError: syntax error, unexpected end of file, expecting "elseif" or "else" or "endif"
+in APPPATH\Views\contenido\registrarse.php on line 73.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('contenido/registrarse', [], true)
+ 3 APPPATH\Controllers\registrarse_controller.php(22): view('contenido/registrarse')
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\registrarse_controller->registrarse()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-29 23:52:18 --> ParseError: syntax error, unexpected end of file, expecting "elseif" or "else" or "endif"
+in APPPATH\Views\contenido\registrarse.php on line 73.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('contenido/registrarse', [], true)
+ 3 APPPATH\Controllers\registrarse_controller.php(22): view('contenido/registrarse')
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\registrarse_controller->registrarse()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-29 23:52:19 --> ParseError: syntax error, unexpected end of file, expecting "elseif" or "else" or "endif"
+in APPPATH\Views\contenido\registrarse.php on line 73.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('contenido/registrarse', [], true)
+ 3 APPPATH\Controllers\registrarse_controller.php(22): view('contenido/registrarse')
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\registrarse_controller->registrarse()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-29 23:53:40 --> ParseError: syntax error, unexpected end of file, expecting "elseif" or "else" or "endif"
+in APPPATH\Views\contenido\registrarse.php on line 73.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('contenido/registrarse', [], true)
+ 3 APPPATH\Controllers\registrarse_controller.php(22): view('contenido/registrarse')
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\registrarse_controller->registrarse()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-29 23:54:11 --> ParseError: syntax error, unexpected end of file, expecting "elseif" or "else" or "endif"
+in APPPATH\Views\contenido\registrarse.php on line 73.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('contenido/registrarse', [], true)
+ 3 APPPATH\Controllers\registrarse_controller.php(22): view('contenido/registrarse')
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\registrarse_controller->registrarse()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-29 23:55:45 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "contenido/registro_user.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('contenido/registro_user.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('contenido/registro_user', [], true)
+ 3 APPPATH\Controllers\registrarse_controller.php(22): view('contenido/registro_user')
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\registrarse_controller->registrarse()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-29 23:55:59 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "contenido/registro_user.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('contenido/registro_user.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('contenido/registro_user', [], true)
+ 3 APPPATH\Controllers\registrarse_controller.php(22): view('contenido/registro_user')
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\registrarse_controller->registrarse()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-29 23:56:01 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "contenido/registro_user.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('contenido/registro_user.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('contenido/registro_user', [], true)
+ 3 APPPATH\Controllers\registrarse_controller.php(22): view('contenido/registro_user')
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\registrarse_controller->registrarse()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-29 23:56:08 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "contenido/registro_user.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('contenido/registro_user.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('contenido/registro_user', [], true)
+ 3 APPPATH\Controllers\registrarse_controller.php(22): view('contenido/registro_user')
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\registrarse_controller->registrarse()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-29 23:56:34 --> ParseError: syntax error, unexpected end of file, expecting "elseif" or "else" or "endif"
+in APPPATH\Views\contenido\registro_user.php on line 73.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('contenido/registro_user', [], true)
+ 3 APPPATH\Controllers\registrarse_controller.php(22): view('contenido/registro_user')
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\registrarse_controller->registrarse()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()

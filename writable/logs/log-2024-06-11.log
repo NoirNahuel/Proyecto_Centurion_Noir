@@ -1,0 +1,98 @@
+CRITICAL - 2024-06-11 15:03:31 --> Error: Call to a member function database() on null
+in APPPATH\Models\UsersModel.php on line 12.
+ 1 APPPATH\Controllers\registrarse_controller.php(86): App\Models\UsersModel->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\registrarse_controller->validation()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-11 15:03:35 --> Error: Call to a member function database() on null
+in APPPATH\Models\UsersModel.php on line 12.
+ 1 APPPATH\Controllers\registrarse_controller.php(86): App\Models\UsersModel->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\registrarse_controller->validation()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-11 15:06:43 --> Error: Call to a member function database() on null
+in APPPATH\Models\UsersModel.php on line 12.
+ 1 APPPATH\Controllers\registrarse_controller.php(86): App\Models\UsersModel->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\registrarse_controller->validation()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-11 15:08:08 --> Error: Call to a member function database() on null
+in APPPATH\Models\UsersModel.php on line 12.
+ 1 APPPATH\Controllers\registrarse_controller.php(84): App\Models\UsersModel->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\registrarse_controller->validation()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-11 15:10:04 --> Error: Call to a member function database() on null
+in APPPATH\Models\UsersModel.php on line 12.
+ 1 APPPATH\Controllers\registrarse_controller.php(84): App\Models\UsersModel->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\registrarse_controller->validation()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-11 15:12:26 --> Error: Call to a member function database() on null
+in APPPATH\Models\UsersModel.php on line 12.
+ 1 APPPATH\Controllers\registrarse_controller.php(84): App\Models\UsersModel->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\registrarse_controller->validation()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-11 15:14:32 --> Error: Call to a member function database() on null
+in APPPATH\Models\UsersModel.php on line 12.
+ 1 APPPATH\Controllers\registrarse_controller.php(84): App\Models\UsersModel->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\registrarse_controller->validation()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-11 15:17:34 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('127.0.0.1', '', Object(SensitiveParameterValue), 'proyectocenturi...', 3306, '', 0)
+#1 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique('esteban.cent95@...', 'email', Array, NULL, 'email')
+#6 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('email', 'correo electr\xC3\xB3...', 'esteban.cent95@...', Array, Array)
+#7 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Controller.php(154): CodeIgniter\Validation\Validation->run()
+#8 C:\xampp\htdocs\Proyecto_Centurion_Esteban\app\Controllers\registrarse_controller.php(30): CodeIgniter\Controller->validate(Array)
+#9 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(943): App\Controllers\registrarse_controller->validation()
+#10 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+#11 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\Proyecto_Centurion_Esteban\index.php(84): CodeIgniter\CodeIgniter->run()
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique('esteban.cent95@...', 'email', Array, NULL, 'email')
+#5 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('email', 'correo electr\xC3\xB3...', 'esteban.cent95@...', Array, Array)
+#6 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Controller.php(154): CodeIgniter\Validation\Validation->run()
+#7 C:\xampp\htdocs\Proyecto_Centurion_Esteban\app\Controllers\registrarse_controller.php(30): CodeIgniter\Controller->validate(Array)
+#8 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(943): App\Controllers\registrarse_controller->validation()
+#9 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+#10 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\Proyecto_Centurion_Esteban\index.php(84): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-06-11 15:17:34 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `registrarse`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique('esteban.cent95@gmail.com', 'email', [...], null, 'email')
+ 5 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('email', 'correo electrónico', 'esteban.cent95@gmail.com', [...], [...])
+ 6 SYSTEMPATH\Controller.php(154): CodeIgniter\Validation\Validation->run()
+ 7 APPPATH\Controllers\registrarse_controller.php(30): CodeIgniter\Controller->validate([...])
+ 8 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\registrarse_controller->validation()
+ 9 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()

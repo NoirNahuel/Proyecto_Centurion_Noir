@@ -1,0 +1,99 @@
+CRITICAL - 2024-06-05 14:42:35 --> Error: Class "App\Models\productModel" not found
+in APPPATH\Controllers\producto_controller.php on line 98.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->store()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-05 18:31:17 --> Error: Undefined constant "crossorigin"
+in APPPATH\Views\plantillas\head.php on line 10.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('plantillas/head', [], true)
+ 4 APPPATH\Controllers\Home.php(13): view('plantillas/head', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->ver()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-05 18:35:17 --> ParseError: syntax error, unexpected identifier "crossorigin", expecting "," or ";"
+in APPPATH\Views\plantillas\head.php on line 10.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('plantillas/head', [], true)
+ 3 APPPATH\Controllers\Home.php(13): view('plantillas/head', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->ver()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-05 18:35:38 --> Error: Undefined constant "crossorigin"
+in APPPATH\Views\plantillas\head.php on line 10.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('plantillas/head', [], true)
+ 4 APPPATH\Controllers\Home.php(13): view('plantillas/head', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->ver()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-05 18:35:40 --> Error: Undefined constant "crossorigin"
+in APPPATH\Views\plantillas\head.php on line 10.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('plantillas/head', [], true)
+ 4 APPPATH\Controllers\Home.php(13): view('plantillas/head', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->ver()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-05 18:35:41 --> Error: Undefined constant "crossorigin"
+in APPPATH\Views\plantillas\head.php on line 10.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('plantillas/head', [], true)
+ 4 APPPATH\Controllers\Home.php(13): view('plantillas/head', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->ver()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-05 18:35:41 --> Error: Undefined constant "crossorigin"
+in APPPATH\Views\plantillas\head.php on line 10.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('plantillas/head', [], true)
+ 4 APPPATH\Controllers\Home.php(13): view('plantillas/head', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->ver()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-05 18:35:41 --> Error: Undefined constant "crossorigin"
+in APPPATH\Views\plantillas\head.php on line 10.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('plantillas/head', [], true)
+ 4 APPPATH\Controllers\Home.php(13): view('plantillas/head', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->ver()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-05 18:35:46 --> Error: Undefined constant "crossorigin"
+in APPPATH\Views\plantillas\head.php on line 10.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('plantillas/head', [], true)
+ 4 APPPATH\Controllers\Home.php(9): view('plantillas/head', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-05 18:42:36 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "mate_arg.jpg alt="
+in SYSTEMPATH\Router\Router.php on line 704.
+ 1 SYSTEMPATH\Router\Router.php(195): CodeIgniter\Router\Router->checkDisallowedChars('assets/img/mate_arg.jpg alt=')
+ 2 SYSTEMPATH\CodeIgniter.php(825): CodeIgniter\Router\Router->handle('assets/img/mate_arg.jpg alt=')
+ 3 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-05 19:04:37 --> ErrorException: Undefined variable $rules
+in APPPATH\Controllers\registrarse_controller.php on line 74.
+ 1 APPPATH\Controllers\registrarse_controller.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $rules', 'C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Controllers\\registrarse_controller.php', 74)
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\registrarse_controller->validation()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()

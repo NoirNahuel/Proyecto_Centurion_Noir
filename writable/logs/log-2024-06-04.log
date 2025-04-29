@@ -1,0 +1,164 @@
+CRITICAL - 2024-06-04 01:33:14 --> CodeIgniter\Validation\Exceptions\ValidationException: "max_lenght" is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 336.
+ 1 SYSTEMPATH\Validation\Validation.php(336): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('max_lenght')
+ 2 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('nombre', 'nombre', 'Esteban Agustín', [...], [...])
+ 3 SYSTEMPATH\Controller.php(154): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\registrarse_controller.php(70): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\registrarse_controller->validation()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-04 01:35:47 --> CodeIgniter\Validation\Exceptions\ValidationException: "max_lenght" is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 336.
+ 1 SYSTEMPATH\Validation\Validation.php(336): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('max_lenght')
+ 2 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('nombre', 'nombre', 'Esteban Agustín', [...], [...])
+ 3 SYSTEMPATH\Controller.php(154): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\registrarse_controller.php(70): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\registrarse_controller->validation()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-04 01:37:39 --> CodeIgniter\Validation\Exceptions\ValidationException: "max_lenght" is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 336.
+ 1 SYSTEMPATH\Validation\Validation.php(336): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('max_lenght')
+ 2 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('nombre', 'nombre', 'Esteban Agustín', [...], [...])
+ 3 SYSTEMPATH\Controller.php(154): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\registrarse_controller.php(70): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\registrarse_controller->validation()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-04 01:38:37 --> CodeIgniter\Validation\Exceptions\ValidationException: "max_lenght" is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 336.
+ 1 SYSTEMPATH\Validation\Validation.php(336): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('max_lenght')
+ 2 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('nombre', 'nombre', 'Esteban Agustín', [...], [...])
+ 3 SYSTEMPATH\Controller.php(154): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\registrarse_controller.php(70): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\registrarse_controller->validation()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-04 01:39:20 --> CodeIgniter\Validation\Exceptions\ValidationException: "max_lenght" is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 336.
+ 1 SYSTEMPATH\Validation\Validation.php(336): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('max_lenght')
+ 2 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('nombre', 'nombre', 'Esteban Agustín', [...], [...])
+ 3 SYSTEMPATH\Controller.php(154): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\registrarse_controller.php(70): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\registrarse_controller->validation()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-04 01:39:29 --> CodeIgniter\Validation\Exceptions\ValidationException: "max_lenght" is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 336.
+ 1 SYSTEMPATH\Validation\Validation.php(336): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('max_lenght')
+ 2 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('nombre', 'nombre', 'Esteban Agustín', [...], [...])
+ 3 SYSTEMPATH\Controller.php(154): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\registrarse_controller.php(70): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\registrarse_controller->validation()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-04 01:42:41 --> CodeIgniter\Validation\Exceptions\ValidationException: "max_lenght" is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 336.
+ 1 SYSTEMPATH\Validation\Validation.php(336): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('max_lenght')
+ 2 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('nombre', 'nombre', 'Esteban Agustín', [...], [...])
+ 3 SYSTEMPATH\Controller.php(154): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\registrarse_controller.php(70): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\registrarse_controller->validation()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-04 01:45:47 --> CodeIgniter\Validation\Exceptions\ValidationException: "max_lenght" is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 336.
+ 1 SYSTEMPATH\Validation\Validation.php(336): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('max_lenght')
+ 2 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('nombre', 'nombre', 'Esteban Agustín', [...], [...])
+ 3 SYSTEMPATH\Controller.php(154): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\registrarse_controller.php(70): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\registrarse_controller->validation()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-04 01:47:18 --> CodeIgniter\Validation\Exceptions\ValidationException: "max_lenght" is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 336.
+ 1 SYSTEMPATH\Validation\Validation.php(336): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('max_lenght')
+ 2 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('nombre', 'nombre', 'Esteban Agustín', [...], [...])
+ 3 SYSTEMPATH\Controller.php(154): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\registrarse_controller.php(70): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\registrarse_controller->validation()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-04 01:47:27 --> CodeIgniter\Validation\Exceptions\ValidationException: "max_lenght" is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 336.
+ 1 SYSTEMPATH\Validation\Validation.php(336): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('max_lenght')
+ 2 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('nombre', 'nombre', 'Esteban Agustín', [...], [...])
+ 3 SYSTEMPATH\Controller.php(154): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\registrarse_controller.php(70): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\registrarse_controller->validation()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-04 01:50:07 --> CodeIgniter\Validation\Exceptions\ValidationException: "max_lenght" is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 336.
+ 1 SYSTEMPATH\Validation\Validation.php(336): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('max_lenght')
+ 2 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('nombre', 'nombre', 'Esteban Agustín', [...], [...])
+ 3 SYSTEMPATH\Controller.php(154): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\registrarse_controller.php(70): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\registrarse_controller->validation()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-04 01:50:26 --> CodeIgniter\Validation\Exceptions\ValidationException: "max_lenght" is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 336.
+ 1 SYSTEMPATH\Validation\Validation.php(336): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('max_lenght')
+ 2 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('nombre', 'nombre', 'Esteban Agustín', [...], [...])
+ 3 SYSTEMPATH\Controller.php(154): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\registrarse_controller.php(70): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\registrarse_controller->validation()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-04 01:51:49 --> CodeIgniter\Validation\Exceptions\ValidationException: "max_lenght" is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 336.
+ 1 SYSTEMPATH\Validation\Validation.php(336): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('max_lenght')
+ 2 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('nombre', 'nombre', 'Esteban Agustín', [...], [...])
+ 3 SYSTEMPATH\Controller.php(154): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\registrarse_controller.php(70): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\registrarse_controller->validation()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-04 02:00:34 --> CodeIgniter\Validation\Exceptions\ValidationException: "max_lenght" is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 336.
+ 1 SYSTEMPATH\Validation\Validation.php(336): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('max_lenght')
+ 2 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('nombre', 'nombre', 'Esteban Agustín', [...], [...])
+ 3 SYSTEMPATH\Controller.php(154): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\registrarse_controller.php(70): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\registrarse_controller->validation()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-04 02:01:09 --> CodeIgniter\Validation\Exceptions\ValidationException: "max_lenght" is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 336.
+ 1 SYSTEMPATH\Validation\Validation.php(336): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('max_lenght')
+ 2 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('nombre', 'nombre', 'Esteban Agustín', [...], [...])
+ 3 SYSTEMPATH\Controller.php(154): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\registrarse_controller.php(70): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\registrarse_controller->validation()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-04 02:09:44 --> ErrorException: Undefined variable $rules
+in APPPATH\Controllers\registrarse_controller.php on line 72.
+ 1 APPPATH\Controllers\registrarse_controller.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $rules', 'C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Controllers\\registrarse_controller.php', 72)
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\registrarse_controller->validation()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-04 02:10:45 --> ErrorException: Undefined variable $rules
+in APPPATH\Controllers\registrarse_controller.php on line 72.
+ 1 APPPATH\Controllers\registrarse_controller.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $rules', 'C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Controllers\\registrarse_controller.php', 72)
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\registrarse_controller->validation()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registrarse_controller))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()

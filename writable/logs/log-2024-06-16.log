@@ -1,0 +1,1239 @@
+INFO - 2024-06-16 00:19:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 00:20:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-16 00:20:11 --> TypeError: mysqli_fetch_assoc(): Argument #1 ($result) must be of type mysqli_result, array given
+in APPPATH\Controllers\login_controller.php on line 32.
+ 1 APPPATH\Controllers\login_controller.php(32): mysqli_fetch_assoc([...])
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\login_controller->login()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\login_controller))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-16 00:24:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-16 00:24:06 --> TypeError: mysqli_fetch_assoc(): Argument #1 ($result) must be of type mysqli_result, array given
+in APPPATH\Controllers\login_controller.php on line 32.
+ 1 APPPATH\Controllers\login_controller.php(32): mysqli_fetch_assoc([...])
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\login_controller->login()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\login_controller))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-16 00:25:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 00:25:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 00:25:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 00:25:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 00:25:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 00:30:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 00:30:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-16 00:30:19 --> Error: Call to undefined method App\Controllers\login_controller::where()
+in APPPATH\Controllers\login_controller.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\login_controller->login()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\login_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-16 00:33:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 00:33:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 00:33:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 00:34:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 00:34:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 00:34:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 00:34:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 00:34:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 00:34:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 00:34:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 00:36:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 00:36:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-16 00:36:36 --> TypeError: count(): Argument #1 ($value) must be of type Countable|array, bool given
+in APPPATH\Controllers\login_controller.php on line 33.
+ 1 APPPATH\Controllers\login_controller.php(33): count(true)
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\login_controller->login()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\login_controller))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-16 00:37:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 00:37:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 00:37:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 00:37:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 00:37:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 00:37:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 00:39:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 00:39:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 00:39:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 00:39:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 00:39:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 00:40:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 00:40:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 00:41:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 00:42:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-16 00:42:05 --> ErrorException: Undefined array key "password"
+in APPPATH\Controllers\login_controller.php on line 34.
+ 1 APPPATH\Controllers\login_controller.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "password"', 'C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Controllers\\login_controller.php', 34)
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\login_controller->login()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\login_controller))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-16 00:45:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 00:45:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 00:45:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 00:45:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-16 00:45:57 --> ErrorException: Undefined variable $p_password
+in APPPATH\Controllers\login_controller.php on line 31.
+ 1 APPPATH\Controllers\login_controller.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $p_password', 'C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Controllers\\login_controller.php', 31)
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\login_controller->login()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\login_controller))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-16 00:46:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 00:46:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 00:46:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-16 00:46:28 --> ErrorException: Undefined array key "password"
+in APPPATH\Controllers\login_controller.php on line 31.
+ 1 APPPATH\Controllers\login_controller.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "password"', 'C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Controllers\\login_controller.php', 31)
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\login_controller->login()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\login_controller))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-16 00:46:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 00:46:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 00:47:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 00:47:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 01:14:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 01:15:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 01:15:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 12:34:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 12:34:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 12:34:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-16 12:34:30 --> ErrorException: Undefined variable $password
+in APPPATH\Controllers\login_controller.php on line 31.
+ 1 APPPATH\Controllers\login_controller.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $password', 'C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Controllers\\login_controller.php', 31)
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\login_controller->login()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\login_controller))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-16 12:39:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-16 12:39:11 --> TypeError: Cannot access offset of type string on string
+in APPPATH\Controllers\login_controller.php on line 31.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\login_controller->login()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\login_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-16 12:41:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 12:41:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 12:41:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-16 12:41:14 --> mysqli_sql_exception: Unknown column 'registrarse.deleted_at' in 'where clause' in C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Model.php(271): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\BaseModel.php(676): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\Proyecto_Centurion_Esteban\app\Models\UsersModel.php(24): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\Proyecto_Centurion_Esteban\app\Controllers\login_controller.php(33): App\Models\UsersModel->validateUser('cent@gmail.com', 'esteban.cent')
+#8 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(943): App\Controllers\login_controller->login()
+#9 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\login_controller))
+#10 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\Proyecto_Centurion_Esteban\index.php(84): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-06-16 12:41:14 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'registrarse.deleted_at' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `registrarse`
+WHERE `email` = :email:
+AND `registrarse`.`deleted_at` IS NULL
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(271): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Models\UsersModel.php(24): CodeIgniter\BaseModel->first()
+ 5 APPPATH\Controllers\login_controller.php(33): App\Models\UsersModel->validateUser('cent@gmail.com', 'esteban.cent')
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\login_controller->login()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\login_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-16 12:41:14 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'registrarse.deleted_at' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `registrarse`
+WHERE `email` = \'cent@gmail.com\'
+AND `registrarse`.`deleted_at` IS NULL
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `registrarse`
+WHERE `email` = \'cent@gmail.com\'
+AND `registrarse`.`deleted_at` IS NULL
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `registrarse`
+WHERE `email` = :email:
+AND `registrarse`.`deleted_at` IS NULL
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH\Model.php(271): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 6 APPPATH\Models\UsersModel.php(24): CodeIgniter\BaseModel->first()
+ 7 APPPATH\Controllers\login_controller.php(33): App\Models\UsersModel->validateUser('cent@gmail.com', 'esteban.cent')
+ 8 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\login_controller->login()
+ 9 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\login_controller))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-16 12:41:14 --> [Caused by] mysqli_sql_exception: Unknown column 'registrarse.deleted_at' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *
+FROM `registrarse`
+WHERE `email` = \'cent@gmail.com\'
+AND `registrarse`.`deleted_at` IS NULL
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `registrarse`
+WHERE `email` = \'cent@gmail.com\'
+AND `registrarse`.`deleted_at` IS NULL
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `registrarse`
+WHERE `email` = \'cent@gmail.com\'
+AND `registrarse`.`deleted_at` IS NULL
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `registrarse`
+WHERE `email` = :email:
+AND `registrarse`.`deleted_at` IS NULL
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(271): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Models\UsersModel.php(24): CodeIgniter\BaseModel->first()
+ 8 APPPATH\Controllers\login_controller.php(33): App\Models\UsersModel->validateUser('cent@gmail.com', 'esteban.cent')
+ 9 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\login_controller->login()
+10 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\login_controller))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-16 12:48:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 12:48:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 12:48:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 12:48:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 12:48:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 12:49:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 12:49:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 12:49:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 12:49:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 12:49:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 16:40:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 16:41:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 16:41:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 16:42:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 16:44:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 16:53:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 16:54:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-16 16:54:20 --> mysqli_sql_exception: Unknown column 'registrarse.deleted_at' in 'where clause' in C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Model.php(271): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\BaseModel.php(676): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\Proyecto_Centurion_Esteban\app\Models\UsersModel.php(24): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\Proyecto_Centurion_Esteban\app\Controllers\login_controller.php(33): App\Models\UsersModel->validateUser('elena@gmail.com', 'elena12345')
+#8 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(943): App\Controllers\login_controller->login()
+#9 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\login_controller))
+#10 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\Proyecto_Centurion_Esteban\index.php(84): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-06-16 16:54:20 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'registrarse.deleted_at' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `registrarse`
+WHERE `email` = :email:
+AND `registrarse`.`deleted_at` IS NULL
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(271): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Models\UsersModel.php(24): CodeIgniter\BaseModel->first()
+ 5 APPPATH\Controllers\login_controller.php(33): App\Models\UsersModel->validateUser('elena@gmail.com', 'elena12345')
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\login_controller->login()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\login_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-16 16:54:20 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'registrarse.deleted_at' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `registrarse`
+WHERE `email` = \'elena@gmail.com\'
+AND `registrarse`.`deleted_at` IS NULL
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `registrarse`
+WHERE `email` = \'elena@gmail.com\'
+AND `registrarse`.`deleted_at` IS NULL
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `registrarse`
+WHERE `email` = :email:
+AND `registrarse`.`deleted_at` IS NULL
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH\Model.php(271): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 6 APPPATH\Models\UsersModel.php(24): CodeIgniter\BaseModel->first()
+ 7 APPPATH\Controllers\login_controller.php(33): App\Models\UsersModel->validateUser('elena@gmail.com', 'elena12345')
+ 8 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\login_controller->login()
+ 9 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\login_controller))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-16 16:54:20 --> [Caused by] mysqli_sql_exception: Unknown column 'registrarse.deleted_at' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *
+FROM `registrarse`
+WHERE `email` = \'elena@gmail.com\'
+AND `registrarse`.`deleted_at` IS NULL
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `registrarse`
+WHERE `email` = \'elena@gmail.com\'
+AND `registrarse`.`deleted_at` IS NULL
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `registrarse`
+WHERE `email` = \'elena@gmail.com\'
+AND `registrarse`.`deleted_at` IS NULL
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `registrarse`
+WHERE `email` = :email:
+AND `registrarse`.`deleted_at` IS NULL
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(271): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Models\UsersModel.php(24): CodeIgniter\BaseModel->first()
+ 8 APPPATH\Controllers\login_controller.php(33): App\Models\UsersModel->validateUser('elena@gmail.com', 'elena12345')
+ 9 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\login_controller->login()
+10 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\login_controller))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-16 16:55:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 16:55:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 16:55:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 16:55:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 16:58:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 17:04:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 17:05:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 17:05:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 17:05:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 17:05:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 17:05:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 17:07:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 17:07:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 17:07:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 17:08:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 17:08:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 17:08:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 17:14:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 17:16:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 17:16:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 17:17:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 17:18:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 17:18:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 17:19:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 17:19:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 17:19:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 17:30:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 17:30:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 17:34:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 17:34:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 17:34:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 17:36:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 17:41:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 17:42:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 17:43:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 17:43:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 17:43:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 17:44:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 17:44:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 17:50:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 17:50:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 17:51:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 17:51:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 17:57:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-16 17:57:23 --> ErrorException: Undefined variable $producto
+in APPPATH\Views\contenido\Gestion_producto\gestion_producto.php on line 53.
+ 1 APPPATH\Views\contenido\Gestion_producto\gestion_producto.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $producto', 'C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\contenido\\Gestion_producto\\gestion_producto.php', 53)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\contenido\\Gestion_producto\\gestion_producto.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('contenido/Gestion_producto/gestion_producto', [], true)
+ 5 APPPATH\Controllers\Home.php(30): view('contenido/Gestion_producto/gestion_producto')
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Home->gestion()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-16 18:12:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-16 18:12:13 --> ErrorException: Undefined array key "id"
+in APPPATH\Views\contenido\Gestion_producto\gestion_producto.php on line 71.
+ 1 APPPATH\Views\contenido\Gestion_producto\gestion_producto.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\contenido\\Gestion_producto\\gestion_producto.php', 71)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\contenido\\Gestion_producto\\gestion_producto.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('contenido/Gestion_producto/gestion_producto', [], true)
+ 5 APPPATH\Controllers\producto_controller.php(41): view('contenido/Gestion_producto/gestion_producto', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->index()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-16 18:12:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 18:17:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 18:19:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 18:20:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 18:20:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 18:20:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 18:20:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 18:30:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 18:38:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 18:44:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 18:44:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 18:48:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 18:49:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-16 18:49:49 --> ErrorException: Undefined variable $dato
+in APPPATH\Controllers\producto_controller.php on line 183.
+ 1 APPPATH\Controllers\producto_controller.php(183): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dato', 'C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Controllers\\producto_controller.php', 183)
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->buscar()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-16 18:50:16 --> ErrorException: Undefined variable $titulo
+in APPPATH\Views\plantillas\head.php on line 6.
+ 1 APPPATH\Views\plantillas\head.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $titulo', 'C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\plantillas\\head.php', 6)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\plantillas\\head.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('plantillas/head', [], true)
+ 5 APPPATH\Controllers\producto_controller.php(185): view('plantillas/head')
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->buscar()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-16 18:50:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 18:56:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 19:13:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 19:17:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 19:27:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 19:28:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 19:29:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 19:29:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 19:29:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 19:31:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 19:32:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 19:32:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 19:39:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 19:39:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 19:40:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 19:41:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 19:41:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 20:09:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 20:16:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 20:16:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 20:19:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 20:20:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 20:21:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 20:31:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 20:33:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-16 20:33:38 --> TypeError: Cannot access offset of type string on string
+in APPPATH\Views\contenido\Gestion_producto\gestion_producto.php on line 58.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('contenido/Gestion_producto/gestion_producto', [], true)
+ 4 APPPATH\Controllers\producto_controller.php(41): view('contenido/Gestion_producto/gestion_producto', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->index()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-16 20:40:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-16 20:40:19 --> ErrorException: Undefined variable $categorias
+in APPPATH\Views\contenido\Gestion_producto\gestion_producto.php on line 54.
+ 1 APPPATH\Views\contenido\Gestion_producto\gestion_producto.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $categorias', 'C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\contenido\\Gestion_producto\\gestion_producto.php', 54)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\contenido\\Gestion_producto\\gestion_producto.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('contenido/Gestion_producto/gestion_producto', [], true)
+ 5 APPPATH\Controllers\producto_controller.php(41): view('contenido/Gestion_producto/gestion_producto', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->index()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-16 20:40:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-16 20:40:50 --> ErrorException: Undefined variable $categorias
+in APPPATH\Views\contenido\Gestion_producto\gestion_producto.php on line 54.
+ 1 APPPATH\Views\contenido\Gestion_producto\gestion_producto.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $categorias', 'C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\contenido\\Gestion_producto\\gestion_producto.php', 54)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\contenido\\Gestion_producto\\gestion_producto.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('contenido/Gestion_producto/gestion_producto', [], true)
+ 5 APPPATH\Controllers\producto_controller.php(41): view('contenido/Gestion_producto/gestion_producto', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->index()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-16 20:40:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-16 20:40:55 --> ErrorException: Undefined variable $categorias
+in APPPATH\Views\contenido\Gestion_producto\gestion_producto.php on line 54.
+ 1 APPPATH\Views\contenido\Gestion_producto\gestion_producto.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $categorias', 'C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\contenido\\Gestion_producto\\gestion_producto.php', 54)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\contenido\\Gestion_producto\\gestion_producto.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('contenido/Gestion_producto/gestion_producto', [], true)
+ 5 APPPATH\Controllers\producto_controller.php(41): view('contenido/Gestion_producto/gestion_producto', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->index()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-16 20:41:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-16 20:41:32 --> ErrorException: Undefined variable $categorias
+in APPPATH\Views\contenido\Gestion_producto\gestion_producto.php on line 54.
+ 1 APPPATH\Views\contenido\Gestion_producto\gestion_producto.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $categorias', 'C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\contenido\\Gestion_producto\\gestion_producto.php', 54)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\contenido\\Gestion_producto\\gestion_producto.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('contenido/Gestion_producto/gestion_producto', [], true)
+ 5 APPPATH\Controllers\producto_controller.php(41): view('contenido/Gestion_producto/gestion_producto', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->index()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-16 20:41:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-16 20:41:53 --> ErrorException: Undefined variable $categorias
+in APPPATH\Views\contenido\Gestion_producto\gestion_producto.php on line 54.
+ 1 APPPATH\Views\contenido\Gestion_producto\gestion_producto.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $categorias', 'C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\contenido\\Gestion_producto\\gestion_producto.php', 54)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\contenido\\Gestion_producto\\gestion_producto.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('contenido/Gestion_producto/gestion_producto', [], true)
+ 5 APPPATH\Controllers\producto_controller.php(41): view('contenido/Gestion_producto/gestion_producto', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->index()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-16 20:42:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-16 20:42:02 --> ErrorException: Undefined variable $categorias
+in APPPATH\Views\contenido\Gestion_producto\gestion_producto.php on line 54.
+ 1 APPPATH\Views\contenido\Gestion_producto\gestion_producto.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $categorias', 'C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\contenido\\Gestion_producto\\gestion_producto.php', 54)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\contenido\\Gestion_producto\\gestion_producto.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('contenido/Gestion_producto/gestion_producto', [], true)
+ 5 APPPATH\Controllers\producto_controller.php(41): view('contenido/Gestion_producto/gestion_producto', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->index()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-16 20:42:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-16 20:42:06 --> ErrorException: Undefined variable $categorias
+in APPPATH\Views\contenido\Gestion_producto\gestion_producto.php on line 54.
+ 1 APPPATH\Views\contenido\Gestion_producto\gestion_producto.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $categorias', 'C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\contenido\\Gestion_producto\\gestion_producto.php', 54)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\contenido\\Gestion_producto\\gestion_producto.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('contenido/Gestion_producto/gestion_producto', [], true)
+ 5 APPPATH\Controllers\producto_controller.php(41): view('contenido/Gestion_producto/gestion_producto', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->index()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-16 20:43:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-16 20:43:23 --> ErrorException: Undefined variable $categorias
+in APPPATH\Views\contenido\Gestion_producto\gestion_producto.php on line 56.
+ 1 APPPATH\Views\contenido\Gestion_producto\gestion_producto.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $categorias', 'C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\contenido\\Gestion_producto\\gestion_producto.php', 56)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\contenido\\Gestion_producto\\gestion_producto.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('contenido/Gestion_producto/gestion_producto', [], true)
+ 5 APPPATH\Controllers\producto_controller.php(41): view('contenido/Gestion_producto/gestion_producto', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->index()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-16 20:46:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-16 20:46:59 --> ErrorException: Undefined variable $categoria
+in APPPATH\Views\contenido\Gestion_producto\gestion_producto.php on line 60.
+ 1 APPPATH\Views\contenido\Gestion_producto\gestion_producto.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $categoria', 'C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\contenido\\Gestion_producto\\gestion_producto.php', 60)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\contenido\\Gestion_producto\\gestion_producto.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('contenido/Gestion_producto/gestion_producto', [], true)
+ 5 APPPATH\Controllers\producto_controller.php(41): view('contenido/Gestion_producto/gestion_producto', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->index()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-16 20:47:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-16 20:47:02 --> ErrorException: Undefined variable $categoria
+in APPPATH\Views\contenido\Gestion_producto\gestion_producto.php on line 60.
+ 1 APPPATH\Views\contenido\Gestion_producto\gestion_producto.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $categoria', 'C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\contenido\\Gestion_producto\\gestion_producto.php', 60)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\contenido\\Gestion_producto\\gestion_producto.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('contenido/Gestion_producto/gestion_producto', [], true)
+ 5 APPPATH\Controllers\producto_controller.php(41): view('contenido/Gestion_producto/gestion_producto', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->index()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-16 20:47:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-16 20:47:53 --> ErrorException: Undefined variable $categorias
+in APPPATH\Views\contenido\Gestion_producto\gestion_producto.php on line 60.
+ 1 APPPATH\Views\contenido\Gestion_producto\gestion_producto.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $categorias', 'C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\contenido\\Gestion_producto\\gestion_producto.php', 60)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\contenido\\Gestion_producto\\gestion_producto.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('contenido/Gestion_producto/gestion_producto', [], true)
+ 5 APPPATH\Controllers\producto_controller.php(41): view('contenido/Gestion_producto/gestion_producto', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->index()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-16 20:47:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-16 20:47:55 --> ErrorException: Undefined variable $categorias
+in APPPATH\Views\contenido\Gestion_producto\gestion_producto.php on line 60.
+ 1 APPPATH\Views\contenido\Gestion_producto\gestion_producto.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $categorias', 'C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\contenido\\Gestion_producto\\gestion_producto.php', 60)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\contenido\\Gestion_producto\\gestion_producto.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('contenido/Gestion_producto/gestion_producto', [], true)
+ 5 APPPATH\Controllers\producto_controller.php(41): view('contenido/Gestion_producto/gestion_producto', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->index()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-16 20:50:10 --> Error: Cannot use object of type App\Models\CategoriaModel as array
+in APPPATH\Controllers\producto_controller.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->index()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-16 20:51:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-16 20:51:55 --> ErrorException: Undefined variable $categorias
+in APPPATH\Views\contenido\Gestion_producto\gestion_producto.php on line 60.
+ 1 APPPATH\Views\contenido\Gestion_producto\gestion_producto.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $categorias', 'C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\contenido\\Gestion_producto\\gestion_producto.php', 60)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\contenido\\Gestion_producto\\gestion_producto.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('contenido/Gestion_producto/gestion_producto', [], true)
+ 5 APPPATH\Controllers\producto_controller.php(41): view('contenido/Gestion_producto/gestion_producto', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->index()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-16 20:52:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 20:54:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-16 20:54:20 --> ErrorException: Undefined variable $result
+in APPPATH\Views\contenido\Gestion_producto\gestion_producto.php on line 56.
+ 1 APPPATH\Views\contenido\Gestion_producto\gestion_producto.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $result', 'C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\contenido\\Gestion_producto\\gestion_producto.php', 56)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\contenido\\Gestion_producto\\gestion_producto.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('contenido/Gestion_producto/gestion_producto', [], true)
+ 5 APPPATH\Controllers\producto_controller.php(41): view('contenido/Gestion_producto/gestion_producto', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->index()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-16 20:56:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-16 20:56:52 --> Error: Call to a member function fetch_assoc() on array
+in APPPATH\Views\contenido\Gestion_producto\gestion_producto.php on line 56.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('contenido/Gestion_producto/gestion_producto', [], true)
+ 4 APPPATH\Controllers\producto_controller.php(41): view('contenido/Gestion_producto/gestion_producto', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->index()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-16 20:58:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-16 20:58:30 --> Error: Call to a member function fetch_assoc() on array
+in APPPATH\Views\contenido\Gestion_producto\gestion_producto.php on line 56.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('contenido/Gestion_producto/gestion_producto', [], true)
+ 4 APPPATH\Controllers\producto_controller.php(41): view('contenido/Gestion_producto/gestion_producto', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->index()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-16 20:58:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-16 20:58:33 --> Error: Call to a member function fetch_assoc() on array
+in APPPATH\Views\contenido\Gestion_producto\gestion_producto.php on line 56.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('contenido/Gestion_producto/gestion_producto', [], true)
+ 4 APPPATH\Controllers\producto_controller.php(41): view('contenido/Gestion_producto/gestion_producto', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->index()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-16 20:58:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-16 20:58:33 --> Error: Call to a member function fetch_assoc() on array
+in APPPATH\Views\contenido\Gestion_producto\gestion_producto.php on line 56.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('contenido/Gestion_producto/gestion_producto', [], true)
+ 4 APPPATH\Controllers\producto_controller.php(41): view('contenido/Gestion_producto/gestion_producto', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->index()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-16 20:58:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-16 20:58:33 --> Error: Call to a member function fetch_assoc() on array
+in APPPATH\Views\contenido\Gestion_producto\gestion_producto.php on line 56.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('contenido/Gestion_producto/gestion_producto', [], true)
+ 4 APPPATH\Controllers\producto_controller.php(41): view('contenido/Gestion_producto/gestion_producto', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->index()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-16 20:58:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-16 20:58:33 --> Error: Call to a member function fetch_assoc() on array
+in APPPATH\Views\contenido\Gestion_producto\gestion_producto.php on line 56.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('contenido/Gestion_producto/gestion_producto', [], true)
+ 4 APPPATH\Controllers\producto_controller.php(41): view('contenido/Gestion_producto/gestion_producto', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->index()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-16 20:58:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-16 20:58:33 --> Error: Call to a member function fetch_assoc() on array
+in APPPATH\Views\contenido\Gestion_producto\gestion_producto.php on line 56.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('contenido/Gestion_producto/gestion_producto', [], true)
+ 4 APPPATH\Controllers\producto_controller.php(41): view('contenido/Gestion_producto/gestion_producto', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->index()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-16 20:58:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-16 20:58:37 --> Error: Call to a member function fetch_assoc() on array
+in APPPATH\Views\contenido\Gestion_producto\gestion_producto.php on line 56.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('contenido/Gestion_producto/gestion_producto', [], true)
+ 4 APPPATH\Controllers\producto_controller.php(41): view('contenido/Gestion_producto/gestion_producto', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->index()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-16 21:12:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-16 21:12:04 --> Error: Call to a member function fetch_assoc() on array
+in APPPATH\Views\contenido\Gestion_producto\gestion_producto.php on line 56.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('contenido/Gestion_producto/gestion_producto', [], true)
+ 4 APPPATH\Controllers\producto_controller.php(41): view('contenido/Gestion_producto/gestion_producto', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->index()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-16 21:17:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-16 21:17:42 --> Error: Call to a member function fetch_assoc() on array
+in APPPATH\Views\contenido\Gestion_producto\gestion_producto.php on line 56.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('contenido/Gestion_producto/gestion_producto', [], true)
+ 4 APPPATH\Controllers\producto_controller.php(41): view('contenido/Gestion_producto/gestion_producto', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->index()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-16 21:17:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-16 21:17:44 --> Error: Call to a member function fetch_assoc() on array
+in APPPATH\Views\contenido\Gestion_producto\gestion_producto.php on line 56.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('contenido/Gestion_producto/gestion_producto', [], true)
+ 4 APPPATH\Controllers\producto_controller.php(41): view('contenido/Gestion_producto/gestion_producto', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->index()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-16 21:17:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-16 21:17:44 --> Error: Call to a member function fetch_assoc() on array
+in APPPATH\Views\contenido\Gestion_producto\gestion_producto.php on line 56.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('contenido/Gestion_producto/gestion_producto', [], true)
+ 4 APPPATH\Controllers\producto_controller.php(41): view('contenido/Gestion_producto/gestion_producto', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->index()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-16 21:17:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-16 21:17:44 --> Error: Call to a member function fetch_assoc() on array
+in APPPATH\Views\contenido\Gestion_producto\gestion_producto.php on line 56.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('contenido/Gestion_producto/gestion_producto', [], true)
+ 4 APPPATH\Controllers\producto_controller.php(41): view('contenido/Gestion_producto/gestion_producto', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->index()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-16 21:17:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-16 21:17:45 --> Error: Call to a member function fetch_assoc() on array
+in APPPATH\Views\contenido\Gestion_producto\gestion_producto.php on line 56.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('contenido/Gestion_producto/gestion_producto', [], true)
+ 4 APPPATH\Controllers\producto_controller.php(41): view('contenido/Gestion_producto/gestion_producto', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->index()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-16 21:23:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-16 21:23:11 --> Error: Call to a member function fetch_assoc() on array
+in APPPATH\Views\contenido\Gestion_producto\gestion_producto.php on line 56.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('contenido/Gestion_producto/gestion_producto', [], true)
+ 4 APPPATH\Controllers\producto_controller.php(41): view('contenido/Gestion_producto/gestion_producto', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->index()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-16 21:23:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-16 21:23:14 --> Error: Call to a member function fetch_assoc() on array
+in APPPATH\Views\contenido\Gestion_producto\gestion_producto.php on line 56.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('contenido/Gestion_producto/gestion_producto', [], true)
+ 4 APPPATH\Controllers\producto_controller.php(41): view('contenido/Gestion_producto/gestion_producto', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->index()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-16 21:23:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-16 21:23:18 --> Error: Call to a member function fetch_assoc() on array
+in APPPATH\Views\contenido\Gestion_producto\gestion_producto.php on line 56.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('contenido/Gestion_producto/gestion_producto', [], true)
+ 4 APPPATH\Controllers\producto_controller.php(41): view('contenido/Gestion_producto/gestion_producto', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->index()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-16 21:23:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-16 21:23:20 --> Error: Call to a member function fetch_assoc() on array
+in APPPATH\Views\contenido\Gestion_producto\gestion_producto.php on line 56.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('contenido/Gestion_producto/gestion_producto', [], true)
+ 4 APPPATH\Controllers\producto_controller.php(41): view('contenido/Gestion_producto/gestion_producto', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->index()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-16 21:24:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-16 21:24:37 --> ErrorException: Undefined variable $row
+in APPPATH\Views\contenido\Gestion_producto\gestion_producto.php on line 56.
+ 1 APPPATH\Views\contenido\Gestion_producto\gestion_producto.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $row', 'C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\contenido\\Gestion_producto\\gestion_producto.php', 56)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\contenido\\Gestion_producto\\gestion_producto.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('contenido/Gestion_producto/gestion_producto', [], true)
+ 5 APPPATH\Controllers\producto_controller.php(41): view('contenido/Gestion_producto/gestion_producto', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->index()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-16 21:33:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-16 21:33:33 --> ErrorException: Undefined variable $row
+in APPPATH\Views\contenido\Gestion_producto\gestion_producto.php on line 75.
+ 1 APPPATH\Views\contenido\Gestion_producto\gestion_producto.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $row', 'C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\contenido\\Gestion_producto\\gestion_producto.php', 75)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\contenido\\Gestion_producto\\gestion_producto.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('contenido/Gestion_producto/gestion_producto', [], true)
+ 5 APPPATH\Controllers\producto_controller.php(42): view('contenido/Gestion_producto/gestion_producto', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->index()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-16 21:33:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 21:37:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-16 21:37:55 --> ErrorException: Undefined variable $categorias
+in APPPATH\Views\contenido\Gestion_producto\gestion_producto.php on line 56.
+ 1 APPPATH\Views\contenido\Gestion_producto\gestion_producto.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $categorias', 'C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\contenido\\Gestion_producto\\gestion_producto.php', 56)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\contenido\\Gestion_producto\\gestion_producto.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('contenido/Gestion_producto/gestion_producto', [], true)
+ 5 APPPATH\Controllers\producto_controller.php(42): view('contenido/Gestion_producto/gestion_producto', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->index()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-16 21:46:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-16 21:46:35 --> ErrorException: Undefined variable $categorias
+in APPPATH\Views\contenido\Gestion_producto\gestion_producto.php on line 56.
+ 1 APPPATH\Views\contenido\Gestion_producto\gestion_producto.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $categorias', 'C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\contenido\\Gestion_producto\\gestion_producto.php', 56)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\contenido\\Gestion_producto\\gestion_producto.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('contenido/Gestion_producto/gestion_producto', [], true)
+ 5 APPPATH\Controllers\producto_controller.php(42): view('contenido/Gestion_producto/gestion_producto', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->index()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-16 21:46:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-16 21:46:49 --> ErrorException: Undefined variable $categoria
+in APPPATH\Views\contenido\Gestion_producto\gestion_producto.php on line 65.
+ 1 APPPATH\Views\contenido\Gestion_producto\gestion_producto.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $categoria', 'C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\contenido\\Gestion_producto\\gestion_producto.php', 65)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\contenido\\Gestion_producto\\gestion_producto.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('contenido/Gestion_producto/gestion_producto', [], true)
+ 5 APPPATH\Controllers\producto_controller.php(42): view('contenido/Gestion_producto/gestion_producto', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->index()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-16 21:47:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-16 21:47:20 --> ErrorException: Undefined variable $row
+in APPPATH\Views\contenido\Gestion_producto\gestion_producto.php on line 74.
+ 1 APPPATH\Views\contenido\Gestion_producto\gestion_producto.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $row', 'C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\contenido\\Gestion_producto\\gestion_producto.php', 74)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\contenido\\Gestion_producto\\gestion_producto.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('contenido/Gestion_producto/gestion_producto', [], true)
+ 5 APPPATH\Controllers\producto_controller.php(42): view('contenido/Gestion_producto/gestion_producto', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->index()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-16 22:18:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-16 22:18:41 --> ErrorException: Undefined variable $row
+in APPPATH\Views\contenido\Gestion_producto\gestion_producto.php on line 75.
+ 1 APPPATH\Views\contenido\Gestion_producto\gestion_producto.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $row', 'C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\contenido\\Gestion_producto\\gestion_producto.php', 75)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\contenido\\Gestion_producto\\gestion_producto.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('contenido/Gestion_producto/gestion_producto', [], true)
+ 5 APPPATH\Controllers\producto_controller.php(42): view('contenido/Gestion_producto/gestion_producto', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->index()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-16 22:19:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-16 22:19:06 --> ErrorException: Undefined array key "eliminado"
+in APPPATH\Views\contenido\Gestion_producto\gestion_producto.php on line 75.
+ 1 APPPATH\Views\contenido\Gestion_producto\gestion_producto.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "eliminado"', 'C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\contenido\\Gestion_producto\\gestion_producto.php', 75)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\contenido\\Gestion_producto\\gestion_producto.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('contenido/Gestion_producto/gestion_producto', [], true)
+ 5 APPPATH\Controllers\producto_controller.php(42): view('contenido/Gestion_producto/gestion_producto', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->index()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-16 22:29:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-16 22:29:50 --> ErrorException: Undefined array key "eliminado"
+in APPPATH\Views\contenido\Gestion_producto\gestion_producto.php on line 75.
+ 1 APPPATH\Views\contenido\Gestion_producto\gestion_producto.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "eliminado"', 'C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\contenido\\Gestion_producto\\gestion_producto.php', 75)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\contenido\\Gestion_producto\\gestion_producto.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('contenido/Gestion_producto/gestion_producto', [], true)
+ 5 APPPATH\Controllers\producto_controller.php(42): view('contenido/Gestion_producto/gestion_producto', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->index()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-16 22:29:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-16 22:29:54 --> ErrorException: Undefined array key "eliminado"
+in APPPATH\Views\contenido\Gestion_producto\gestion_producto.php on line 75.
+ 1 APPPATH\Views\contenido\Gestion_producto\gestion_producto.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "eliminado"', 'C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\contenido\\Gestion_producto\\gestion_producto.php', 75)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\contenido\\Gestion_producto\\gestion_producto.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('contenido/Gestion_producto/gestion_producto', [], true)
+ 5 APPPATH\Controllers\producto_controller.php(42): view('contenido/Gestion_producto/gestion_producto', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->index()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-16 22:29:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-16 22:29:55 --> ErrorException: Undefined array key "eliminado"
+in APPPATH\Views\contenido\Gestion_producto\gestion_producto.php on line 75.
+ 1 APPPATH\Views\contenido\Gestion_producto\gestion_producto.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "eliminado"', 'C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\contenido\\Gestion_producto\\gestion_producto.php', 75)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\contenido\\Gestion_producto\\gestion_producto.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('contenido/Gestion_producto/gestion_producto', [], true)
+ 5 APPPATH\Controllers\producto_controller.php(42): view('contenido/Gestion_producto/gestion_producto', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->index()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-16 22:41:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-16 22:41:47 --> ErrorException: Undefined array key "eliminado"
+in APPPATH\Views\contenido\Gestion_producto\gestion_producto.php on line 75.
+ 1 APPPATH\Views\contenido\Gestion_producto\gestion_producto.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "eliminado"', 'C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\contenido\\Gestion_producto\\gestion_producto.php', 75)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\contenido\\Gestion_producto\\gestion_producto.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('contenido/Gestion_producto/gestion_producto', [], true)
+ 5 APPPATH\Controllers\producto_controller.php(42): view('contenido/Gestion_producto/gestion_producto', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->index()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-16 22:41:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-16 22:41:54 --> ErrorException: Undefined array key "eliminado"
+in APPPATH\Views\contenido\Gestion_producto\gestion_producto.php on line 75.
+ 1 APPPATH\Views\contenido\Gestion_producto\gestion_producto.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "eliminado"', 'C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\contenido\\Gestion_producto\\gestion_producto.php', 75)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Views\\contenido\\Gestion_producto\\gestion_producto.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('contenido/Gestion_producto/gestion_producto', [], true)
+ 5 APPPATH\Controllers\producto_controller.php(42): view('contenido/Gestion_producto/gestion_producto', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->index()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-16 22:47:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-16 22:48:05 --> ErrorException: Undefined array key "eliminado"
+in APPPATH\Controllers\producto_controller.php on line 168.
+ 1 APPPATH\Controllers\producto_controller.php(168): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "eliminado"', 'C:\\xampp\\htdocs\\Proyecto_Centurion_Esteban\\app\\Controllers\\producto_controller.php', 168)
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->delete('1')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-16 22:50:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 22:50:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 22:50:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 22:50:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 22:50:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 22:50:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 22:50:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 22:50:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 22:51:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 22:51:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 22:51:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 22:58:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 22:58:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 22:58:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 22:58:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 22:58:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 22:58:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 22:59:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 22:59:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 22:59:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 22:59:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 23:00:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 23:00:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 23:01:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 23:01:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 23:02:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 23:02:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 23:12:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 23:12:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 23:13:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-16 23:15:36 --> mysqli_sql_exception: Column 'imagen' cannot be null in C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Model.php(327): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Model.php(749): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\Proyecto_Centurion_Esteban\app\Controllers\producto_controller.php(159): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(943): App\Controllers\producto_controller->store()
+#9 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+#10 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\Proyecto_Centurion_Esteban\index.php(84): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-06-16 23:15:36 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'imagen' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `productos` (`nombre_producto`, `categoria`, `descripcion`, `precio`, `imagen`, `stock`, `estado`) VALUES (:nombre_producto:, :categoria:, :descripcion:, :precio:, :imagen:, :stock:, :estado:)', [...], false)
+ 2 SYSTEMPATH\Model.php(327): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(749): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\producto_controller.php(159): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->store()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-16 23:15:36 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'imagen' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `productos` (`nombre_producto`, `categoria`, `descripcion`, `precio`, `imagen`, `stock`, `estado`) VALUES (\'Bombilla\', \'1\', \'bombilla alpaca\', \'3000\', NULL, \'25\', 1)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `productos` (`nombre_producto`, `categoria`, `descripcion`, `precio`, `imagen`, `stock`, `estado`) VALUES (\'Bombilla\', \'1\', \'bombilla alpaca\', \'3000\', NULL, \'25\', 1)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `productos` (`nombre_producto`, `categoria`, `descripcion`, `precio`, `imagen`, `stock`, `estado`) VALUES (:nombre_producto:, :categoria:, :descripcion:, :precio:, :imagen:, :stock:, :estado:)', [...], false)
+ 4 SYSTEMPATH\Model.php(327): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(749): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\producto_controller.php(159): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->store()
+ 9 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-16 23:15:36 --> [Caused by] mysqli_sql_exception: Column 'imagen' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `productos` (`nombre_producto`, `categoria`, `descripcion`, `precio`, `imagen`, `stock`, `estado`) VALUES (\'Bombilla\', \'1\', \'bombilla alpaca\', \'3000\', NULL, \'25\', 1)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `productos` (`nombre_producto`, `categoria`, `descripcion`, `precio`, `imagen`, `stock`, `estado`) VALUES (\'Bombilla\', \'1\', \'bombilla alpaca\', \'3000\', NULL, \'25\', 1)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `productos` (`nombre_producto`, `categoria`, `descripcion`, `precio`, `imagen`, `stock`, `estado`) VALUES (\'Bombilla\', \'1\', \'bombilla alpaca\', \'3000\', NULL, \'25\', 1)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `productos` (`nombre_producto`, `categoria`, `descripcion`, `precio`, `imagen`, `stock`, `estado`) VALUES (:nombre_producto:, :categoria:, :descripcion:, :precio:, :imagen:, :stock:, :estado:)', [...], false)
+ 5 SYSTEMPATH\Model.php(327): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(749): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\producto_controller.php(159): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->store()
+10 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-16 23:15:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-16 23:16:09 --> mysqli_sql_exception: Column 'imagen' cannot be null in C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Model.php(327): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Model.php(749): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\Proyecto_Centurion_Esteban\app\Controllers\producto_controller.php(159): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(943): App\Controllers\producto_controller->store()
+#9 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+#10 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\Proyecto_Centurion_Esteban\index.php(84): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-06-16 23:16:09 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'imagen' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `productos` (`nombre_producto`, `categoria`, `descripcion`, `precio`, `imagen`, `stock`, `estado`) VALUES (:nombre_producto:, :categoria:, :descripcion:, :precio:, :imagen:, :stock:, :estado:)', [...], false)
+ 2 SYSTEMPATH\Model.php(327): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(749): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\producto_controller.php(159): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->store()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-16 23:16:09 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'imagen' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `productos` (`nombre_producto`, `categoria`, `descripcion`, `precio`, `imagen`, `stock`, `estado`) VALUES (\'Bombilla\', \'1\', \'bombilla alpaca\', \'3000\', NULL, \'25\', 1)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `productos` (`nombre_producto`, `categoria`, `descripcion`, `precio`, `imagen`, `stock`, `estado`) VALUES (\'Bombilla\', \'1\', \'bombilla alpaca\', \'3000\', NULL, \'25\', 1)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `productos` (`nombre_producto`, `categoria`, `descripcion`, `precio`, `imagen`, `stock`, `estado`) VALUES (:nombre_producto:, :categoria:, :descripcion:, :precio:, :imagen:, :stock:, :estado:)', [...], false)
+ 4 SYSTEMPATH\Model.php(327): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(749): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\producto_controller.php(159): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->store()
+ 9 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-16 23:16:09 --> [Caused by] mysqli_sql_exception: Column 'imagen' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `productos` (`nombre_producto`, `categoria`, `descripcion`, `precio`, `imagen`, `stock`, `estado`) VALUES (\'Bombilla\', \'1\', \'bombilla alpaca\', \'3000\', NULL, \'25\', 1)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `productos` (`nombre_producto`, `categoria`, `descripcion`, `precio`, `imagen`, `stock`, `estado`) VALUES (\'Bombilla\', \'1\', \'bombilla alpaca\', \'3000\', NULL, \'25\', 1)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `productos` (`nombre_producto`, `categoria`, `descripcion`, `precio`, `imagen`, `stock`, `estado`) VALUES (\'Bombilla\', \'1\', \'bombilla alpaca\', \'3000\', NULL, \'25\', 1)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `productos` (`nombre_producto`, `categoria`, `descripcion`, `precio`, `imagen`, `stock`, `estado`) VALUES (:nombre_producto:, :categoria:, :descripcion:, :precio:, :imagen:, :stock:, :estado:)', [...], false)
+ 5 SYSTEMPATH\Model.php(327): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(749): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\producto_controller.php(159): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->store()
+10 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-16 23:16:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-16 23:16:34 --> mysqli_sql_exception: Column 'imagen' cannot be null in C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Model.php(327): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Model.php(749): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\Proyecto_Centurion_Esteban\app\Controllers\producto_controller.php(159): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(943): App\Controllers\producto_controller->store()
+#9 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+#10 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\Proyecto_Centurion_Esteban\index.php(84): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-06-16 23:16:34 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'imagen' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `productos` (`nombre_producto`, `categoria`, `descripcion`, `precio`, `imagen`, `stock`, `estado`) VALUES (:nombre_producto:, :categoria:, :descripcion:, :precio:, :imagen:, :stock:, :estado:)', [...], false)
+ 2 SYSTEMPATH\Model.php(327): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(749): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\producto_controller.php(159): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->store()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-16 23:16:34 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'imagen' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `productos` (`nombre_producto`, `categoria`, `descripcion`, `precio`, `imagen`, `stock`, `estado`) VALUES (\'Bombilla\', \'1\', \'bombilla alpaca\', \'3000\', NULL, \'25\', 1)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `productos` (`nombre_producto`, `categoria`, `descripcion`, `precio`, `imagen`, `stock`, `estado`) VALUES (\'Bombilla\', \'1\', \'bombilla alpaca\', \'3000\', NULL, \'25\', 1)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `productos` (`nombre_producto`, `categoria`, `descripcion`, `precio`, `imagen`, `stock`, `estado`) VALUES (:nombre_producto:, :categoria:, :descripcion:, :precio:, :imagen:, :stock:, :estado:)', [...], false)
+ 4 SYSTEMPATH\Model.php(327): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(749): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\producto_controller.php(159): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->store()
+ 9 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-16 23:16:34 --> [Caused by] mysqli_sql_exception: Column 'imagen' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `productos` (`nombre_producto`, `categoria`, `descripcion`, `precio`, `imagen`, `stock`, `estado`) VALUES (\'Bombilla\', \'1\', \'bombilla alpaca\', \'3000\', NULL, \'25\', 1)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `productos` (`nombre_producto`, `categoria`, `descripcion`, `precio`, `imagen`, `stock`, `estado`) VALUES (\'Bombilla\', \'1\', \'bombilla alpaca\', \'3000\', NULL, \'25\', 1)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `productos` (`nombre_producto`, `categoria`, `descripcion`, `precio`, `imagen`, `stock`, `estado`) VALUES (\'Bombilla\', \'1\', \'bombilla alpaca\', \'3000\', NULL, \'25\', 1)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `productos` (`nombre_producto`, `categoria`, `descripcion`, `precio`, `imagen`, `stock`, `estado`) VALUES (:nombre_producto:, :categoria:, :descripcion:, :precio:, :imagen:, :stock:, :estado:)', [...], false)
+ 5 SYSTEMPATH\Model.php(327): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(749): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\producto_controller.php(159): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->store()
+10 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-16 23:16:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-16 23:17:01 --> mysqli_sql_exception: Column 'imagen' cannot be null in C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Model.php(327): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\Model.php(749): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\Proyecto_Centurion_Esteban\app\Controllers\producto_controller.php(159): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(943): App\Controllers\producto_controller->store()
+#9 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+#10 C:\xampp\htdocs\Proyecto_Centurion_Esteban\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\Proyecto_Centurion_Esteban\index.php(84): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-06-16 23:17:01 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'imagen' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `productos` (`nombre_producto`, `categoria`, `descripcion`, `precio`, `imagen`, `stock`, `estado`) VALUES (:nombre_producto:, :categoria:, :descripcion:, :precio:, :imagen:, :stock:, :estado:)', [...], false)
+ 2 SYSTEMPATH\Model.php(327): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(749): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\producto_controller.php(159): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->store()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-16 23:17:01 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'imagen' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `productos` (`nombre_producto`, `categoria`, `descripcion`, `precio`, `imagen`, `stock`, `estado`) VALUES (\'Bombilla\', \'1\', \'bombilla alpaca\', \'3000\', NULL, \'25\', 1)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `productos` (`nombre_producto`, `categoria`, `descripcion`, `precio`, `imagen`, `stock`, `estado`) VALUES (\'Bombilla\', \'1\', \'bombilla alpaca\', \'3000\', NULL, \'25\', 1)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `productos` (`nombre_producto`, `categoria`, `descripcion`, `precio`, `imagen`, `stock`, `estado`) VALUES (:nombre_producto:, :categoria:, :descripcion:, :precio:, :imagen:, :stock:, :estado:)', [...], false)
+ 4 SYSTEMPATH\Model.php(327): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(749): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\producto_controller.php(159): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->store()
+ 9 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-16 23:17:01 --> [Caused by] mysqli_sql_exception: Column 'imagen' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `productos` (`nombre_producto`, `categoria`, `descripcion`, `precio`, `imagen`, `stock`, `estado`) VALUES (\'Bombilla\', \'1\', \'bombilla alpaca\', \'3000\', NULL, \'25\', 1)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `productos` (`nombre_producto`, `categoria`, `descripcion`, `precio`, `imagen`, `stock`, `estado`) VALUES (\'Bombilla\', \'1\', \'bombilla alpaca\', \'3000\', NULL, \'25\', 1)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `productos` (`nombre_producto`, `categoria`, `descripcion`, `precio`, `imagen`, `stock`, `estado`) VALUES (\'Bombilla\', \'1\', \'bombilla alpaca\', \'3000\', NULL, \'25\', 1)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `productos` (`nombre_producto`, `categoria`, `descripcion`, `precio`, `imagen`, `stock`, `estado`) VALUES (:nombre_producto:, :categoria:, :descripcion:, :precio:, :imagen:, :stock:, :estado:)', [...], false)
+ 5 SYSTEMPATH\Model.php(327): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(749): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\producto_controller.php(159): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\producto_controller->store()
+10 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto_controller))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-16 23:17:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 23:17:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 23:18:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 23:18:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 23:18:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 23:18:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 23:18:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 23:18:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 23:20:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 23:20:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 23:20:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 23:20:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 23:21:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 23:21:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 23:22:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 23:22:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-16 23:22:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

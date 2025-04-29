@@ -1,0 +1,11 @@
+__ci_last_regenerate|i:1745925181;_ci_previous_url|s:49:"http://localhost/Proyecto_Centurion_Noir/contacto";_ci_old_input|a:2:{s:3:"get";a:0:{}s:4:"post";a:3:{s:6:"nombre";s:0:"";s:5:"email";s:0:"";s:7:"mensaje";s:0:"";}}__ci_vars|a:3:{s:13:"_ci_old_input";s:3:"old";s:21:"_ci_validation_errors";s:3:"old";s:6:"errors";s:3:"old";}_ci_validation_errors|a:3:{s:6:"nombre";s:21:"Introduzca su nombre.";s:5:"email";s:34:"Introduzca su correo electrónico.";s:7:"mensaje";s:19:"Introduzca mensaje.";}errors|s:313:"<!-- DEBUG-VIEW START 1 SYSTEMPATH\Validation\Views\list.php -->
+	<div class="errors" role="alert">
+		<ul>
+					<li>Introduzca su nombre.</li>
+					<li>Introduzca su correo electrónico.</li>
+					<li>Introduzca mensaje.</li>
+				</ul>
+	</div>
+
+<!-- DEBUG-VIEW ENDED 1 SYSTEMPATH\Validation\Views\list.php -->
+";
