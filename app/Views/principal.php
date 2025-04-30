@@ -11,47 +11,93 @@
   
 </section> 
 
-<section class="py-5 ">
-  <div class="container">
-    <h2 class="text-center fw-bold">Bandas que rugieron en Guitar N'Cent</h2>
+<section id="clients" class="container my-5">
+  <div class="row align-items-center">
     
+    <!-- Texto -->
+    <div class="col-12 col-md-6 mb-4 mb-md-0">
+      <div class="section-heading">
+        <h3 class="text-secondary">Instrumentos Musicales</h3>
+        <h2 class="section-title">Descubrí las marcas más confiables del mundo musical.</h2>
+        <p class="section-subtitle">
+          Trabajamos con fabricantes líderes que garantizan calidad, innovación y sonido profesional. Desde guitarras legendarias hasta equipos de audio de alta gama, elegimos solo lo mejor para vos.
+        </p>
+      </div>
+    </div>
+
+    <!-- Imagen -->
+    <div class="col-12 col-md-6 d-flex justify-content-center">
+      <div class="brand-image-wrapper">
+        <img src="assets/img/marcas.jpg" alt="Fender logo" class="img-fluid rounded shadow brand-img">
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+<section class="py-5">
+  <div class="container">
+    <h2 class="text-center fw-bold mb-4">Bandas que rugieron en Guitar N'Cent</h2>
+
     <div class="row g-4">
       <!-- Banda 1 -->
-      <div class="col-sm-12 col-md-12 col-lg-4">
-        <div class="card bg-black border-0 shadow-lg h-100">
-        <img src="assets/img/pinkfloid.jpg" class="img-fluid w-100" style="height: 200px; object-fit: cover;" alt="Banda 1">
-
+      <div class="col-sm-12 col-md-6 col-lg-3">
+        <div class="card bg-black border-0 shadow-lg h-100 d-flex flex-column">
+          <div class="d-flex justify-content-center align-items-center" style="height: 200px; overflow: hidden;">
+            <img src="assets/img/rollingstones.png" alt="Pink Floyd" class="img-fluid" style="max-height: 100%; object-fit: cover;">
+          </div>
           <div class="card-body text-center">
-            <h5 class="card-title text-warning">Pink Floid</h5>
-            <p class="card-text">Pasaron por nuestra tienda en su gira mundial 2022. ¡Se llevaron 5 guitarras custom!</p>
+            <h5 class="card-title text-warning">Rolling Stones</h5>
+            <p class="card-text text-white">Pasaron por nuestra tienda en su gira mundial 2015. ¡Se llevaron 5 guitarras custom!</p>
           </div>
         </div>
       </div>
 
       <!-- Banda 2 -->
-      <div class="col-sm-12 col-md-12 col-lg-4">
-        <div class="card bg-black border-0 shadow-lg h-100">
-          <img src="assets/img/foofighters.jpg" class="img-fluid w-100" style="height: 200px; object-fit: cover;" alt="Banda 2">
+      <div class="col-sm-12 col-md-6 col-lg-3">
+        <div class="card bg-black border-0 shadow-lg h-100 d-flex flex-column">
+          <div class="d-flex justify-content-center align-items-center" style="height: 200px; overflow: hidden;">
+            <img src="assets/img/foofighters.png" alt="Foo Fighters" class="img-fluid" style="max-height: 100%; object-fit: cover;">
+          </div>
           <div class="card-body text-center">
             <h5 class="card-title text-warning">Foo Fighters</h5>
-            <p class="card-text">Amantes de los pedales análogos, nos visitaron para grabar su último disco.</p>
+            <p class="card-text text-white">Amantes de los pedales análogos, nos visitaron para grabar su último disco.</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Banda 2 -->
+      <div class="col-sm-12 col-md-6 col-lg-3">
+        <div class="card bg-black border-0 shadow-lg h-100 d-flex flex-column">
+          <div class="d-flex justify-content-center align-items-center" style="height: 200px; overflow: hidden;">
+            <img src="assets/img/oasis.png" alt="Foo Fighters" class="img-fluid" style="max-height: 100%; object-fit: cover;">
+          </div>
+          <div class="card-body text-center">
+            <h5 class="card-title text-warning">Oasis</h5>
+            <p class="card-text text-white">Nos visitaron para grabar su último disco desde su regreso en 2024.</p>
           </div>
         </div>
       </div>
 
-      <!-- Banda 3 -->
-      <div class="col-sm-12 col-md-12 col-lg-4">
-        <div class="card bg-black border-0 shadow-lg h-100">
-          <img src="assets/img/gunsandroses.jpg" class="img-fluid w-100" style="height: 200px; object-fit: cover;" alt="Banda 3">
+      <!-- Banda 4 -->
+      <div class="col-sm-12 col-md-6 col-lg-3">
+        <div class="card bg-black border-0 shadow-lg h-100 d-flex flex-column">
+          <div class="d-flex justify-content-center align-items-center" style="height: 200px; overflow: hidden;">
+            <img src="assets/img/gunsandroses.png" alt="Guns and Roses" class="img-fluid" style="max-height: 100%; object-fit: cover;">
+          </div>
           <div class="card-body text-center">
             <h5 class="card-title text-warning">Guns and Roses</h5>
-            <p class="card-text">Nos eligieron para equipar todo su estudio para gira en Argentina. ¡Orgullo nacional!</p>
+            <p class="card-text text-white">Nos eligieron para equipar todo su estudio para gira en Argentina. ¡Orgullo nacional!</p>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
+
 
 
   <section>
@@ -103,26 +149,26 @@
     <div class="col ">
       <div class="container-fluid card-category category-guitarra ">
         <p>Guitarras</p>
-       <a class="text-decoration-none" data-bs-toggle="modal" data-bs-target="#modalDesarrollo"><span >Ver mas</span></a>
+       <a class="text-decoration-none" href="productos?categoria=guitarras"><span >Ver mas</span></a>
 
       </div>
       </div>
       <div class="col">
       <div class="container-fluid card-category category-bajo">
         <p>Bajos</p>
-        <a class="text-decoration-none" data-bs-toggle="modal" data-bs-target="#modalDesarrollo"><span >Ver mas</span></a>
+        <a class="text-decoration-none" href="productos?categoria=bajos"><span >Ver mas</span></a>
       </div>
       </div>
       <div class="col">
       <div class="container-fluid card-category category-bateria">
         <p>Baterias</p>
-        <a class="text-decoration-none" data-bs-toggle="modal" data-bs-target="#modalDesarrollo"><span >Ver mas</span></a>>
+        <a class="text-decoration-none" href="productos?categoria=baterias"><span >Ver mas</span></a>>
       </div>
       </div>
       <div class="col">
       <div class="container-fluid card-category category-componente">
         <p>Componentes</p>
-        <a class="text-decoration-none" data-bs-toggle="modal" data-bs-target="#modalDesarrollo"><span >Ver mas</span></a>>
+        <a class="text-decoration-none" href="productos?categoria=componentes"><span >Ver mas</span></a>>
       </div>
       </div>
     </div>

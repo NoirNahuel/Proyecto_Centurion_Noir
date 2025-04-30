@@ -1,4 +1,5 @@
-<section class="divBoxPrincipal py-5">
+<section class="divBoxPrincipal">
+    <br>
     <div class="container">
         <!-- Breadcrumb -->
         <nav class="d-flex justify-content-center mb-4" style="--bs-breadcrumb-divider: '/';" aria-label="breadcrumb">

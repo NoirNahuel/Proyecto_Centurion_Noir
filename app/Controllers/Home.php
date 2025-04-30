@@ -29,9 +29,12 @@ class Home extends BaseController
         $data['titulo'] = 'Comercializacion';
         return view('plantillas/head', $data).view('plantillas/nav').view('contenido/comercializacion').view('plantillas/footer');
     }
-    public function productos() {
+    public function productos($categoria = 'todas')
+    {
+        
+
         $data['titulo'] = 'Productos - GuitarCN';
-        return view('plantillas/head', $data). view('plantillas/nav').view('contenido/productos').view('plantillas/footer');
+        return view('plantillas/head', $data). view('plantillas/nav').view('contenido/productos', ['categoria' => $categoria]).view('plantillas/footer');
     }
     
 }

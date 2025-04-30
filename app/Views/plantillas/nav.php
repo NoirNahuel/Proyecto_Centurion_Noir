@@ -1,43 +1,3 @@
- <!--<header>
-    <div id="inicio" class="divBoxFooter">  
-      <img  class="imgFooter" src="<?php echo base_url("../assets/img/logo2.png");?>" alt="Logo Footer">
-      
-    </div>
-    <h2 class="h2">Bienvenido al mundo de la Musica y sus instrumentos</h2>
-</header>
-
-  
- 
-    
- <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-        <div class="container px-4 px-lg-5">
-            <a class="navbar-brand text-white" href="<?php echo base_url('/');?>">Guitar CN</a>
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-                aria-label="Toggle navigation">
-                Menú
-                <i class="fas fa-bars ms-1"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                
-                   
-<ul class="navbar-nav ms-auto">
-    <li class="nav-item"><a class="nav-link text-white " href="<?php echo base_url('/');?>">Inicio</a></li>
-    <li class="nav-item"><a class="nav-link text-white hover-blanco " href="<?php echo base_url('quieneSomos');?>">Quiénes Somos</a></li>
-    <li class="nav-item"><a class="nav-link text-white hover-blanco" href="productos">Productos</a></li>
-    <li class="nav-item"><a class="nav-link text-white hover-blanco" href="<?php echo base_url('contacto');?>">Contacto</a></li>
-    <li class="nav-item"><a class="nav-link text-white hover-blanco" href="terminos_usos">Términos y Usos</a></li>
-</ul>
-               
-            </div>
-        </div>
-    </nav>
-    <div class="container text-white text-center py-5" style="padding-top: 6rem;">
-        <h1 class="display-4 fw-bold">Bienvenido a Guitar CN</h1>
-        <p class="lead">Tu tienda online de instrumentos musicales</p>
-    </div>
-
--->
 <!-- Contenedor general fijo en el top -->
 
 <!-- HEADER STICKY CON NAVBAR -->
@@ -62,11 +22,15 @@
          </div>
          <div class="offcanvas-body">
             <div class="d-md-flex align-items-center gap-2">
+                <a class="nav-link text-white" href="<?php echo base_url('/')?>">
+                Inicio
+                </a>
+                  <!-- botones en desarrollo a fututo
                <button class="btn btn-dark btn-sm" data-bs-toggle="modal" data-bs-target="#modalDesarrollo">Iniciar Sesión</button>
                <button class="btn btn-dark btn-sm" data-bs-toggle="modal" data-bs-target="#modalDesarrollo">Shop</button>
                <a class="btn btn-dark btn-sm" data-bs-toggle="modal" data-bs-target="#modalDesarrollo">
-                  <i class="fas fa-shopping-cart"></i>
-               </a>
+               <i class="bi bi-cart mx-1"></i>
+               </a> -->
             </div>
 
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -121,100 +85,3 @@
     </div>
   </div>
 </div>
-
-
-    
-  <!--       
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a href="<?php echo base_url('/');?>"><img class="logo_nav" src="<?php echo base_url("../assets/img/guitar_logo_title.jpg");?>" alt=""></a>
-    <a class="navbar-brand" href="<?php echo base_url('/');?>">Guitar Cent</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          
-        <li class="nav-item">
-            <a class="nav-link" href="<?php echo base_url('/');?>">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="<?php echo base_url('quieneSomos');?>">Quienes Somos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="<?php echo base_url('acercaDe');?>">Acerca De</a>
-          </li>
-          <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            productos
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Guitarras</a></li>
-            <li><a class="dropdown-item" href="#">Bajos</a></li>
-            <li><a class="dropdown-item" href="#">Baterias</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Componentes</a></li>
-          </ul>
-        </li>
-        <?php if (!(session()->get('id_perfil') == 1 || session()->get('id_perfil') == 2)): ?>
-          <li class="nav-item">
-            <a class="nav-link" href="<?php echo base_url('registrarse');?>">Registrate</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="<?php echo base_url('login');?>"><i class="fa-solid fa-user-large"> </i>Iniciar Sesion</a>
-          </li>
-          <?php endif; ?>
-          <?php if (session()->get('id_perfil') == 2): ?>
-            <li>
-            <a class="nav-link" class="btn btn-outline-success d-block mb-3" href="<?= base_url('user/editar_user/'.session()->get('id_usuario'));?>">Modificar mis Datos</a>
-            </li>
-            <li >
-              <a class="nav-link"  href="<?php echo base_url('/Cerrar-Sesion') ?>">Cerrar sesión</a>
-             </li>
-             
-                <?php endif; ?>
-          <?php if (session()->get('id_perfil') == 1): ?>
-                  
-                        <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Crud Usuarios
-                        </a>
-                     
-                       <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="<?php echo base_url("/usuarios"); ?>">Tabla de Usuarios</a>
-                            </li>
-                            <li><a class="dropdown-item" href="<?php echo base_url("/baja_usuario"); ?>">Tabla de Eliminados</a>
-                            </li>
-                                                   
-                        </ul>
-                       
-  
-
-                        </li>
-                        
-
-   
-
-                       
-    <li >
-        <a class="nav-link" href="<?php echo base_url('/Cerrar-Sesion') ?>">Cerrar sesión</a>
-    </li>
-
-  
-    
- 
-              
-                <?php endif; ?>
-      
-        </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Buscar</button>
-        </form>
-      </div>
-    </div>
-
-
-
-</nav>  
-

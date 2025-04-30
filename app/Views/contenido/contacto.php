@@ -1,4 +1,5 @@
-<section class="divBoxPrincipal py-5">
+<section class="divBoxPrincipal ">
+  <br>
 <nav  class="d-flex justify-content-center" style="--bs-breadcrumb-divider: '/';" aria-label="breadcrumb">
   <ol class="breadcrumb">
     <li class="breadcrumb-item "><a class="text-secondary text-decoration-none" href="<?php echo base_url('/');?>">Inicio</a></li>

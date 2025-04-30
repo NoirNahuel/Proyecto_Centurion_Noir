@@ -3,6 +3,11 @@ body {
     margin: 0;
     padding: 0;
     }
+    html {
+        font-size: 100%; /* equivalente a 16px por defecto */
+
+      }
+      
     .tituloLogo {
        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
         }
@@ -23,7 +28,17 @@ body {
             background-image: linear-gradient( 135deg, #000000 10%, #1d2035 100%);
               
           }
+          .brand-img {
+            max-width: 100%;
+            max-height: 300px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+          }
           
+          .brand-img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+          }
+            
         #mainNav {
             background-color: #050505; /* dark background */
             padding-top: 1rem;
