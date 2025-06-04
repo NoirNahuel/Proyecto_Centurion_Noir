@@ -176,6 +176,5 @@ Este acuerdo se regirá por las leyes vigentes del país donde se encuentre domi
 </div>
 <br>
 </section>
-
 </section>
 

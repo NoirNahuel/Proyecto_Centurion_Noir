@@ -22,15 +22,16 @@
          </div>
          <div class="offcanvas-body">
             <div class="d-md-flex align-items-center gap-2">
-                <a class="nav-link text-white" href="<?php echo base_url('/')?>">
+               <!--
+                <a class="nav-link text-white" href="<?php echo base_url('/')?>"> <i class="bi bi-house-door-fill fs-5"></i>
                 Inicio
-                </a>
-                  <!-- botones en desarrollo a fututo
+                </a>-->
+                 
                <button class="btn btn-dark btn-sm" data-bs-toggle="modal" data-bs-target="#modalDesarrollo">Iniciar Sesión</button>
                <button class="btn btn-dark btn-sm" data-bs-toggle="modal" data-bs-target="#modalDesarrollo">Shop</button>
                <a class="btn btn-dark btn-sm" data-bs-toggle="modal" data-bs-target="#modalDesarrollo">
                <i class="bi bi-cart mx-1"></i>
-               </a> -->
+               </a> 
             </div>
 
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">

@@ -111,6 +111,12 @@
       </div>
 
   </section>
+   <!-- Footer para Usuario perfil 1-administrador -->
+     <?php if (session()->get('id_perfil') == 1): ?> 
+  <footer class="degradado text-white-50 text-center py-2 mt-auto">
+  <small>&copy; <?= date('Y'); ?> Guitar N' Cent - Panel Admin</small>
+</footer>
+ <?php endif; ?>
 </footer>
 
 
