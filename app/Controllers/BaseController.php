@@ -56,5 +56,9 @@ abstract class BaseController extends Controller
 
         // E.g.: $this->session = \Config\Services::session();
         $this->session = \Config\Services::session();
+           $this->response->setHeader('Cache-Control', 'no-store, no-cache, must-revalidate, max-age=0');
+            $this->response->setHeader('Pragma', 'no-cache');
+            $this->response->setHeader('Expires', '0');
+            $this->session = \Config\Services::session();
     }
 }

@@ -1,94 +1,66 @@
  <!-- Sidebar -->
     <style>
- /* Sidebar */
+/* === SIDEBAR === */
 #sidebar {
-  width: 20%;
+  width: clamp(200px, 15%, 250px);
   background-color: #343a40;
   color: white;
+  position: fixed;
+  top: 155px;
+  left: 0;
+  bottom: 0;
   display: flex;
   flex-direction: column;
-  height: 100vh; /*  altura de la pantalla solamente */
-  position: sticky; /* o fixed si querés que no se mueva nunca */
-  top: 0;
-  
-  /* ✅ Nueva mejora visual */
-  border-right: 1px solid #495057; /* Línea de separación sutil */
-  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2); /* Sombra leve */
- /*  z-index: 1030; Encima del contenido si hace falta */
-   display: flex;
-  flex-direction: column;
-  justify-content: space-between; /* Asegura separación entre lista y logout */
+  justify-content: space-between;
+  transition: width 0.3s ease;
+  overflow-y: auto;
+  z-index: 1020;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
 }
-
 
 #sidebar.collapsed {
   width: 70px;
-  border-right: 1px solid #495057; /* conservar contorno al colapsar */
-}
-
-.logout-section {
-  margin-top: auto;
-
 }
 
 #sidebar .nav-link {
   color: white;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0.75rem;
+  white-space: nowrap;
 }
 
 #sidebar .nav-link:hover {
-  color: #adb5bd; /* opcional: gris claro para efecto hover */
+  color: #adb5bd;
 }
 
 .sidebar-text {
   display: inline;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 #sidebar.collapsed .sidebar-text {
   display: none;
 }
 
-   .sidebar-toggle-btn {
+.sidebar-toggle-btn {
   position: absolute;
   top: 10px;
   right: 10px;
   left: 10px;
-  color: rgb(255, 255, 255);
+  color: white;
   background: none;
   border: none;
-  outline: none;
-  box-shadow: none;
-  padding: 0;
-  margin: 0;
   font-size: 1.2rem;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.sidebar-toggle-btn:focus,
-.sidebar-toggle-btn:active,
-.sidebar-toggle-btn:focus-visible {
-  outline: none !important;
-  box-shadow: none !important;
-  border: none !important;
-}
 
-.sidebar-toggle-btn:hover {
-  color: rgb(168, 161, 161);
-  background: none;
-}
- /* Fin sidebar e iconos del sidebar */
-
-    
-
-/* Panel derecho oculto en móviles */
-@media (max-width: 767.98px) {
-  .right-panel {
-    display: none;
-  }
-}
   </style>
-  <div id="sidebar" class="degradado collapsed">
+  <div id="sidebar" class="degradado collapsed" style="z-index: 1020;">
     
   <a id="toggleSidebar" class="btn btn-sm  sidebar-toggle-btn">
   <i id="sidebarIcon" class="bi bi-chevron-double-right"></i>
@@ -108,7 +80,7 @@
         <a href="Gestion_Producto" class="nav-link" data-bs-toggle="tooltip" data-bs-custom-class="custom-tooltip"
         data-bs-title="Productos"  data-bs-placement="right">
         <i class="bi bi-box-seam fs-5"></i>
-        <span class="sidebar-text ms-2" >Crud Productos</span>
+        <span class="sidebar-text ms-2" >Productos</span>
         </a>
 
       </li>
@@ -116,7 +88,7 @@
          <a href="usuarios" class="nav-link" data-bs-toggle="tooltip" data-bs-custom-class="custom-tooltip"
         data-bs-title="Usuarios"  data-bs-placement="right" >
           <i class="bi bi-people-fill fs-5"></i>
-          <span class="sidebar-text ms-2">Crud Usuarios</span>
+          <span class="sidebar-text ms-2">Usuarios</span>
         </a>
       </li>
        <li class="nav-item mb-3">
@@ -147,7 +119,7 @@
       <div  class="nav flex-column mt-5 px-2">
                <!-- Ícono de Cerrar sesión al fondo -->
     <li class="logout-section mt-auto nav-item mb-3">
-      <a href="#" class="nav-link" data-bs-toggle="tooltip" data-bs-custom-class="custom-tooltip"
+      <a  href="<?= base_url('/Cerrar-Sesion'); ?>" class="nav-link" data-bs-toggle="tooltip" data-bs-custom-class="custom-tooltip"
         data-bs-title="Cerrar"  data-bs-placement="right">
         <i class="bi bi-box-arrow-right fs-5"></i>
         <span class="sidebar-text ms-2">Cerrar sesión</span>

@@ -187,12 +187,3 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 </script>
-
-
-
-
-
-
-
-
-

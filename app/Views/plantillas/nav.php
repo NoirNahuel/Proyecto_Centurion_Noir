@@ -26,12 +26,63 @@
                 <a class="nav-link text-white" href="<?php echo base_url('/')?>"> <i class="bi bi-house-door-fill fs-5"></i>
                 Inicio
                 </a>-->
-                 
-               <button class="btn btn-dark btn-sm" data-bs-toggle="modal" data-bs-target="#modalDesarrollo">Iniciar Sesión</button>
-               <button class="btn btn-dark btn-sm" data-bs-toggle="modal" data-bs-target="#modalDesarrollo">Shop</button>
+                    <!-- Opciones para no autenticados -->
+         
+                <?php if (!(session()->get('id_perfil') == 1 || session()->get('id_perfil') == 2)): ?>  
+               
+               <a href="<?php echo base_url('login'); ?>" class="btn btn-dark btn-sm  shadow-sm">
+                        <i class="fa-solid fa-user-large me-2"></i>Iniciar sesión
+                    </a>
+               <?php endif; ?> 
+               
+                <!-- Menú de usuario -->
+    <?php if (session()->get('id_perfil') == 2): ?> 
+    <div class="btn-group">
+       <button 
+            class="btn btn-dark btn-sm dropdown-toggle " 
+            type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fa-solid fa-user-circle me-2"></i> Bienvenido, <strong><?= esc(session('nombre')); ?></strong>
+         </button>
+
+         <ul class="dropdown-menu shadow-sm">
+            <!-- Información de usuario -->
+            <li><h6 class="dropdown-header text-muted">Información de la cuenta</h6></li>
+            <li><span class="dropdown-item-text"><i class="fa-solid fa-envelope me-2"></i><?= esc(session('email')); ?></span></li>
+            <li><span class="dropdown-item-text"><i class="fa-solid fa-id-card me-2"></i><?= esc(session('apellido')); ?> <?= esc(session('nombre')); ?></span></li>
+            
+            <li><hr class="dropdown-divider"></li>
+            <!-- Opciones -->
+            <li>
+               <a class="dropdown-item text-warning" href="<?= base_url('userCliente/editar_user/'.esc(session('id_usuario')));?>"> 
+                     <i class="fa-solid fa-user-edit me-2"></i>Editar perfil
+               </a>
+            </li>
+            <li>
+               <a class="dropdown-item text-danger" href="<?= base_url('/Cerrar-Sesion'); ?>">
+                     <i class="fa-solid fa-sign-out-alt me-2"></i>Cerrar sesión
+               </a>
+            </li>
+         </ul>
+
+        
+        </div>
+        <div class="d-flex justify-content-between align-items-center px-2">
+            <div>
+                <a 
+                href="<?= base_url('dashboard_cliente/' . esc(session('id_usuario'))) ?>" 
+                class="btn btn-dark btn-sm ">
+                <i class="fa-solid fa-chart-line me-1"></i> Mi Panel Cliente
+                </a> 
+            </div>  
+                
+        </div>
+        <button class="btn btn-dark btn-sm" data-bs-toggle="modal" data-bs-target="#modalDesarrollo">Mis Compras</button>
                <a class="btn btn-dark btn-sm" data-bs-toggle="modal" data-bs-target="#modalDesarrollo">
                <i class="bi bi-cart mx-1"></i>
                </a> 
+            </div>
+    <?php endif; ?>
+             
             </div>
 
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -41,6 +92,7 @@
                <li class="nav-item">
                   <a class="nav-link text-white" href="productos">Productos</a>
                </li>
+               
                <li class="nav-item">
                   <a class="nav-link text-white" href="comercializacion">Comercialización</a>
                </li>

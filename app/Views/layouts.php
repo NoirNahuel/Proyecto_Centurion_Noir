@@ -3,7 +3,8 @@
     <?= $this->include('plantillas/nav') ?>
 <style>
     .dashboard-wrapper {
-  min-height: 100vh;
+  margin-left: 5%;
+  padding: 1rem;
 }
 
 

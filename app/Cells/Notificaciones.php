@@ -6,13 +6,26 @@ use App\Models\LogUsuarioModel;
 
 class Notificaciones
 {
-   public function render(): string
+public function render(): string
 {
+    $limit = 5;
     $logModel = new LogUsuarioModel();
-    $logs = $logModel->orderBy('fecha_hora', 'DESC')->findAll(5, 0); // Limite 3, offset 0
+    $logs = $logModel
+        ->select('log_usuario.*, usuarios.nombre')
+        ->join('usuarios', 'usuarios.id_usuario = log_usuario.id_usuario', 'left')
+        ->orderBy('fecha_hora', 'DESC')
+        ->findAll($limit, 0); // Limita los primeros 5
 
-    return view('components/notificaciones', ['logs' => $logs]);
+    $total = $logModel->countAll();
+    $hayMas = $limit < $total;
+
+    return view('components/notificaciones', [
+        'logs' => $logs,
+        'hayMas' => $hayMas
+    ]);
 }
+
+
 
 }
 

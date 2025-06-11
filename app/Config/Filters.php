@@ -27,15 +27,73 @@ class Filters extends BaseConfig
    *     'secureheaders' => SecureHeaders::class,
   *  ];
      */
-    public $aliases = [
+      public $aliases = [
 		'csrf'     => \CodeIgniter\Filters\CSRF::class,
 		'toolbar'  => \CodeIgniter\Filters\DebugToolbar::class,
 		'honeypot' => \CodeIgniter\Filters\Honeypot::class,
 		//'authGuard' => \App\Filters\AuthGuard::class,
         'admin' => \App\Filters\SessionAdmin::class,
-        'auth'  => \App\Filters\AuthFilter::class,
+        'AuthFilter'  => \App\Filters\AuthFilter::class,
         'NoAuthFilter'  => \App\Filters\NoAuthFilter::class
 	];
+     public $filters = [
+        'AuthFilter' => [
+            // Lista de rutas en las que se aplicará el filtro "auth"
+            'only' => [
+            '/dashboard_cliente/(:num)',
+            '/listar-compras',
+            '/factura/(:num)',
+            '/carrito',
+            '/carrito_actualiza',
+            '/carrito_agrega',
+            'carrito_elimina/(:any)',
+            '/borrar',
+            '/carrito-comprar',
+            'sumar_carrito',
+            'restar_carrito',
+
+            'userCliente/editar/(:num)',
+            'userCliente/editar_user/(:num)',
+          
+        
+        ],
+    ],
+        'admin' => [
+            // Lista de rutas en las que se aplicará el filtro "admin"
+            'only' => [
+                '/usuarios',
+                '/baja_usuarios',
+                '/buscar',
+                '/alta_productos',
+                '/productos',
+                '/ProductoController/store',
+                '/product/change_baja/(:num)',
+                '/productos_eliminados',
+                '/buscar_producto',
+                '/product/editar_producto/(:num)',
+                '/product/editar/(:num)',
+                '/buscar_catalogo',
+                '/respuesta/(:num)',
+                '/buscar_consulta',
+                '/respuestas/(:num)',
+                '/consultas',
+                '/consultas_respuestas',
+                '/dashboard',
+               
+                
+            ],
+        ],
+        'NoAuthFilter' => [
+            // Lista de rutas en las que se aplicará el filtro "NoAuthFilter"
+            'only' => [
+                '/login'
+               
+                
+               
+                
+            ],
+        ],
+    ];
     /**
      * List of filter aliases that are always
      * applied before and after every request.
@@ -80,29 +138,5 @@ class Filters extends BaseConfig
      *
      * @var array<string, array<string, list<string>>>
      */
-    public $filters = [
-        'auth' => [
-            // Lista de rutas en las que se aplicará el filtro "auth"
-            'except' => [
-            
-            
-           
-        
-        ],
-    ],
-        'admin' => [
-            // Lista de rutas en las que se aplicará el filtro "admin"
-            'only' => [
-                '/usuarios',
-                '/baja_usuario',
-                '/buscar',
-                'user/editar_usuario/(:num)',
-                'user/editar/(:num)',
-            
-                
-               
-                
-            ],
-        ],
-    ];
+   
 }

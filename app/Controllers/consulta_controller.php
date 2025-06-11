@@ -48,25 +48,32 @@ class consulta_controller extends BaseController{
     if (!$this->validate($validacion)) {
         return redirect()->back()->withInput()->with('errors', $this->validator->listErrors());
     } else {
-        $consultaModel = new \App\Models\ConsultaModel();
+       $consultaModel = new \App\Models\ConsultaModel();
 
-        $data = [
-            'nombre' => $request->getPost('nombre'),
-            'email'  => $request->getPost('email'),
-            'mensaje' => $request->getPost('mensaje'),
-            'fecha_consulta' => date('Y-m-d H:i:s'),
-        ];
+$data = [
+    'nombre' => $request->getPost('nombre'),
+    'email'  => $request->getPost('email'),
+    'mensaje' => $request->getPost('mensaje'),
+    'fecha_consulta' => date('Y-m-d H:i:s'),
+];
 
-        $consultaModel->save($data);
+$consultaModel->save($data);
 
-        // REGISTRAR EL LOG (como visitante)
-        $nombre = $data['nombre'];
-        $email  = $data['email'];
-        $mensaje = $data['mensaje'];
+// Registrar log de actividad
+    $nombre  = $data['nombre'];
+    $email   = $data['email'];
+    $mensaje = $data['mensaje'];
 
-        registrar_log(null, 'Consulta', "Visitante: $nombre - $email\nMensaje: " . substr($mensaje, 0, 100), 'visitante');
+    $id_usuario  = session()->get('id_usuario') ?? null;
+    $tipo_origen = $id_usuario ? 'usuario' : 'visitante';
 
-        return redirect()->to(base_url('/contacto'))->with('mensaje', 'Su consulta ha sido enviada con éxito!');
+    $detalle = "$nombre ($email) envió una consulta. Mensaje: " . substr(strip_tags($mensaje), 0, 100) . "...";
+
+    registrar_log($id_usuario, 'Consulta enviada', $detalle, $tipo_origen);
+
+    return redirect()->to(base_url('/contacto'))->with('mensaje', 'Su consulta ha sido enviada con éxito!');
+
+
     }
 }
 

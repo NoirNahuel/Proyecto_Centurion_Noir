@@ -1,6 +1,13 @@
+    <!-- Footer para Usuario perfil 1-administrador -->
+     <?php if (session()->get('id_perfil') == 1): ?> 
+<footer class="degradado text-white-50 text-center py-2 mt-auto">
+      <small>&copy; <?= date('Y'); ?> Guitar N' Cent - Panel Admin</small>
+ </footer>
+ <?php endif; ?>
+ <!-- Footer para Usuario perfil 2-Cliente -->
+     <?php if (session()->get('id_perfil') == 2): ?> 
 <!-- Footer -->
 <footer class="fs-6 text-white bg-body-tertiary text-center degradado">
-
   <!-- Footer content -->
   <section class="text-white pt-5">
     <div class="container text-center text-md-center">
@@ -109,26 +116,20 @@
     </div>
   </div>
       </div>
-
   </section>
-   <!-- Footer para Usuario perfil 1-administrador -->
-     <?php if (session()->get('id_perfil') == 1): ?> 
-  <footer class="degradado text-white-50 text-center py-2 mt-auto">
-  <small>&copy; <?= date('Y'); ?> Guitar N' Cent - Panel Admin</small>
 </footer>
  <?php endif; ?>
-</footer>
-
 
   <!-- Bootstrap JS (solo una vez) -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-<!-- Tu archivo JavaScript personalizado (una sola vez) -->
-<script src="<?php echo base_url('../assets/js/main2.js'); ?>"></script>
+  <!-- Tu archivo JavaScript personalizado (una sola vez) -->
+  <script src="<?php echo base_url('../assets/js/main2.js'); ?>"></script>
 
-<!-- Font Awesome (si usas íconos) -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js" integrity="sha512-u3fPA7V8qQmhBPNT5quvaXVa1mnnLSXUep5PS1qo5NRzHwG19aHmNJnj1Q8hpA/nBWZtZD4r4AX6YOt5ynLN2g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    
-</body>
-    </html>
+
+  <!-- Font Awesome (si usas íconos) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js" integrity="sha512-u3fPA7V8qQmhBPNT5quvaXVa1mnnLSXUep5PS1qo5NRzHwG19aHmNJnj1Q8hpA/nBWZtZD4r4AX6YOt5ynLN2g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      
+  </body>
+</html>
