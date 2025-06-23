@@ -123,73 +123,75 @@
                             <i class="bi bi-pencil-square"></i> Editar perfil
                         </a>
                         <?php if (empty($persona)) : ?>
-                        <a href="<?= base_url('completar-datos');?>" class="btn btn-outline-dark btn-sm">
+                        <a href="<?= base_url('completar-datos');?>" class="btn btn-warning btn-sm">
                             <i class="bi bi-pencil-square"></i> Datos adicionales
                         </a>
+                        
                            <?php else: ?>
                          <button class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#modalEditarDatos">
                         <i class="bi bi-pencil-square me-1"></i> Editar Datos de Envío
                         </button>
-                         <?php endif; ?>
                          <div class="modal fade" id="modalEditarDatos" tabindex="-1" aria-labelledby="editarLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg modal-dialog-centered">
-    <div class="modal-content shadow">
-    <form action="<?= base_url('editar-datos/' . $persona['id_domicilio']) ?>" method="post" novalidate>
-    <?= csrf_field() ?>
-     
-        <div class="modal-header bg-dark text-white">
-          <h5 class="modal-title" id="editarLabel">Editar Datos de Envío</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-        </div>
-        <div class="modal-body">
-          <div class="row g-3">
+                            <div class="modal-dialog modal-lg modal-dialog-centered">
+                              <div class="modal-content shadow">
+                              <form action="<?= base_url('editar-datos/' . $persona['id_domicilio']) ?>" method="post" novalidate>
+                              <?= csrf_field() ?>
+                              
+                                  <div class="modal-header bg-dark text-white">
+                                    <h5 class="modal-title" id="editarLabel">Editar Datos de Envío</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                                  </div>
+                                  <div class="modal-body">
+                                    <div class="row g-3">
 
-            <div class="col-md-6">
-              <label class="form-label">Dirección</label>
-              <input type="text" name="direccion" class="form-control <?= session('errors.direccion') ? 'is-invalid' : '' ?>" value="<?= old('direccion', $persona['direccion']) ?>" required>
-              <div class="invalid-feedback"><?= session('errors.direccion') ?? '' ?></div>
-            </div>
+                                      <div class="col-md-6">
+                                        <label class="form-label">Dirección</label>
+                                        <input type="text" name="direccion" class="form-control <?= session('errors.direccion') ? 'is-invalid' : '' ?>" value="<?= old('direccion', $persona['direccion']) ?>" required>
+                                        <div class="invalid-feedback"><?= session('errors.direccion') ?? '' ?></div>
+                                      </div>
 
-            <div class="col-md-6">
-              <label class="form-label">Teléfono</label>
-              <input type="text" name="telefono" class="form-control <?= session('errors.telefono') ? 'is-invalid' : '' ?>" value="<?= old('telefono', $persona['telefono']) ?>" required>
-              <div class="invalid-feedback"><?= session('errors.telefono') ?? '' ?></div>
-            </div>
+                                      <div class="col-md-6">
+                                        <label class="form-label">Teléfono</label>
+                                        <input type="text" name="telefono" class="form-control <?= session('errors.telefono') ? 'is-invalid' : '' ?>" value="<?= old('telefono', $persona['telefono']) ?>" required>
+                                        <div class="invalid-feedback"><?= session('errors.telefono') ?? '' ?></div>
+                                      </div>
 
-            <div class="col-md-6">
-              <label class="form-label">Ciudad</label>
-              <input type="text" name="ciudad" class="form-control <?= session('errors.ciudad') ? 'is-invalid' : '' ?>" value="<?= old('ciudad', $persona['ciudad']) ?>" required>
-              <div class="invalid-feedback"><?= session('errors.ciudad') ?? '' ?></div>
-            </div>
+                                      <div class="col-md-6">
+                                        <label class="form-label">Ciudad</label>
+                                        <input type="text" name="ciudad" class="form-control <?= session('errors.ciudad') ? 'is-invalid' : '' ?>" value="<?= old('ciudad', $persona['ciudad']) ?>" required>
+                                        <div class="invalid-feedback"><?= session('errors.ciudad') ?? '' ?></div>
+                                      </div>
 
-            <div class="col-md-6">
-              <label class="form-label">País</label>
-              <input type="text" name="pais" class="form-control <?= session('errors.pais') ? 'is-invalid' : '' ?>" value="<?= old('pais', $persona['pais']) ?>" required>
-              <div class="invalid-feedback"><?= session('errors.pais') ?? '' ?></div>
-            </div>
+                                      <div class="col-md-6">
+                                        <label class="form-label">País</label>
+                                        <input type="text" name="pais" class="form-control <?= session('errors.pais') ? 'is-invalid' : '' ?>" value="<?= old('pais', $persona['pais']) ?>" required>
+                                        <div class="invalid-feedback"><?= session('errors.pais') ?? '' ?></div>
+                                      </div>
 
-            <div class="col-md-6">
-              <label class="form-label">DNI</label>
-              <input type="text" name="dni" class="form-control <?= session('errors.dni') ? 'is-invalid' : '' ?>" value="<?= old('dni', $persona['dni']) ?>" required>
-              <div class="invalid-feedback"><?= session('errors.dni') ?? '' ?></div>
-            </div>
+                                      <div class="col-md-6">
+                                        <label class="form-label">DNI</label>
+                                        <input type="text" name="dni" class="form-control <?= session('errors.dni') ? 'is-invalid' : '' ?>" value="<?= old('dni', $persona['dni']) ?>" required>
+                                        <div class="invalid-feedback"><?= session('errors.dni') ?? '' ?></div>
+                                      </div>
 
-            <div class="col-md-6">
-              <label class="form-label">Código Postal</label>
-              <input type="text" name="codigo_postal" class="form-control <?= session('errors.codigo_postal') ? 'is-invalid' : '' ?>" value="<?= old('codigo_postal', $persona['codigo_postal']) ?>" required>
-              <div class="invalid-feedback"><?= session('errors.codigo_postal') ?? '' ?></div>
-            </div>
+                                      <div class="col-md-6">
+                                        <label class="form-label">Código Postal</label>
+                                        <input type="text" name="codigo_postal" class="form-control <?= session('errors.codigo_postal') ? 'is-invalid' : '' ?>" value="<?= old('codigo_postal', $persona['codigo_postal']) ?>" required>
+                                        <div class="invalid-feedback"><?= session('errors.codigo_postal') ?? '' ?></div>
+                                      </div>
 
-          </div>
-        </div>
-        <div class="modal-footer">
-          <button type="submit" class="btn btn-success">Guardar Cambios</button>
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-        </div>
-      </form>
-    </div>
-  </div>
-</div>
+                                    </div>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="submit" class="btn btn-success">Guardar Cambios</button>
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                                  </div>
+                                </form>
+                              </div>
+                            </div>
+                          </div>
+                         <?php endif; ?>
+                        
 <?php if (session('errors')): ?>
   <script>
     document.addEventListener('DOMContentLoaded', function () {
