@@ -55,7 +55,8 @@
             <label class="me-2 fw-bold">Fecha hasta:</label>
             <input type="date" name="fecha_hasta" class="form-control w-25 me-2" value="<?= esc($fecha_hasta ?? '') ?>">
 
-            <button type="submit" class="btn btn-primary">Filtrar</button>
+             <button type="submit" class="btn btn-dark" data-bs-toggle="tooltip"
+          data-bs-custom-class="custom-tooltip" data-bs-title="Filtrar Fecha" data-bs-placement="top"><i class="fas fa-filter"></i> </button>
         </form>
 
 <!-- Resto de tu contenido de usuarios -->

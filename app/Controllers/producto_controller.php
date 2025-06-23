@@ -518,11 +518,11 @@ public function buscar(){
         $categoriasmodel= new CategoriaModel();
         $session=session();
         
-        $cart = \Config\Services::cart();
-       
-
-  
-
+        $cart =\Config\Services::cart();
+         $cartTotal=['cartTotal'=>count($cart->contents())] ; // Obtiene el total de productos 
+         $contadorCart = [
+            'cartTotal' => count($cart->contents()),
+        ];
         if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['id_categoria'])) {
             $search = $_POST['id_categoria'];
             
@@ -554,7 +554,7 @@ public function buscar(){
         ];
         
         echo view('plantillas/head', $datos);
-        echo view('plantillas/nav', $datos);
+        echo view('plantillas/nav', $contadorCart);
         echo view('contenido/producto', $data);
         echo view('plantillas/footer');
                     
@@ -565,6 +565,11 @@ public function buscar(){
 public function buscar_catalogo()
     {
         helper(['form','url','cart']);
+          $cart =\Config\Services::cart();
+         $contadorCart=['cartTotal'=>count($cart->contents())] ; // Obtiene el total de productos 
+         $datos = [
+            'cartTotal' => count($cart->contents()),
+        ];
         $categoriasmodel= new CategoriaModel();
         $productModel = new productosModel();
         $session=session();
@@ -590,10 +595,13 @@ public function buscar_catalogo()
          ];
 
    
-    $data['titulo']='Productos';
+    $datos['titulo']='Productos';
 
    
-    echo view('contenido/producto', $data);
+        echo view('plantillas/head', $datos);
+        echo view('plantillas/nav', $contadorCart);
+          echo view('contenido/producto', $data);
+        echo view('plantillas/footer');
     } 
    
                     

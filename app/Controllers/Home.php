@@ -4,51 +4,137 @@ namespace App\Controllers;
 use App\Models\consultaModel;
 use App\Models\UsersModel;
 use App\Models\LogUsuarioModel;
+use App\Models\CategoriaModel;
+use App\Models\productosModel;
+use App\Models\VentasModel;
+use CodeIgniter\Cart\Cart;
 class Home extends BaseController
 {
     public function index(){
-        $data['titulo'] = 'GuitarNCent';
-        return view('plantillas/head', $data).view('plantillas/nav').view('principal').view('plantillas/footer');
+         helper(['form','url','cart']);
+        $cart =\Config\Services::cart();
+        $cartTotal=['cartTotal'=>count($cart->contents())] ; // Obtiene el total de productos
+        $datos = ['cartTotal' => count($cart->contents()),];
+
+        $productModel= new productosModel();
+        $categoriasmodel= new CategoriaModel();
+
+        $detalleVentaModel = new VentasModel();
+        $topProductos = $detalleVentaModel->obtenerTopProductos();
+        $session=session();
+       
+       
+        // Recupera todos los productos desde el modelo
+        $dato=['categorias'=>$categoriasmodel->getCategorias(),
+        'topProductos' =>$detalleVentaModel->obtenerTopProductos(3),
+ ];
+
+        $data['titulo'] = 'Tienda GuitarNCent'; 
+        return view('plantillas/head', $data).view('plantillas/nav',$datos).view('principal',$dato).view('plantillas/footer');
+    }
+     public function ver($categoryId = null)
+    {
+        $categoryModel = new CategoriaModel();
+        $productModel = new productosModel();
+       
+        // Si se pasa un ID de categoría, mostrar solo esa categoría
+        if ($categoryId) {
+            $category = $categoryModel->find($categoryId);
+            if (!$category) {
+                throw new \CodeIgniter\Exceptions\PageNotFoundException('Categoría no encontrada');
+            }
+
+
+            $data['category'] = $category;
+            $data['products'] = $productModel->getProductsByCategory($categoryId);
+        } else {
+            // Si no se pasa un ID, redirigir o mostrar un mensaje
+            return redirect()->to('/');
+        }
+        $data= ['categorias'=>$categoriasmodel->getCategorias(),
+                'topProductos' =>$detalleVentaModel->obtenerTopProductos(3),
+         ];
+        $dato['titulo'] = 'Tienda GuitarNCent';
+        return view('plantillas/head', $dato).view('plantillas/nav').view('principal',$data).view('plantillas/footer');
+       
     }
     public function quieneSomos(){
+         $cart =\Config\Services::cart();
+         $cartTotal=['cartTotal'=>count($cart->contents())] ; // Obtiene el total de productos 
+         $datos = [
+            'cartTotal' => count($cart->contents()),
+        ];
         $data['titulo'] = 'Quienes Somos';
-        return view('plantillas/head', $data).view('plantillas/nav').view('contenido/quienesSomos').view('plantillas/footer');
+        return view('plantillas/head', $data).view('plantillas/nav',$datos).view('contenido/quienesSomos').view('plantillas/footer');
     }
     public function acerca_de(){
+         $cart =\Config\Services::cart();
+         $cartTotal=['cartTotal'=>count($cart->contents())] ; // Obtiene el total de productos 
+         $datos = [
+            'cartTotal' => count($cart->contents()),
+        ];
         $data['titulo'] = 'Nosotros';
-        return view('plantillas/head', $data).view('plantillas/nav').view('contenido/acercaDe').view('plantillas/footer');
+        return view('plantillas/head', $data).view('plantillas/nav',$datos).view('contenido/acercaDe').view('plantillas/footer');
     }
     public function contacto(){
+         $cart =\Config\Services::cart();
+         $cartTotal=['cartTotal'=>count($cart->contents())] ; // Obtiene el total de productos 
+         $datos = [
+            'cartTotal' => count($cart->contents()),
+        ];
         $data['titulo'] = 'Contactanos';
-        return view('plantillas/head', $data).view('plantillas/nav').view('contenido/contacto').view('plantillas/footer');
+        return view('plantillas/head', $data).view('plantillas/nav',$datos).view('contenido/contacto').view('plantillas/footer');
     }
     
     public function terminos_usos(){
         $data['titulo'] = 'Terminos y Usos';
-        return view('plantillas/head', $data).view('plantillas/nav').view('contenido/terminosUsos').view('plantillas/footer');
+         $cart =\Config\Services::cart();
+         $cartTotal=['cartTotal'=>count($cart->contents())] ; // Obtiene el total de productos 
+         $datos = [
+            'cartTotal' => count($cart->contents()),
+        ];
+        return view('plantillas/head', $data).view('plantillas/nav',$datos).view('contenido/terminosUsos').view('plantillas/footer');
     }
     public function comercializacion(){
+         $cart =\Config\Services::cart();
+         $cartTotal=['cartTotal'=>count($cart->contents())] ; // Obtiene el total de productos 
+         $datos = [
+            'cartTotal' => count($cart->contents()),
+        ];
         $data['titulo'] = 'Comercializacion';
-        return view('plantillas/head', $data).view('plantillas/nav').view('contenido/comercializacion').view('plantillas/footer');
+        return view('plantillas/head', $data).view('plantillas/nav',$datos).view('contenido/comercializacion').view('plantillas/footer');
     }
-    public function productos($categoria = 'todas')
-    {
+    public function productos($categoria = 'todas'){   
+         $cart =\Config\Services::cart();
+         $cartTotal=['cartTotal'=>count($cart->contents())] ; // Obtiene el total de productos 
+         $datos = [
+            'cartTotal' => count($cart->contents()),
+        ];
         $data['titulo'] = 'Productos - GuitarCN';
-        return view('plantillas/head', $data). view('plantillas/nav').view('contenido/productos', ['categoria' => $categoria]).view('plantillas/footer');
+        return view('plantillas/head', $data). view('plantillas/nav',$datos).view('contenido/productos', ['categoria' => $categoria]).view('plantillas/footer');
     }
      public function login_user(){
+         $cart =\Config\Services::cart();
+         $cartTotal=['cartTotal'=>count($cart->contents())] ; // Obtiene el total de productos 
+         $datos = [
+            'cartTotal' => count($cart->contents()),
+        ];
         $data['titulo'] = 'Iniciar Sesion';
-       return view('plantillas/head', $data).view('plantillas/nav').view('contenido/login').view('plantillas/footer');
+       return view('plantillas/head', $data).view('plantillas/nav',$datos).view('contenido/login').view('plantillas/footer');
     }
     public function dashboard() 
     {
         $data['titulo'] = 'Panel de Administracion';
         return view('components/dashboard_Admin', $data);
     }
-    public function dashboard_2()
-    {
-        $data['titulo'] = 'Panel del Cliente';
-        return view('plantillas/head', $data).view('plantillas/nav').view('contenido/dashboard_2').view('plantillas/footer');
+    public function dashboard_2(){
+         $cart =\Config\Services::cart();
+         $cartTotal=['cartTotal'=>count($cart->contents())] ; // Obtiene el total de productos 
+         $datos = [
+            'cartTotal' => count($cart->contents()),
+        ];
+        $data['titulo'] = 'Panel del Cliente'; 
+        return view('plantillas/head', $data).view('plantillas/nav',$datos).view('contenido/dashboard_2').view('plantillas/footer');
     }
     public function layouts()
     {

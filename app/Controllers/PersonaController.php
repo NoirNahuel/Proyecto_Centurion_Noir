@@ -10,16 +10,18 @@ class PersonaController extends Controller
     public function formulario()
     {
         $data['titulo'] = 'Datos Adicionales ';
-     
-        return view('plantillas/head', $data).view('plantillas/nav').view('contenido/Persona/formulario').view('plantillas/footer');
+        $cart =\Config\Services::cart();
+        $cartTotal=['cartTotal'=>count($cart->contents())] ; // Obtiene el total de productos
+        $datos = [
+            'cartTotal' => count($cart->contents()),
+        ];
+        return view('plantillas/head', $data).view('plantillas/nav',$datos).view('contenido/Persona/formulario').view('plantillas/footer');
     }
     public function formularioCompra()
     {
         $data['titulo'] = 'Datos Adicionales para Compra ';
         $cart =\Config\Services::cart();
-    
         $cartTotal=['cartTotal'=>count($cart->contents())] ; // Obtiene el total de productos
-        
         $datos = [
             'cartTotal' => count($cart->contents()),
         ];
@@ -248,7 +250,7 @@ public function actualizarDatos($id)
     $personaModel = new PersonaModel();
     
     // Verificar si el registro existe y pertenece al usuario en sesión
-    $persona = $personaModel->where('id_persona', $id)->where('id_usuario', $id_usuario)->first();
+    $persona = $personaModel->where('id_domicilio', $id)->where('id_usuario', $id_usuario)->first();
     
     if (!$persona) {
         return redirect()->back()->with('error', 'No tienes permisos para modificar este registro.');
@@ -319,7 +321,7 @@ public function actualizarDatos($id)
     // Actualizar los datos en la base de datos
     $personaModel->update($id, $datos);
 
-    return redirect()->to(base_url('resumen-compra'))->with('success', 'Datos actualizados correctamente para su compra.');
+    return redirect()->back()->withInput()->with('success', 'Datos actualizados correctamente.');
 }
 
 

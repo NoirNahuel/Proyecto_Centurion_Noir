@@ -6,7 +6,6 @@
         <tr>
             <td><?= esc($consulta['id_consulta']) ?></td>
             <td><?= esc($consulta['nombre']) ?></td>
-            <td><?= esc($consulta['tipo_consulta']) ?></td>
             <td><?= esc($consulta['email']) ?></td>
             <td><?= date('d/m/Y H:i', strtotime($consulta['fecha_consulta'])) ?></td>
              <td><?= $consulta['respuesta'] == null ? 'No'  : 'Si' ?>

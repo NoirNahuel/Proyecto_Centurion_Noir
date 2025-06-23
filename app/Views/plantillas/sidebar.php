@@ -100,20 +100,20 @@
         </a>
         </li>
         <li class="nav-item mb-3">
-        <a href="#" class="nav-link" data-bs-toggle="tooltip" data-bs-custom-class="custom-tooltip"
+        <a href="<?php echo base_url('/ventas') ?>" class="nav-link" data-bs-toggle="tooltip" data-bs-custom-class="custom-tooltip"
         data-bs-title="Ventas"  data-bs-placement="right">
             <i class="bi bi-cash-coin  fs-5"></i>
             <span class="sidebar-text ms-2">Ventas</span>
         </a>
         </li>
-
+<!--
       <li class="nav-item mb-3" >
         <a href="#" class="nav-link" data-bs-toggle="tooltip" data-bs-custom-class="custom-tooltip"
         data-bs-title="Reportes"  data-bs-placement="right">
           <i class="bi bi-bar-chart-line-fill fs-5"></i>
           <span class="sidebar-text ms-2">Reportes</span>
         </a>
-      </li>
+      </li> -->
  
     </ul>
       <div  class="nav flex-column mt-5 px-2">

@@ -1,17 +1,29 @@
 <?php
 
 use CodeIgniter\Router\RouteCollection;
-
+use App\Filters\AuthFilter;
+use App\Filters\SessionAdmin;
+// Create a new instance of our RouteCollection class.
+$routes = \Config\Services::routes();
+$routes->setDefaultNamespace('App\Controllers');
+$routes->setDefaultController('Home');
+$routes->setDefaultMethod('index');
+$routes->setTranslateURIDashes(false);
+$routes->set404Override();
 
 /**
  * @var RouteCollection $routes
  */
 /** Rutas paginas de navegacion inicial */
 $routes->get('/', 'Home::index');
+$routes->get('/principal',  'Home::ver');
+$routes->match(['post'], 'products/category/(:num)', 'Home::ver/$1');// categoriza los productos
+$routes->get('topProductos', 'Home::topProductos');// Trae los productos mas vendidos 
 $routes->get('/quieneSomos', 'Home::quieneSomos');
 $routes->get('/contacto', 'Home::contacto');
 $routes->get('/terminos_usos', 'Home::terminos_usos');
 $routes->get('/comercializacion', 'Home::comercializacion');
+$routes->match(['get', 'post'],'/buscar_catalogo', 'producto_controller::buscar_catalogo');
 //$routes->get('productos', 'Home::productos');
 //$routes->get('productos/(:segment)', 'Home::productos/$1');
 $routes->match(['get', 'post'],'/productos', 'producto_controller::catalogo');
@@ -20,23 +32,16 @@ $routes->match(['get', 'post'], 'enviarconsultas', 'consulta_controller::validar
 //Registro Usuarios
 $routes->get('/registro', 'registrarse_controller::registrarse',['filter' => 'NoAuthFilter']);
 $routes->post('/validar', 'registrarse_controller::validation',['filter' => 'NoAuthFilter']);
-//Datos adicionales Persona
-$routes->get('completar-datos', 'PersonaController::formulario');
-$routes->post('guardar-datos', 'PersonaController::guardarDatos');
-$routes->get('verificarDatosCompra', 'PersonaController::verificarDatosUsuario');
-$routes->post('guardar-datos-compra', 'PersonaController::guardarDatoscompra');
-$routes->get('completar-datos-compra', 'PersonaController::formularioCompra');
-$routes->get('editarDatos/(:num)', 'PersonaController::editar/$1');
-$routes->post('editar-datos/(:num)', 'PersonaController::actualizarDatos/$1');
+
 //login 
 $routes->get('/login', 'Home::login_user',['filter' => 'NoAuthFilter']);
 $routes->get('/raiz', 'login_controller::index');
 $routes->post( 'ingresar', 'login_controller::loginAuth');//Ingresa sesion
 $routes->get('/Cerrar-Sesion', 'login_controller::logout');//Cierra sesion
 /* Filtro para Usuarios Administrador (acceso a CRUD-Productos-Usuarios-Consultas-Respuestas)*/
-$routes->get('dashboard', 'Home::dashboard');
-$routes->group('', ['filter' => 'admin'], function ($routes) {
 
+$routes->group('', ['filter' => 'admin'], function ($routes) {
+$routes->get('dashboard', 'Home::dashboard');
 /** Rutas paginas de Panel de Administrador */
 $routes->get('layouts', 'Home::layouts');
 $routes->get('cargar', 'Home::cargar');
@@ -84,6 +89,12 @@ $routes->post('product/change_baja/(:num)', 'producto_controller::cambiarEstado/
 $routes->match(['get', 'post'],'product/editar_producto/(:num)', 'producto_controller::editar_producto/$1');
 $routes->match(['get', 'post'],'product/editar/(:num)', 'producto_controller::editar/$1');
 $routes->get('/gestionar', 'Home::gestion');
+/*ventas*/
+$routes->match(['get', 'post'],'/facturas/(:num)', 'VentasController::factura/$1');
+$routes->get('/ventas', 'VentasController::ventas');
+$routes->match(['get', 'post'], '/buscarVentas', 'VentasController::buscarVentas');
+$routes->post('ventas/actualizarEstado', 'VentasController::actualizarEstado');
+
 });
 
 /** Rutas paginas de Usuarios Panel de Cliente */
@@ -103,7 +114,14 @@ $routes->get('/borrar','carrito_controller::borrar_carrito');
 $routes->get('/carrito-comprar', 'VentasController::comprar_carrito');
 $routes->get('sumar_carrito', 'carrito_controller::sumar_carrito', ['as' => 'sumar_carrito']);
 $routes->get('restar_carrito', 'carrito_controller::restar_carrito', ['as' => 'restar_carrito']);
-
+//Datos adicionales Persona
+$routes->get('completar-datos', 'PersonaController::formulario');
+$routes->post('guardar-datos', 'PersonaController::guardarDatos');
+$routes->get('verificarDatosCompra', 'PersonaController::verificarDatosUsuario');
+$routes->post('guardar-datos-compra', 'PersonaController::guardarDatoscompra');
+$routes->get('completar-datos-compra', 'PersonaController::formularioCompra');
+$routes->match(['get', 'post'],'editarDatos/(:num)', 'PersonaController::editar/$1');
+$routes->match(['get', 'post'],'editar-datos/(:num)', 'PersonaController::actualizarDatos/$1');
 
 
 

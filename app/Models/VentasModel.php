@@ -11,7 +11,7 @@ class VentasModel extends Model{
         'venta_id',
         'producto_id',
         'cantidad',
-        'precio',     
+        'precio',    
     ];
     
     public function obtenerTopProductos()

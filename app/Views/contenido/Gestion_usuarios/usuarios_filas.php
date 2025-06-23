@@ -16,13 +16,20 @@
                              <div class="btn-group d-flex justify-content-center flex-wrap small-btn-group" role="group" aria-label="Acciones de usuarios">
 
   <!-- Editar Usuario -->
-  <a href="<?= base_url('user/editar_user/' . $user["id_usuario"]); ?>" 
-     class="btn btn-sm btn-warning" 
-     data-bs-toggle="tooltip" 
-     data-bs-title="Editar Usuario" 
-     data-bs-placement="top">
-    <i class="bi bi-pencil-square"></i>
-  </a>
+ <a  
+  class="btn btn-sm btn-warning editar-btn" 
+  data-bs-toggle="modal"
+  data-bs-target="#modalEditarUsuario"
+  data-bs-id="<?= $user['id_usuario'] ?>"
+  data-bs-nombre="<?= esc($user['nombre']) ?>"
+  data-bs-apellido="<?= esc($user['apellido']) ?>"
+  data-bs-email="<?= esc($user['email']) ?>"
+  data-bs-placement="top"
+  title="Editar Usuario">
+  <i class="bi bi-pencil-square"></i>
+</a>
+
+
 
   <!-- Activar/Desactivar Usuario -->
   <?php if ($user['estado'] == 1): ?>
@@ -65,6 +72,66 @@
     </tr>
 <?php endif; ?>
 
+<div class="modal fade" id="modalEditarUsuario" tabindex="-1" aria-labelledby="modalEditarUsuarioLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content shadow-lg">
+      <div class="modal-header bg-dark text-white">
+        <h5 class="modal-title" id="modalEditarUsuarioLabel">Editar Usuario</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <form id="formEditarUsuario" method="post">
+        <div class="modal-body bg-light">
+          <input type="hidden" name="id_usuario" id="modal_id_usuario">
+
+          <div class="mb-3">
+            <label class="form-label">Nombre</label>
+            <input type="text" class="form-control" name="nombre" id="modal_nombre" required>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Apellido</label>
+            <input type="text" class="form-control" name="apellido" id="modal_apellido" required>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input type="email" class="form-control" name="email" id="modal_email" required>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Nueva Contraseña</label>
+            <input type="password" class="form-control" name="password" placeholder="Dejar en blanco si no se modifica">
+          </div>
+        </div>
+
+        <div class="modal-footer bg-light">
+          <button type="submit" class="btn btn-success">Guardar Cambios</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<script>
+document.querySelectorAll('.editar-btn').forEach(btn => {
+    btn.addEventListener('click', function () {
+        const id = this.dataset.bsId;
+        const nombre = this.dataset.bsNombre;
+        const apellido = this.dataset.bsApellido;
+        const email = this.dataset.bsEmail;
+
+        // Completar el formulario dentro del modal
+        document.getElementById('modal_id_usuario').value = id;
+        document.getElementById('modal_nombre').value = nombre;
+        document.getElementById('modal_apellido').value = apellido;
+        document.getElementById('modal_email').value = email;
+
+        // Cambiar acción del formulario
+        document.getElementById('formEditarUsuario').action = `<?= base_url('user/editar/') ?>${id}`;
+    });
+});
+
+</script>
 
 <script>
 document.addEventListener('DOMContentLoaded', function () {

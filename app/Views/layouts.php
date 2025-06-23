@@ -247,8 +247,7 @@ button[disabled][data-bs-toggle="tooltip"] {
         <div id="accordionNotificaciones">         
         <?= view_cell(\App\Cells\Notificaciones::class . '::render') ?>
         </div>
-        
-        </div>
+       </div>
     </aside>
 
     </div>

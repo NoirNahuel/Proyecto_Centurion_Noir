@@ -1,0 +1,108 @@
+INFO - 2025-06-22 16:02:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-22 16:02:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-22 16:02:47 --> Cart Class Initialized
+INFO - 2025-06-22 16:13:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-22 16:13:38 --> Cart Class Initialized
+INFO - 2025-06-22 16:19:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-22 16:19:34 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in C:\xampp\htdocs\Proyecto_Centurion_Noir\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto_Centurion_Noir\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'db_cent-noir', 3306, '', 0)
+#1 C:\xampp\htdocs\Proyecto_Centurion_Noir\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Proyecto_Centurion_Noir\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Proyecto_Centurion_Noir\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Proyecto_Centurion_Noir\system\Model.php(271): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Proyecto_Centurion_Noir\system\BaseModel.php(676): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\Proyecto_Centurion_Noir\app\Models\UsersModel.php(21): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\Proyecto_Centurion_Noir\app\Controllers\login_controller.php(261): App\Models\UsersModel->validateUser('esteban.centu@g...', 'centu123')
+#8 C:\xampp\htdocs\Proyecto_Centurion_Noir\system\CodeIgniter.php(943): App\Controllers\login_controller->loginAuth()
+#9 C:\xampp\htdocs\Proyecto_Centurion_Noir\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\login_controller))
+#10 C:\xampp\htdocs\Proyecto_Centurion_Noir\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\Proyecto_Centurion_Noir\index.php(84): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in C:\xampp\htdocs\Proyecto_Centurion_Noir\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto_Centurion_Noir\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Proyecto_Centurion_Noir\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Proyecto_Centurion_Noir\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\Proyecto_Centurion_Noir\system\Model.php(271): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\Proyecto_Centurion_Noir\system\BaseModel.php(676): CodeIgniter\Model->doFirst()
+#5 C:\xampp\htdocs\Proyecto_Centurion_Noir\app\Models\UsersModel.php(21): CodeIgniter\BaseModel->first()
+#6 C:\xampp\htdocs\Proyecto_Centurion_Noir\app\Controllers\login_controller.php(261): App\Models\UsersModel->validateUser('esteban.centu@g...', 'centu123')
+#7 C:\xampp\htdocs\Proyecto_Centurion_Noir\system\CodeIgniter.php(943): App\Controllers\login_controller->loginAuth()
+#8 C:\xampp\htdocs\Proyecto_Centurion_Noir\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\login_controller))
+#9 C:\xampp\htdocs\Proyecto_Centurion_Noir\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Proyecto_Centurion_Noir\index.php(84): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2025-06-22 16:19:34 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuarios`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(271): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Models\UsersModel.php(21): CodeIgniter\BaseModel->first()
+ 6 APPPATH\Controllers\login_controller.php(261): App\Models\UsersModel->validateUser('esteban.centu@gmail.com', 'centu123')
+ 7 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\login_controller->loginAuth()
+ 8 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\login_controller))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2025-06-22 16:22:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-22 16:22:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-22 18:55:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-22 18:55:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-22 18:55:07 --> Cart Class Initialized
+INFO - 2025-06-22 18:55:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-22 18:55:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-22 18:55:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-22 18:56:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-22 18:56:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-22 18:56:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-22 19:49:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-22 19:50:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-22 19:53:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-22 19:53:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-22 19:53:12 --> Cart Class Initialized
+INFO - 2025-06-22 19:53:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-22 19:53:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-22 19:53:25 --> Cart Class Initialized
+INFO - 2025-06-22 19:53:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-22 19:53:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-22 19:53:35 --> Cart Class Initialized
+CRITICAL - 2025-06-22 19:53:35 --> ErrorException: Undefined array key "id_persona"
+in APPPATH\Views\contenido\dashboard_2.php on line 77.
+ 1 APPPATH\Views\contenido\dashboard_2.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_persona"', 'C:\\xampp\\htdocs\\Proyecto_Centurion_Noir\\app\\Views\\contenido\\dashboard_2.php', 77)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\Proyecto_Centurion_Noir\\app\\Views\\contenido\\dashboard_2.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('contenido/dashboard_2', [], true)
+ 5 APPPATH\Controllers\login_controller.php(713): view('contenido/dashboard_2', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\login_controller->dashboard_cliente('2')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\login_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(84): CodeIgniter\CodeIgniter->run()
+INFO - 2025-06-22 20:00:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-22 20:00:07 --> Cart Class Initialized
+INFO - 2025-06-22 20:00:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-22 20:00:48 --> Cart Class Initialized
+INFO - 2025-06-22 20:01:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-22 20:01:00 --> Cart Class Initialized
+INFO - 2025-06-22 20:01:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-22 20:01:26 --> Cart Class Initialized
+INFO - 2025-06-22 20:01:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-22 20:01:35 --> Cart Class Initialized
+INFO - 2025-06-22 20:01:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-22 20:01:40 --> Cart Class Initialized
+INFO - 2025-06-22 20:02:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-22 20:02:18 --> Cart Class Initialized
+INFO - 2025-06-22 20:03:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-22 20:03:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-22 20:03:01 --> Cart Class Initialized
+INFO - 2025-06-22 20:04:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-22 20:04:26 --> Cart Class Initialized
+INFO - 2025-06-22 23:54:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-22 23:54:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-22 23:54:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-22 23:54:08 --> Cart Class Initialized

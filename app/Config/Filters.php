@@ -51,10 +51,12 @@ class Filters extends BaseConfig
             '/carrito-comprar',
             'sumar_carrito',
             'restar_carrito',
-
+            
             'userCliente/editar/(:num)',
             'userCliente/editar_user/(:num)',
-          
+            'editarDatos/(:num)',
+            'editar-datos/(:num)'
+      
         
         ],
     ],

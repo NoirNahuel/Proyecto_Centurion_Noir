@@ -1,7 +1,52 @@
+<style>
+    .small-card {
+    font-size: 0.9rem;
+    max-width: 100%;
+}
 
+.img-container {
+    height: 200px; /* o el alto que prefieras */
+    width: 100%;
+    background-color: #f8f9fa; /* fondo claro para imágenes con transparencia */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+.img-container img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+.tech-card:hover {
+    transform: scale(1.02);
+}
+
+.catalog-title {
+    font-weight: bold;
+    color: #343a40;
+}
+
+    .bg-gradient-primary {
+    background: linear-gradient(45deg, #007bff, #0056b3);
+}
+
+.card-header h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.card-body p {
+    margin-bottom: 0.6rem;
+}
+
+</style>
 <div>
 <br>
-<br>
+
 
 <nav  class="d-flex justify-content-center" style="--bs-breadcrumb-divider: '/';" aria-label="breadcrumb">
   <ol class="breadcrumb">
@@ -9,8 +54,6 @@
     <li class="breadcrumb-item navbar-brand" aria-current="page">Producto</li>
   </ol>
 </nav>
- <h1  class="text-center">Nuestros Productos MateCamp</h1>
- <br>   
  <section class="container mt-4">
     <!-- Verifica si hay un mensaje flash en la sesión -->
     <?php if (session()->getFlashdata('mensaje')): ?>
@@ -75,7 +118,6 @@
 
 
 <section>
-<h2 class="text-center mt-3">Catalogo</h2>
     <section class="container mt-4 text-center">
         <form action="<?= base_url('/buscar_catalogo') ?>" method="post" class="mb-3">
             <div class="input-group input-group-sm">
@@ -140,105 +182,152 @@
 
 
     </div>
-    <div class="container">
-    <div class="row g-4 justify-content-center">
-        <?php foreach ($producto as $producto) : ?>
-            <div class="col-12 col-md-3 col-lg-3">
-                <div class="card h-100 d-flex flex-column shadow-sm">
-                    <img src="<?= base_url() ?>/assets/uploads/<?= $producto['imagen'] ?>" alt="<?= $producto['nombre_producto']; ?>" class="card-img-top">
-                    <div class="card-body d-flex flex-column">
-                        <div class="text-center">
-                            <a href="#" class="text-reset text-decoration-none fw-bold" data-bs-toggle="modal" data-bs-target="#productoModal<?= $producto['idProducto'] ?>">
-                                <i class="bi bi-info-circle-fill"></i> Descripción
-                            </a>
+ <div class="container my-5">
+    <section class="catalog-container">
+        <h1 class="text-center mb-4 catalog-title">
+            <i class="bi bi-list-check"></i> Catálogo de Productos
+        </h1>
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+            <?php foreach ($producto as $producto) : ?>
+                <div class="col">
+                    <div class="card h-100 shadow-sm tech-card small-card">
+                        <!-- Imagen -->
+                        <!-- Contenedor de la imagen -->
+                        <div class="img-container">
+                            <img src="<?= base_url() ?>/assets/uploads/<?= $producto['imagen'] ?>" alt="<?= $producto['nombre_producto']; ?>">
                         </div>
-                        <?php foreach ($categorias as $categoria) { ?>
-                            <?php if ($categoria['id_categoria'] == $producto['id_categoria']) : ?>
-                                <span class=" text-center mt-2"><?php echo $categoria['descripcion']; ?></span>
-                            <?php endif ?>
-                        <?php } ?>
-                        <h5 class="text-center mt-2"><?php echo $producto['nombre_producto']; ?></h5>
-                        <p class="product-price text-center text-dark fw-bold">$<?php echo $producto['precio']; ?></p>
 
-                        <?php if ($producto['estado'] == 0 || $producto['stock_min'] == $producto['stock'] || $producto['stock'] == 0) : ?>
-                            <p class=" text-danger text-center mt-auto">Sin Stock</p>
-                            <p class="badge bg-danger text-white text-center mt-auto">No disponible</p>
-                        <?php else : ?>
-                            <p class="text-center text-muted">Stock: <?php echo $producto['stock']; ?></p>
-                            <p class="badge bg-success text-white text-center mt-auto">Disponible</p>
+                        <div class="card-body p-3">
+                            <!-- Nombre del producto -->
+                            <h6 class="card-title text-truncate">
+                                <i class="bi bi-box-seam"></i> <?= $producto['nombre_producto']; ?>
+                            </h6>
 
-                            <div class="text-center mt-auto">
-                                <?php
-                                echo form_open('carrito_agrega');
-                                echo form_hidden('idProducto', $producto['idProducto']);
-                                echo form_hidden('precio', $producto['precio']);
-                                echo form_hidden('nombre_producto', $producto['nombre_producto']);
-                                echo form_hidden('stock', $producto['stock']);
-                                echo form_hidden('stock_min', $producto['stock_min']);
+                            <!-- Categoría -->
+                            <p class="card-text text-muted small mb-1">
+                                <i class="bi bi-tag"></i>
+                                <?php 
+                                    foreach ($categorias as $categoria) {
+                                        if ($categoria['id_categoria'] == $producto['id_categoria']) {
+                                            echo $categoria['descripcion'];
+                                            break;
+                                        }
+                                    }
                                 ?>
-                                <button class="btn btn-dark btn-sm mt-2">
-                                    <i class="bi bi-cart-plus"></i> Agregar al Carrito
-                                </button>
-                                <?php echo form_close(); ?>
-                            </div>
-                        <?php endif; ?>
-                    </div>
-                </div>
-            </div>
+                            </p>
 
-           <!-- Modal del producto mejorado -->
-<div class="modal fade" id="productoModal<?= $producto['idProducto'] ?>" tabindex="-1" aria-labelledby="productoModalLabel<?= $producto['idProducto'] ?>" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-centered">
-        <div class="modal-content border-0 shadow-lg rounded-4">
-            <div class="modal-body p-4">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <!-- Imagen del producto -->
-                        <div class="col-md-5 text-center">
-                            <img src="<?= base_url() ?>/asset/uploads/<?= $producto['imagen'] ?>" 
-                                 alt="<?= $producto['nombre_producto']; ?>" 
-                                 class="img-fluid rounded-3 shadow-sm">
+                            <!-- Precio -->
+                            <p class="card-text fw-bold text-success small mb-1">
+                                <i class="bi bi-currency-dollar"></i> <?= number_format($producto['precio'], 2, ',', '.') ?>
+                            </p>
+
+                            <!-- Stock -->
+                            <?php if ($producto['estado'] == 0 || $producto['stock'] <= $producto['stock_min']) : ?>
+                                <p class="badge bg-danger small">No disponible</p>
+                            <?php else : ?>
+                                <p class="text-muted small mb-0"><i class="bi bi-boxes"></i> Stock: <?= $producto['stock']; ?></p>
+                                <p class="badge bg-success small">Disponible</p>
+                            <?php endif; ?>
                         </div>
-                        <!-- Información del producto -->
-                        <div class="col-md-7">
-                            <h3 class="fw-bold text-primary"><?= $producto['nombre_producto']; ?></h3>
-                            <p class="text-muted"><?= $producto['descripcion_producto']; ?></p>
-                            <div class="mb-3">
-                                <span class="fs-4 fw-bold text-success">Precio: $<?= number_format($producto['precio'], 2, ',', '.'); ?></span>
-                                <br>
-                                <span class="text-muted text-decoration-line-through">Precio lista: $<?= number_format($producto['precio'] + 500, 2, ',', '.'); ?></span>
-                                <br>
-                                <span class="fs-4 fw-bold text-secondary">Stock:<?= number_format($producto['stock']); ?></span>
-                            </div>
-                            <!-- Botón de cierre -->
-                            <button type="button" class="btn btn-danger px-4 fw-bold" data-bs-dismiss="modal">
-                                <i class="bi bi-x-circle"></i> Cerrar
-                            </button>
+
+                        <!-- Footer -->
+                        <div class="card-footer bg-dark text-center p-2">
+                            <?php if ($producto['estado'] == 0 || $producto['stock'] <= $producto['stock_min']) : ?>
+                                <a href="#" class="btn btn-light btn-sm w-100 disabled">Ver detalle</a>
+                            <?php else : ?>
+                                <a href="#" class="btn btn-dark btn-sm w-100" data-bs-toggle="modal" data-bs-target="#productoModal<?= $producto['idProducto'] ?>">
+                                    Ver detalle
+                                </a>
+                            <?php endif; ?>
                         </div>
                     </div>
                 </div>
-            </div>
+
+                <!-- Modal del producto -->
+                <div class="modal fade" id="productoModal<?= $producto['idProducto'] ?>" tabindex="-1" aria-labelledby="productoModalLabel<?= $producto['idProducto'] ?>" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                        <div class="modal-content border-0 shadow-lg rounded-4">
+                            <div class="modal-body p-4">
+                                <div class="row justify-content-center">
+                                    <div class="col-md-12">
+                                        <div class="card shadow-lg rounded">
+                                            <!-- Encabezado -->
+                                            <div class="card-header text-center bg-dark text-white">
+                                                <h2><?= $producto['nombre_producto']; ?></h2>
+                                            </div>
+
+                                            <!-- Cuerpo de la tarjeta -->
+                                            <div class="card-body bg-light">
+                                                <div class="row">
+                                                    <div class="col-md-5 text-center mb-3">
+                                                       <div class="img-container">
+                            <img src="<?= base_url() ?>/assets/uploads/<?= $producto['imagen'] ?>" alt="<?= $producto['nombre_producto']; ?>">
+                        </div>
+                                                           
+                                                    </div>
+
+                                                    <div class="col-md-7">
+                                                        <p><strong>Descripción:</strong> <?= $producto['descripcion_producto']; ?></p>
+                                                        <p><strong>Precio:</strong> $<?= number_format($producto['precio'], 2, ',', '.'); ?></p>
+                                                        <p><strong>Stock:</strong> <?= $producto['stock']; ?></p>
+
+                                                        <p><strong>Categoría:</strong>
+                                                            <?php 
+                                                            foreach ($categorias as $categoria) {
+                                                                if ($categoria['id_categoria'] == $producto['id_categoria']) {
+                                                                    echo $categoria['descripcion'];
+                                                                    break;
+                                                                }
+                                                            }
+                                                            ?>
+                                                        </p>
+
+                                                        <?php if ($producto['estado'] == 0 || $producto['stock'] <= $producto['stock_min']) : ?>
+                                                            <span class="badge bg-danger">No disponible</span>
+                                                        <?php else : ?>
+                                                            <span class="badge bg-success">Disponible</span>
+                                                        <?php endif; ?>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Pie de tarjeta -->
+                                            <div class="card-footer d-flex justify-content-between align-items-center bg-dark text-white">
+                                                <button type="button" class="btn btn-outline-light btn-sm" data-bs-dismiss="modal">
+                                                    <i class="bi bi-x-circle"></i> Cerrar
+                                                </button>
+
+                                                <?php if ($producto['estado'] != 0 && $producto['stock'] > $producto['stock_min']) : ?>
+                                                    <?= form_open('carrito_agrega') ?>
+                                                        <?= form_hidden('idProducto', $producto['idProducto']) ?>
+                                                        <?= form_hidden('precio', $producto['precio']) ?>
+                                                        <?= form_hidden('nombre_producto', $producto['nombre_producto']) ?>
+                                                        <?= form_hidden('stock', $producto['stock']) ?>
+                                                        <?= form_hidden('stock_min', $producto['stock_min']) ?>
+                                                        <?= form_hidden('imagen', $producto['imagen']) ?> <!-- NUEVO -->
+                                                        <button type="submit" class="btn btn-success btn-sm">
+                                                            <i class="bi bi-cart-plus"></i> Agregar al carrito
+                                                        </button>
+                                                    <?= form_close() ?>
+                                                <?php endif; ?>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- end modal-body -->
+                        </div>
+                    </div>
+                </div>
+
+            <?php endforeach; ?>
         </div>
-    </div>
-</div>
 
-        <?php endforeach; ?>
-    </div>
-</div>
-
-<br>
-<br>
-      
+        <!-- Paginador -->
         <?php if (isset($paginador)) : ?>
-    <div>
-        <?= $paginador->simpleLinks('default', 'bootstrap') ?>
-    </div>
-<?php endif; ?>
-        </div>
-
-
-      
-  
-
-</section>
+            <div class="mt-4">
+                <?= $paginador->simpleLinks('default', 'bootstrap') ?>
+            </div>
+        <?php endif; ?>
+    </section>
 </div>

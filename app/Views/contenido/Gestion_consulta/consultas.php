@@ -113,7 +113,6 @@
                 <tr>
                     <th>id</th>
                     <th>Nombre</th>
-                    <th>Asunto</th>
                     <th>Email</th>
                     <th>fecha de la consulta</th>
                     <th>Respondido</th>

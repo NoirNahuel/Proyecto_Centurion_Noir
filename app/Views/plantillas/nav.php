@@ -34,7 +34,62 @@
                         <i class="fa-solid fa-user-large me-2"></i>Iniciar sesión
                     </a>
                <?php endif; ?> 
-               
+  <?php if (session()->get('id_perfil') == 1): ?> 
+          <!-- Menú de usuario administrador -->
+ <!-- Acceso rápido -->
+    <div class="d-flex justify-content-center gap-2 mt-3">
+   <div>
+    <a 
+    href="<?= base_url('/dashboard'); ?>" 
+    class="btn btn-dark btn-sm px-3 py-2  me-2 shadow-sm">
+    <i class="fa-solid fa-chart-line me-1 "></i> Panel
+    </a> 
+   
+       
+        </div>
+    <!-- Bienvenida y menú -->
+       <div class="btn-group" style="z-index: 1055; position: relative;">
+    <button 
+        class="btn btn-dark btn-sm dropdown-toggle" 
+        type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <i class="fa-solid fa-user-circle me-2"></i>
+        <strong><?= esc(session('nombre')); ?></strong>
+    </button>
+
+    <ul class="dropdown-menu shadow-sm" style="z-index: 1056; position: absolute;">
+        <!-- Información de usuario -->
+        <li>
+            <h6 class="dropdown-header text-muted">Información de la cuenta</h6>
+        </li>
+        <li>
+            <span class="dropdown-item-text text-truncate d-block" title="<?= esc(session('email')); ?>">
+                <i class="fa-solid fa-envelope me-2"></i><?= esc(session('email')); ?>
+            </span>
+        </li>
+        <li>
+            <span class="dropdown-item-text text-truncate d-block" title="<?= esc(session('apellido').' '.session('nombre')); ?>">
+                <i class="fa-solid fa-id-card me-2"></i><?= esc(session('apellido')); ?> <?= esc(session('nombre')); ?>
+            </span>
+        </li>
+
+        <li><hr class="dropdown-divider"></li>
+
+        <!-- Opciones -->
+        <li>
+            <a class="dropdown-item text-warning text-truncate" href="<?= base_url('user/editar_user/'.esc(session('id_usuario')));?>">
+                <i class="fa-solid fa-user-edit me-2"></i>Editar perfil
+            </a>
+        </li>
+        <li>
+            <a class="dropdown-item text-danger text-truncate" href="<?= base_url('/Cerrar-Sesion'); ?>">
+                <i class="fa-solid fa-sign-out-alt me-2"></i>Cerrar sesión
+            </a>
+        </li>
+    </ul>
+</div>
+
+   </div>
+<?php endif; ?>
                 <!-- Menú de usuario -->
     <?php if (session()->get('id_perfil') == 2): ?> 
     <div class="btn-group">
@@ -66,21 +121,36 @@
 
         
         </div>
-        <div class="d-flex justify-content-between align-items-center px-2">
-            <div>
+        <div >
+            
                 <a 
                 href="<?= base_url('dashboard_cliente/' . esc(session('id_usuario'))) ?>" 
                 class="btn btn-dark btn-sm ">
                 <i class="fa-solid fa-chart-line me-1"></i> Mi Panel Cliente
                 </a> 
-            </div>  
+            
                 
         </div>
-        <button class="btn btn-dark btn-sm" data-bs-toggle="modal" data-bs-target="#modalDesarrollo">Mis Compras</button>
-               <a class="btn btn-dark btn-sm" data-bs-toggle="modal" data-bs-target="#modalDesarrollo">
-               <i class="bi bi-cart mx-1"></i>
-               </a> 
-            </div>
+       <a class="btn btn-dark btn-sm" href="<?php echo base_url('listar-compras'); ?>">
+                Mis Compras</a> 
+             
+            
+                 <div class="nav-item dropdown">
+    <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+       aria-haspopup="true" aria-expanded="false">
+        <span class="badge badge-pill badge-dark">
+            <i class="fa fa-shopping-cart"></i> <?= isset($cartTotal) ? $cartTotal : 0; ?>
+        </span>
+    </a>
+
+    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown"
+         style="width: 450px; padding: 0px; border-color: #9DA0A2">
+        <ul class="list-group" id="cartDropdownContent" style="margin: 20px;">
+            <!-- Aquí se cargará el contenido del carrito al hacer clic -->
+            <?= view('contenido/Carrito/cart-drop', [ 'cartTotal' => isset($cartTotal)]); ?>
+        </ul>
+    </div>
+    </div>
     <?php endif; ?>
              
             </div>
@@ -90,11 +160,11 @@
                   <a class="nav-link text-white" href="<?php echo base_url('quieneSomos');?>">Quiénes Somos</a>
                </li>
                <li class="nav-item">
-                  <a class="nav-link text-white" href="productos">Productos</a>
+                  <a class="nav-link text-white"  href="<?php echo base_url('productos');?>">Productos</a>
                </li>
                
                <li class="nav-item">
-                  <a class="nav-link text-white" href="comercializacion">Comercialización</a>
+                  <a class="nav-link text-white"  href="<?php echo base_url('comercializacion');?>">Comercialización</a>
                </li>
                <li class="nav-item">
                   <a class="nav-link text-white" href="<?php echo base_url('contacto');?>">Contacto</a>
@@ -102,6 +172,19 @@
                <li class="nav-item">
                   <a class="nav-link text-white" href="<?php echo base_url('terminos_usos');?>">Términos y Usos</a>
                </li>
+              <li class="nav-item position-relative">
+  <?php if (session()->get('id_perfil') == 2): ?>
+    <a class="nav-link text-white position-relative" href="<?= base_url('carrito'); ?>">
+      <div>
+     <i class="bi bi-cart mx-1"></i>
+      <span class="badge bg-danger position-absolute top-0 start-100 translate-middle p-1 rounded-circle">
+        <?= isset($cartTotal) ? $cartTotal : 0; ?>
+      </span></div>
+    </a>
+  <?php endif; ?>
+</li>
+
+                 
             </ul>
          </div>
       </div>

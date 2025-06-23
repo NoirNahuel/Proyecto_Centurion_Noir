@@ -125,8 +125,8 @@
   <div class="info content-banner col w-100 mx-auto  ">
   
    <h3 >Instrumentos de primera calidad</h3>
-    <div class="comprar">
-    <button type="button"  class="btn btn-outline-light btn-sm" data-bs-toggle="modal" data-bs-target="#modalDesarrollo">Comprar Ahora</button>
+    <div >
+    <a type="button"  class="btn btn-outline-light btn-sm" href="<?php echo base_url('productos');?>">Comprar ahora</a>
     </div>
   </div>
   <br>
@@ -265,6 +265,7 @@
     </div>
   </div>
 </section> 
+<!-- Seccion de categoria primera parte- sin traer categorias de la base de datos
 <section class="container top-categorias ">
       <h1 class="heading-1">Categorias</h1>
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 g-4 " class="container-categorias">
@@ -295,9 +296,36 @@
       </div>
     </div>
   </section>
+  -->
+  <!-- Seccion CATEGORIA 2da entrega modificado para trabajar con base de datos -->
+<section class="container top-categorias" style="max-width: 80%;">
+  <h2 class="heading-1 text-center mb-4">Categorías</h2>
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 g-4">
+    <?php foreach ($categorias as $categoria): ?>
+      <div class="col">
+        <form action="<?= base_url('productos') ?>" method="post">       
+          <div class="container-fluid card-category <?= 
+            $categoria['id_categoria'] == 1 ? 'category-guitarra' :
+            ($categoria['id_categoria'] == 2 ? 'category-bajo' :
+            ($categoria['id_categoria'] == 3 ? 'category-bateria' :
+            ($categoria['id_categoria'] == 4 ? 'category-componente' : '')))
+          ?>">
+            <h4 class="text-white"><?= esc($categoria['descripcion']) ?></h4>
+            <select hidden name="id_categoria">   
+              <option value="<?= $categoria['id_categoria'] ?>"></option>
+            </select>
+            <button class="btn btn-dark btn-sm mt-1">Ver más</button>
+          </div>
+        </form>
+      </div>
+    <?php endforeach; ?>
+  </div>
+</section>
+<section>
+    <h2 class="text-center"><a href="<?php echo base_url('registro');?>"><i class="fa-solid fa-right-to-bracket"></i></a> Registrate aqui</h3>
+   <p class="text-center">Crear cuenta y empeza a navegar </p>
 
-
-
+  </section>
 <!-- Modal -->
 <div class="modal fade" id="modalDesarrollo" tabindex="-1" aria-labelledby="modalDesarrolloLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">

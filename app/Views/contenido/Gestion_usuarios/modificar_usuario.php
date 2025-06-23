@@ -1,8 +1,4 @@
 <!-- app/Views/Gestion_usuarios/modificar usuarios -->
-<?= $this->extend('layouts') ?>
-
-   
-<?= $this->section('contenido') ?>
 
 <section>
 
@@ -91,7 +87,7 @@
               <?php endif; ?>
 
               <?php if (session()->get('id_perfil') == 2): ?>
-                  <a href="<?= base_url('dashboardCliente/' . $user['id_usuario']) ?>" class="btn btn-secondary">Volver al Panel</a>
+                  <a href="<?= base_url('dashboard_cliente/' . $user['id_usuario']) ?>" class="btn btn-secondary">Volver al Panel</a>
               <?php endif; ?>
             </div>
 
@@ -106,4 +102,3 @@
 </section>
  
 
-<?= $this->endSection() ?>

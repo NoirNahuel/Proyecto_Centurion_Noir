@@ -1,7 +1,3 @@
-<br>
-<br>
-<br>
-<br>
 <style>
         /* Fondo degradado para mayor profesionalismo */
         .bg-gradient-dark {

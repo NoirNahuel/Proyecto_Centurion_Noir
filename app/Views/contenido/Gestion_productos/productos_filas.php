@@ -21,7 +21,12 @@
                         </td>
 
                         <td><?= $producto['fecha_modificacion'] ?></td>
-                        <td><?= $producto['estado'] == 1 ? 'Activo' : 'Inactivo' ?></td>
+                        <td>
+                            <?= $producto['estado'] == 1 
+                                ? '<span class="badge bg-success text-dark">Activo</span>' 
+                                : '<span class="badge bg-danger text-white">Inactivo</span>' ?>
+                        </td>
+
                         <td>
                             <div class="btn-group d-flex justify-content-center flex-wrap small-btn-group" role="group" aria-label="Acciones de usuarios">
                             <!-- Editar Producto -->
@@ -32,13 +37,13 @@
                                 data-bs-placement="top">
                                 <i class="bi bi-pencil-square"></i>
                             </a>
-
+                              
                             <!-- Activar/Desactivar Producto -->
                             <?php if ($producto['estado'] == 1): ?>
                                 <a href="<?= base_url('Baja-Producto/' . $producto['idProducto']); ?>" 
                                 class="btn btn-sm btn-danger" 
                                 data-bs-toggle="tooltip" 
-                                data-bs-title="Desactivar Usuario" 
+                                data-bs-title="Desactivar producto" 
                                 data-bs-placement="top">
                                 <i class="bi bi-person-dash"></i>
                                 </a>
@@ -46,7 +51,7 @@
                                 <a  href="<?= base_url('Baja-Producto/' . $producto['idProducto']); ?>"
                                 class="btn btn-sm btn-success" 
                                 data-bs-toggle="tooltip" 
-                                data-bs-title="Activar Usuario" 
+                                data-bs-title="Activar Producto" 
                                 data-bs-placement="top">
                                 <i class="bi bi-person-check"></i>
                                 </a>

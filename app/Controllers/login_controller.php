@@ -194,12 +194,6 @@ public function buscarUsuariosPorFechas()
    
 }
 
-
-
-public function AdminDashboard(){
-    $data['titulo']='Administrador';
-    return view('plantillas/head', $data).view('plantillas/nav').view('contenido/AdminDashboard').view('plantillas/footer');
-}
 public function index()
 	{
 		$mensaje = session('mensaje');
@@ -214,7 +208,7 @@ public function index()
     public function loginAuth()
     {   
       
-    helper('date'); // Asegúrate de cargar el helper aquí
+    helper('date'); //cargar el helper 
    // $last_acceso = formatear_fecha(session('ultimo_acceso'));
     //$ultimo_acceso= ['ultimo_acceso' => $last_acceso];
 
@@ -280,12 +274,10 @@ public function index()
                                                 ];
                                             
                                                 // Redirige utilizando directamente el valor de la sesión para `id_perfil`
-                                                return redirect()->to(base_url('/dashboard_cliente/' . $this->session->get('id_perfil')));
+                                                return redirect()->to(base_url('/productos'));
                                             
                                                 break; // Asegúrate de romper el flujo del `switch`
-                                            
-
-                                           
+   
                                             break;
                                     }
                                 
@@ -446,13 +438,20 @@ public function index()
 {
     $userModel = new UsersModel();
     $user = $userModel->find($id);
-
+      $cart =\Config\Services::cart();
+         $cartTotal=['cartTotal'=>count($cart->contents())] ; // Obtiene el total de productos 
+         $datos = [
+            'cartTotal' => count($cart->contents()),
+        ];
     $data = [
         'titulo' => 'Modificar Usuario',
         'user'   => $user
     ];
-
-    return view('contenido/Gestion_usuarios/modificar_usuario', $data);
+     $datas = [
+        'titulo' => 'Modificar Usuario',
+    ];
+     return view('plantillas/head', $datas).view('plantillas/nav',$datos).view('contenido/Gestion_usuarios/modificar_usuario', $data).view('plantillas/footer');
+           
 }
 
     public function editar($id)
@@ -649,7 +648,10 @@ return redirect()->to(base_url('/dashboard_cliente/' . $id));
         $productos = [];
         if ($ultimaVenta) {
             // Obtener los detalles del último pedido
-            $detalles = $this->detalleVentas->obtenerDetallesPedido($ultimaVenta['id']);
+          
+            $detalles = $ventasDetalleModel->obtenerDetallesPedido($ultimaVenta['id']);
+
+          
     
             // Obtener los productos relacionados a esa venta
             foreach ($detalles as $producto) {
@@ -696,8 +698,12 @@ if (!empty($usuarioId)) {
             'persona' => $persona,
             
         ];
+         $cart =\Config\Services::cart();
+         $cartTotal=['cartTotal'=>count($cart->contents())] ; // Obtiene el total de productos 
+      
         $user = [
-            'user' => $users];
+            'user' => $users,
+            'cartTotal' => count($cart->contents())];
         $data['titulo'] = 'Dashboard Cliente | Tienda GuitarN Cent';
     
         // Renderizar las vistas

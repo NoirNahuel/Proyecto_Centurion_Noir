@@ -1,7 +1,4 @@
-<br>
-<br>
-<br>
-<br>
+
 <style>
         /* Fondo degradado para mayor profesionalismo */
         .bg-gradient-dark {
@@ -84,7 +81,7 @@
         </div>
 
         <div class="col-md-12 text-center mt-3">
-            <button type="submit" class="btn btn-primary w-50">Guardar</button>
+            <button type="submit" class="btn btn-success w-40">Guardar</button>
         </div>
     </div>
 </form>

@@ -9,7 +9,8 @@ class VentasHeadModel extends Model{
     protected $allowedFields = [
         'fecha',
         'usuario_id',
-        'total_venta',      
+        'total_venta',   
+        'estado',   
     ];
    
     public function getVentasCabecera(){
