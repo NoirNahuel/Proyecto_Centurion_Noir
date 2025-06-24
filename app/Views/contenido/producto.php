@@ -182,7 +182,7 @@
 
 
     </div>
- <div class="container my-5">
+ <div class="container  my-5">
     <section class="catalog-container">
         <h1 class="text-center mb-4 catalog-title">
             <i class="bi bi-list-check"></i> Catálogo de Productos
@@ -244,81 +244,71 @@
                     </div>
                 </div>
 
-                <!-- Modal del producto -->
-                <div class="modal fade" id="productoModal<?= $producto['idProducto'] ?>" tabindex="-1" aria-labelledby="productoModalLabel<?= $producto['idProducto'] ?>" aria-hidden="true">
-                    <div class="modal-dialog modal-lg modal-dialog-centered">
-                        <div class="modal-content border-0 shadow-lg rounded-4">
-                            <div class="modal-body p-4">
-                                <div class="row justify-content-center">
-                                    <div class="col-md-12">
-                                        <div class="card shadow-lg rounded">
-                                            <!-- Encabezado -->
-                                            <div class="card-header text-center bg-dark text-white">
-                                                <h2><?= $producto['nombre_producto']; ?></h2>
-                                            </div>
+               <!-- Modal del producto (React UI Style) -->
+<div class="modal fade" id="productoModal<?= $producto['idProducto'] ?>" tabindex="-1" aria-labelledby="productoModalLabel<?= $producto['idProducto'] ?>" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content bg-dark text-light border-0 rounded-4 shadow-lg">
+            <div class="modal-header border-0">
+                <h5 class="modal-title fw-bold"><?= esc($producto['nombre_producto']) ?></h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
 
-                                            <!-- Cuerpo de la tarjeta -->
-                                            <div class="card-body bg-light">
-                                                <div class="row">
-                                                    <div class="col-md-5 text-center mb-3">
-                                                       <div class="img-container">
-                            <img src="<?= base_url() ?>/assets/uploads/<?= $producto['imagen'] ?>" alt="<?= $producto['nombre_producto']; ?>">
-                        </div>
-                                                           
-                                                    </div>
-
-                                                    <div class="col-md-7">
-                                                        <p><strong>Descripción:</strong> <?= $producto['descripcion_producto']; ?></p>
-                                                        <p><strong>Precio:</strong> $<?= number_format($producto['precio'], 2, ',', '.'); ?></p>
-                                                        <p><strong>Stock:</strong> <?= $producto['stock']; ?></p>
-
-                                                        <p><strong>Categoría:</strong>
-                                                            <?php 
-                                                            foreach ($categorias as $categoria) {
-                                                                if ($categoria['id_categoria'] == $producto['id_categoria']) {
-                                                                    echo $categoria['descripcion'];
-                                                                    break;
-                                                                }
-                                                            }
-                                                            ?>
-                                                        </p>
-
-                                                        <?php if ($producto['estado'] == 0 || $producto['stock'] <= $producto['stock_min']) : ?>
-                                                            <span class="badge bg-danger">No disponible</span>
-                                                        <?php else : ?>
-                                                            <span class="badge bg-success">Disponible</span>
-                                                        <?php endif; ?>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <!-- Pie de tarjeta -->
-                                            <div class="card-footer d-flex justify-content-between align-items-center bg-dark text-white">
-                                                <button type="button" class="btn btn-outline-light btn-sm" data-bs-dismiss="modal">
-                                                    <i class="bi bi-x-circle"></i> Cerrar
-                                                </button>
-
-                                                <?php if ($producto['estado'] != 0 && $producto['stock'] > $producto['stock_min']) : ?>
-                                                    <?= form_open('carrito_agrega') ?>
-                                                        <?= form_hidden('idProducto', $producto['idProducto']) ?>
-                                                        <?= form_hidden('precio', $producto['precio']) ?>
-                                                        <?= form_hidden('nombre_producto', $producto['nombre_producto']) ?>
-                                                        <?= form_hidden('stock', $producto['stock']) ?>
-                                                        <?= form_hidden('stock_min', $producto['stock_min']) ?>
-                                                        <?= form_hidden('imagen', $producto['imagen']) ?> <!-- NUEVO -->
-                                                        <button type="submit" class="btn btn-success btn-sm">
-                                                            <i class="bi bi-cart-plus"></i> Agregar al carrito
-                                                        </button>
-                                                    <?= form_close() ?>
-                                                <?php endif; ?>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> <!-- end modal-body -->
+            <div class="modal-body">
+                <div class="row g-4">
+                    <!-- Imagen del producto -->
+                    <div class="col-md-5 text-center">
+                        <div class="rounded-3 overflow-hidden bg-body-tertiary p-2">
+                            <img src="<?= base_url() ?>/assets/uploads/<?= $producto['imagen'] ?>" alt="<?= esc($producto['nombre_producto']) ?>" class="img-fluid rounded" style="object-fit: contain; max-height: 250px;">
                         </div>
                     </div>
+
+                    <!-- Información del producto -->
+                    <div class="col-md-7">
+                        <p><strong>Descripción:</strong> <?= esc($producto['descripcion_producto']) ?></p>
+                        <p><strong>Precio:</strong> $<?= number_format($producto['precio'], 2, ',', '.') ?></p>
+                        <p><strong>Stock:</strong> <?= esc($producto['stock']) ?></p>
+                        <p><strong>Categoría:</strong>
+                            <?php 
+                                foreach ($categorias as $categoria) {
+                                    if ($categoria['id_categoria'] == $producto['id_categoria']) {
+                                        echo esc($categoria['descripcion']);
+                                        break;
+                                    }
+                                }
+                            ?>
+                        </p>
+                        <?php if ($producto['estado'] == 0 || $producto['stock'] <= $producto['stock_min']) : ?>
+                            <span class="badge bg-danger">No disponible</span>
+                        <?php else : ?>
+                            <span class="badge bg-success">Disponible</span>
+                        <?php endif; ?>
+                    </div>
                 </div>
+            </div>
+
+            <div class="modal-footer border-0 d-flex justify-content-between">
+                <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">
+                    <i class="bi bi-x-circle"></i> Cerrar
+                </button>
+
+                <?php if ($producto['estado'] != 0 && $producto['stock'] > $producto['stock_min']) : ?>
+                    <?= form_open('carrito_agrega') ?>
+                        <?= form_hidden('idProducto', $producto['idProducto']) ?>
+                        <?= form_hidden('precio', $producto['precio']) ?>
+                        <?= form_hidden('nombre_producto', $producto['nombre_producto']) ?>
+                        <?= form_hidden('stock', $producto['stock']) ?>
+                        <?= form_hidden('stock_min', $producto['stock_min']) ?>
+                        <?= form_hidden('imagen', $producto['imagen']) ?>
+                        <button type="submit" class="btn btn-success">
+                            <i class="bi bi-cart-plus"></i> Agregar al carrito
+                        </button>
+                    <?= form_close() ?>
+                <?php endif; ?>
+            </div>
+        </div>
+    </div>
+</div>
+
 
             <?php endforeach; ?>
         </div>
