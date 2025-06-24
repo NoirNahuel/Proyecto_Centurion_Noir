@@ -173,7 +173,7 @@
                   <a class="nav-link text-white" href="<?php echo base_url('terminos_usos');?>">Términos y Usos</a>
                </li>
               <li class="nav-item position-relative">
-  <?php if (session()->get('id_perfil') == 2): ?>
+  <!-- <?php if (session()->get('id_perfil') == 2): ?>
     <a class="nav-link text-white position-relative" href="<?= base_url('carrito'); ?>">
       <div>
      <i class="bi bi-cart mx-1"></i>
@@ -181,7 +181,7 @@
         <?= isset($cartTotal) ? $cartTotal : 0; ?>
       </span></div>
     </a>
-  <?php endif; ?>
+  <?php endif; ?> -->
 </li>
 
                  
