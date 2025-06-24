@@ -44,7 +44,12 @@
 <br>
 <div class="card border-secondary ">
     <div class="card-header bg-dark text-white text-center">
-        <h3 class="fw-bold mb-0">Detalle de mi compra</h3>
+         <div class="d-flex align-items-center mb-2 mb-md-0">
+         <img class="logoTienda img-fluid" src="<?php echo base_url('../assets/img/guitarCent_logo.png'); ?>" alt="Logo" style="height: 40px;" class="me-3 img-fluid">
+         <h4 class="mb-0 logoTienda"><a class="text-decoration-none text-white" href="<?php echo base_url('/');?>">Guitar N' Cent Store</a></h1>
+      </div>
+        <h4 class="fw-bold mb-0">Factura de mi compra</h4>
+         <p class="text-light text-center">Detalles completos de la compra realizada.</p>
     </div>
     <div class="card-body">
         <!-- Información del Cliente -->
