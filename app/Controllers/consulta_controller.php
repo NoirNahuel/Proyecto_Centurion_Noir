@@ -8,74 +8,100 @@ use App\Models\UsersModel;
 
 class consulta_controller extends BaseController{
  
-    public function validarmensaje()
-         {
-    helper(['form', 'log']); // Asegurate de incluir el helper de logs
-    $validacion = \Config\Services::validation();
+   public function validarmensaje()
+{
+    helper(['form', 'log']);
     $request = \Config\Services::request();
+    $id_usuario = session()->get('id_usuario');
 
-    $validacion = [
-        'nombre' => [
-            'label'  => 'nombre',
-            'rules'  => 'required|min_length[2]|max_length[50]',
-            'errors' => [
-                'required'   => 'Introduzca su {field}.',
-                'min_length' => 'Su {field} debe tener menos de {param} caracteres.',
-                'max_length' => 'Su {field} debe tener más de {param} caracteres.'
-            ]
-        ],
-        'email' => [
-            'label'  => 'correo electrónico',
-            'rules'  => 'required|min_length[4]|max_length[30]|valid_email',
-            'errors' => [
-                'required'    => 'Introduzca su {field}.',
-                'min_length'  => 'Su {field} debe tener más de {param} caracteres.',
-                'max_length'  => 'Su {field} debe tener menos de {param} caracteres.',
-                'valid_email' => 'El correo electrónico ({value}) no es válido.',
-            ]
-        ],
-        'mensaje' => [
-            'label'  => 'mensaje',
-            'rules'  => 'required|min_length[4]|max_length[255]',
-            'errors' => [
-                'required'   => 'Introduzca {field}.',
-                'min_length' => 'La {field} debe tener más de {param} caracteres.',
-                'max_length' => 'La {field} debe tener menos de {param} caracteres.'
-            ]
-        ],
-    ];
+    // 1. Definir las reglas de validación condicionalmente
+    if (!$id_usuario) {
+        // Visitante: validar nombre y email
+        $validacion = [
+            'nombre' => [
+                'label'  => 'nombre',
+                'rules'  => 'required|min_length[2]|max_length[50]',
+                'errors' => [
+                    'required'   => 'Introduzca su {field}.',
+                    'min_length' => 'Su {field} debe tener menos de {param} caracteres.',
+                    'max_length' => 'Su {field} debe tener más de {param} caracteres.'
+                ]
+            ],
+            'email' => [
+                'label'  => 'correo electrónico',
+                'rules'  => 'required|min_length[4]|max_length[30]|valid_email',
+                'errors' => [
+                    'required'    => 'Introduzca su {field}.',
+                    'min_length'  => 'Su {field} debe tener más de {param} caracteres.',
+                    'max_length'  => 'Su {field} debe tener menos de {param} caracteres.',
+                    'valid_email' => 'El correo electrónico ({value}) no es válido.',
+                ]
+            ],
+            'mensaje' => [
+                'label'  => 'mensaje',
+                'rules'  => 'required|min_length[4]|max_length[255]',
+                'errors' => [
+                    'required'   => 'Introduzca {field}.',
+                    'min_length' => 'La {field} debe tener más de {param} caracteres.',
+                    'max_length' => 'La {field} debe tener menos de {param} caracteres.'
+                ]
+            ],
+        ];
+    } else {
+        // Cliente registrado: solo validar mensaje
+        $validacion = [
+            'mensaje' => [
+                'label'  => 'mensaje',
+                'rules'  => 'required|min_length[4]|max_length[255]',
+                'errors' => [
+                    'required'   => 'Introduzca {field}.',
+                    'min_length' => 'La {field} debe tener más de {param} caracteres.',
+                    'max_length' => 'La {field} debe tener menos de {param} caracteres.'
+                ]
+            ],
+        ];
+    }
 
+    // 2. Ejecutar validación
     if (!$this->validate($validacion)) {
         return redirect()->back()->withInput()->with('errors', $this->validator->listErrors());
     } else {
-       $consultaModel = new \App\Models\ConsultaModel();
+        $consultaModel = new \App\Models\ConsultaModel();
 
-$data = [
-    'nombre' => $request->getPost('nombre'),
-    'email'  => $request->getPost('email'),
-    'mensaje' => $request->getPost('mensaje'),
-    'fecha_consulta' => date('Y-m-d H:i:s'),
-];
+        // 3. Armar los datos a guardar
+        if ($id_usuario) {
+            // Datos desde la sesión del cliente
+            $nombre = session('nombre') . ' ' . session('apellido');
+            $email = session('email');
+        } else {
+            // Datos desde el formulario del visitante
+            $nombre = $request->getPost('nombre');
+            $email  = $request->getPost('email');
+        }
 
-$consultaModel->save($data);
+        $data = [
+            'nombre'         => $nombre,
+            'email'          => $email,
+            'mensaje'        => $request->getPost('mensaje'),
+            'fecha_consulta' => date('Y-m-d H:i:s'),
+        ];
 
-// Registrar log de actividad
-    $nombre  = $data['nombre'];
-    $email   = $data['email'];
-    $mensaje = $data['mensaje'];
+        // Si es cliente logueado, guardar el id_usuario
+        if ($id_usuario) {
+            $data['id_usuario'] = $id_usuario;
+        }
 
-    $id_usuario  = session()->get('id_usuario') ?? null;
-    $tipo_origen = $id_usuario ? 'usuario' : 'visitante';
+        $consultaModel->save($data);
 
-    $detalle = "$nombre ($email) envió una consulta. Mensaje: " . substr(strip_tags($mensaje), 0, 100) . "...";
+        // Registrar log
+        $tipo_origen = $id_usuario ? 'usuario' : 'visitante';
+        $detalle = "$nombre ($email) envió una consulta. Mensaje: " . substr(strip_tags($data['mensaje']), 0, 100) . "...";
+        registrar_log($id_usuario, 'Consulta enviada', $detalle, $tipo_origen);
 
-    registrar_log($id_usuario, 'Consulta enviada', $detalle, $tipo_origen);
-
-    return redirect()->to(base_url('/contacto'))->with('mensaje', 'Su consulta ha sido enviada con éxito!');
-
-
+        return redirect()->to(base_url('/contacto'))->with('mensaje', 'Su consulta ha sido enviada con éxito!');
     }
 }
+
 
     
     public function consultas()
@@ -97,17 +123,21 @@ $consultaModel->save($data);
         } else {
             $consultas = $consultaModel->paginate(5);
         }
-    
-        $data = [
-            'consultas' => $consultas,
-            'paginador' => $consultaModel->pager, 
-            'fecha_desde' => $fecha_desde,
-            'fecha_hasta' => $fecha_hasta
-        ];
-    
-        $data['titulo'] = 'Consultas de Clientes ';
-    
-        echo view('contenido/Gestion_consulta/consultas', $data);
+                $consultaModel = new ConsultaModel();
+
+            // Obtener datos paginados con join
+            $consultas = $consultaModel->obtenerConsultasConUsuarioPaginadas(10);
+
+            $data = [
+                'consultas'     => $consultas,
+                'paginador'     => $consultaModel->pager,
+                'fecha_desde'   => $fecha_desde,
+                'fecha_hasta'   => $fecha_hasta,
+                'titulo'        => 'Consultas de Clientes',
+            ];
+
+            echo view('contenido/Gestion_consulta/consultas', $data);
+
     
     }
      public function ajaxLista()

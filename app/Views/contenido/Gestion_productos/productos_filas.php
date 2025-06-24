@@ -45,7 +45,7 @@
                                 data-bs-toggle="tooltip" 
                                 data-bs-title="Desactivar producto" 
                                 data-bs-placement="top">
-                                <i class="bi bi-person-dash"></i>
+                                <i class="fas fa-check-circle text-dark ms-1"></i>
                                 </a>
                             <?php else: ?>
                                 <a  href="<?= base_url('Baja-Producto/' . $producto['idProducto']); ?>"
@@ -53,7 +53,9 @@
                                 data-bs-toggle="tooltip" 
                                 data-bs-title="Activar Producto" 
                                 data-bs-placement="top">
-                                <i class="bi bi-person-check"></i>
+                                
+                                <i class="fas fa-check-circle text-dark ms-1"></i>
+
                                 </a>
                             <?php endif; ?>
                             </div>

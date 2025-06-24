@@ -4,9 +4,26 @@
     <?php if ($consulta['fecha_respuesta'] !== null) : ?>
         <?php $hayConsultas = true; ?>
         <tr>
-            <td><?= esc($consulta['id_consulta']) ?></td>
-            <td><?= esc($consulta['nombre']) ?></td>
-            <td><?= esc($consulta['email']) ?></td>
+        <td><?= esc($consulta['id_consulta']) ?></td>
+
+<td>
+  <?php if (!empty($consulta['id_usuario'])): ?>
+    <?= esc($consulta['nombre_usuario'] . ' ' . $consulta['apellido_usuario']) ?>
+    <span class="badge bg-success ms-1">Cliente</span>
+  <?php else: ?>
+    <?= esc($consulta['nombre']) ?>
+    <span class="badge bg-warning ms-1">Visitante</span>
+  <?php endif; ?>
+</td>
+
+<td>
+  <?php if (!empty($consulta['id_usuario'])): ?>
+    <?= esc($consulta['email_usuario']) ?>
+  <?php else: ?>
+    <?= esc($consulta['email']) ?>
+  <?php endif; ?>
+</td>
+
             <td><?= date('d/m/Y H:i', strtotime($consulta['fecha_consulta'])) ?></td>
              <td><?= $consulta['respuesta'] == null ? 'No'  : 'Si' ?>
             <td>

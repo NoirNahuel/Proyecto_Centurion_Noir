@@ -8,7 +8,11 @@
                             <td><?= $user['apellido'] ?></td>
                             <td><?= $user['email'] ?></td>
                             <td><?= $perfilMap[$user['id_perfil']] ?? 'Sin perfil' ?></td> <!-- Obtener descripción del perfil -->
-                            <td><?= $user['estado'] == 1 ? 'Activo' : 'Inactivo' ?></td>
+                            <td>
+                            <?= $user['estado'] == 1 
+                                ? '<span class="badge bg-success text-dark">Activo</span>' 
+                                : '<span class="badge bg-danger text-white">Inactivo</span>' ?>
+                        </td>
                             <td><?= $user['fecha_modificacion'] ?></td>
                            
 

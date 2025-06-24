@@ -36,6 +36,8 @@
       <div class="col-lg-6 col-md-10 mb-4">
         <?php $validation = \Config\Services::validation(); ?>
         <form action="<?= base_url('enviarconsultas') ?>" method="post" class="p-4 rounded shadow bg-dark text-white">
+          <?php if (!session()->has('id_usuario')): ?>
+         <!-- Campos visibles solo para visitantes -->
           <div class="mb-3">
             <label for="nombre" class="form-label">Nombre</label>
             <input class="form-control <?= $validation->getError('nombre') ? 'is-invalid' : '' ?>" name="nombre" type="text" id="nombre" value="<?= set_value('nombre') ?>">
@@ -55,7 +57,7 @@
               </div>
             <?php endif; ?>
           </div>
-
+           <?php endif; ?>
           <div class="mb-3">
             <label for="mensaje" class="form-label">Mensaje</label>
             <textarea class="form-control <?= $validation->getError('mensaje') ? 'is-invalid' : '' ?>" name="mensaje" id="mensaje" rows="4"><?= set_value('mensaje') ?></textarea>
