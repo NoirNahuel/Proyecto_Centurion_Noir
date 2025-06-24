@@ -42,9 +42,9 @@
 </a>
 <br>
 <br>
-<div class="card border-secondary shadow-lg">
+<div class="card border-secondary ">
     <div class="card-header bg-dark text-white text-center">
-        <h3 class="fw-bold mb-0">Detalle de la Factura</h3>
+        <h3 class="fw-bold mb-0">Detalle de mi compra</h3>
     </div>
     <div class="card-body">
         <!-- Información del Cliente -->
@@ -81,11 +81,19 @@
                     ?>
                         <tr>
                             <td>
-                                <div class="d-flex align-items-center">
-                                    <img class="rounded shadow-sm me-3" width="60px" src="<?= base_url('/assets/uploads/' . $producto['imagen']) ?>" alt="<?= esc($producto['nombre_producto']); ?>">
-                                    <span class="fw-semibold"><?= esc($producto['nombre_producto']); ?></span>
-                                </div>
-                            </td>
+  <div class="d-flex align-items-center">
+    <div style="width: 60px; height: 60px; display: flex; align-items: center; justify-content: center;" class="me-3 bg-white rounded shadow-sm">
+      <img 
+        src="<?= base_url('/assets/uploads/' . $producto['imagen']) ?>" 
+        alt="<?= esc($producto['nombre_producto']); ?>"
+        class="img-fluid"
+        style="max-width: 100%; max-height: 100%; object-fit: contain;"
+      >
+    </div>
+    <span class="fw-semibold"><?= esc($producto['nombre_producto']); ?></span>
+  </div>
+</td>
+
                             <td class="text-center"><?= esc($detalles[$index]['cantidad']); ?></td>
                             <td class="text-center">$<?= number_format($detalles[$index]['precio'], 2); ?></td>
                             <td class="text-center fw-bold text-success">$<?= number_format($subtotal, 2); ?></td>
@@ -103,7 +111,7 @@
 </div>
 </div>
 <div class="text-center mt-4 no-print">
-    <button class="btn btn-dark btn-lg px-4 py-2" onclick="window.print()">
+    <button class="btn btn-dark btn-sm px-4 py-2" onclick="window.print()">
         <i class="fa-solid fa-print me-2"></i> Imprimir
     </button>
 </div>

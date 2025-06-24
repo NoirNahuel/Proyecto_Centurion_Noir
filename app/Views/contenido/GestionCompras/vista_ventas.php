@@ -26,6 +26,7 @@
                         <td><?= $detalle['usuario_id'] ?></td>
                         <?php endif?>
                         <td><?= $detalle['fecha'] ?></td>
+                        <td><?= date('d/m/Y H:i', strtotime($detalle['fecha'])) ?></td>
                         <td>$<?= $detalle['total_venta'] ?></td>
                         <td>
                         <form action="<?= base_url('/facturas'.$detalle['id']) ?>" method="post" style="display: inline;">

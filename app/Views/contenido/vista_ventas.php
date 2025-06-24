@@ -1,12 +1,14 @@
+<?= $this->extend('layouts') ?>
+
+   
+<?= $this->section('contenido') ?>
 <style>
     select.transition {
     transition: all 0.3s ease-in-out;
     
 }
 </style>
-<section>
-    <div class="container">
-  
+
         <!-- Título principal -->
         <h1 class="text-center fw-bold mt-4">Listado de Ventas</h1>
         <p class="text-center text-muted">Consulta el historial completo de las ventas realizadas en la plataforma.</p>
@@ -19,11 +21,11 @@
                value="<?= esc($cliente ?? '') ?>" placeholder="Ingrese el nombre del comprador">
     </div>
     <div class="col-md-2 align-self-end">
-        <button type="submit" class="btn btn-primary w-100"><i class="fa-solid fa-search"></i> Buscar</button>
+        <button type="submit" class="btn btn-dark"><i class="fa-solid fa-search"></i></button>
     </div>
 </form>
 <br>
-<section class="container mt-4 text-center">
+<section class="container text-center">
     <?php if (!empty($_GET['cliente'])) : ?>
         <a href="<?= site_url('/ventas') ?>"  class="custom-btn btn btn-sm btn-dark rounded-pill px-4 shadow-sm ms-lg-3 mt-2 mt-lg-0"><i class="bi bi-reply"></i>volver a ventas</a>
     <?php endif; ?>
@@ -57,93 +59,89 @@
         <p class="alert alert-warning text-center">No se encontraron registros en ese periodo de tiempo.</p>
     <?php endif; ?>
 <?php endif; ?>
-        <!-- Tabla -->
-<div class="container mt-5">
-    <div class="table-responsive">
-        <table class="table table-striped table-hover align-middle producto-table">
-            <thead class="table-dark text-center">
-                <tr>
-                    <th>Venta ID</th>
-                    <?php if (session()->get('id_perfil') == 2): ?>
-                        <th>Usuario ID</th>
-                    <?php endif; ?>
-                    <th>Cliente</th>
-                    <th>Fecha</th>
-                    <th>Total</th>
-                    <th>Ver Detalles</th>
-                    <th>Estado</th>
-                </tr>
-            </thead>
-            <tbody>
-                <?php foreach ($ventaDetalle as $detalle): ?>
-                    <tr class="text-center">
-                        <td><?= esc($detalle['id']) ?></td>
-                        <?php if (session()->get('id_perfil') == 2): ?>
-                            <td><?= esc($detalle['usuario_id']) ?></td>
-                        <?php endif; ?>
-                        <td><?= esc($detalle['nombre_comprador']) ?></td>
-                        <td><?= date('d/m/Y ', strtotime($detalle['fecha'])) ?></td>
-                        <td class="fw-bold text-success">$<?= number_format($detalle['total_venta'], 2) ?></td>
-                        <td>
-                            <form action="<?= base_url('facturas/' . $detalle['id']) ?>" method="post" style="display: inline;">
-                                <button type="submit" class="btn btn-sm btn-outline-dark">
-                                    <i class="fa-solid fa-file-invoice"></i> Factura
-                                </button>
-                            </form>
-                        </td>
-                        <td>
-    <?php 
-        $estado = esc($detalle['estado']);
-        $ventaId = esc($detalle['id']);
+      <div class="table-responsive" >
+  <table class="table table-sm table-hover align-middle text-center">
 
-        // Badge actual
-            $badge = match ($estado) {
-            'pendiente'   => array('label' => ' Pendiente',   'class' => 'bg-danger'),
-            'preparando'  => array('label' => ' Preparando', 'class' => 'bg-warning text-dark'),
-            'despachado'  => array('label' => ' Despachado',  'class' => 'bg-info text-dark'),
-            'entregado'   => array('label' => ' Entregado',   'class' => 'bg-success'),
-            default       => array('label' => '❓ Desconocido',  'class' => 'bg-secondary')
-        };
+    <thead class="table-dark">
+      <tr>
+        <th class="text-nowrap">Venta ID</th>
+        <?php if (session()->get('id_perfil') == 2): ?>
+          <th class="text-nowrap">Usuario ID</th>
+        <?php endif; ?>
+        <th>Cliente</th>
+        <th class="text-nowrap">Fecha</th>
+        <th class="text-nowrap">Total</th>
+        <th class="text-nowrap">Detalles</th>
+        <th class="text-nowrap">Estado</th>
+      </tr>
+    </thead>
+    <tbody>
+      <?php foreach ($ventaDetalle as $detalle): ?>
+        <tr>
+          <td class="text-nowrap"><?= esc($detalle['id']) ?></td>
 
-    ?>
+          <?php if (session()->get('id_perfil') == 2): ?>
+            <td class="text-nowrap"><?= esc($detalle['usuario_id']) ?></td>
+          <?php endif; ?>
 
-    <div class="dropdown">
-        <button class="btn btn-sm dropdown-toggle <?= $badge['class'] ?>" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-            <?= $badge['label'] ?>
-        </button>
-        <ul class="dropdown-menu shadow border-0">
+          <td class="text-nowrap"><?= esc($detalle['nombre_comprador']) ?></td>
+          <td class="text-nowrap"><?= date('d/m/Y H:i', strtotime($detalle['fecha'])) ?></td>
+          <td class="fw-bold text-success text-nowrap">$<?= number_format($detalle['total_venta'], 2) ?></td>
+          <td class="text-nowrap">
+            <form action="<?= base_url('facturas/' . $detalle['id']) ?>" method="post" style="display: inline;">
+              <button type="submit" class="btn btn-sm btn-outline-dark">
+                <i class="fa-solid fa-file-invoice"></i> Factura
+              </button>
+            </form>
+          </td>
+          <td class="text-nowrap">
             <?php 
-                $estadosDisponibles = [
+              $estado = esc($detalle['estado']);
+              $ventaId = esc($detalle['id']);
+              $badge = match ($estado) {
+                'pendiente'   => ['label' => ' Pendiente',   'class' => 'bg-danger'],
+                'preparando'  => ['label' => ' Preparando', 'class' => 'bg-warning text-dark'],
+                'despachado'  => ['label' => ' Despachado',  'class' => 'bg-info text-dark'],
+                'entregado'   => ['label' => ' Entregado',   'class' => 'bg-success'],
+                default       => ['label' => '❓ Desconocido', 'class' => 'bg-secondary']
+              };
+            ?>
+
+            <div class="dropdown">
+              <button class="btn btn-sm dropdown-toggle <?= $badge['class'] ?>" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <?= $badge['label'] ?>
+              </button>
+              <ul class="dropdown-menu shadow border-0">
+                <?php 
+                  $estadosDisponibles = [
                     'pendiente'   => ' Pendiente',
                     'preparando'  => ' Preparando',
                     'despachado'  => ' Despachado',
                     'entregado'   => ' Entregado'
-                ];
-                foreach ($estadosDisponibles as $valor => $texto):
-                    if ($valor === $estado) continue; // No mostrar el actual
-            ?>
-                <li>
+                  ];
+                  foreach ($estadosDisponibles as $valor => $texto):
+                    if ($valor === $estado) continue;
+                ?>
+                  <li>
                     <form action="<?= base_url('ventas/actualizarEstado') ?>" method="post" class="px-3 py-1">
-                        <input type="hidden" name="venta_id" value="<?= $ventaId ?>">
-                        <input type="hidden" name="estado" value="<?= $valor ?>">
-                        <button type="submit" class="dropdown-item text-dark">
-                            <?= $texto ?>
-                        </button>
+                      <input type="hidden" name="venta_id" value="<?= $ventaId ?>">
+                      <input type="hidden" name="estado" value="<?= $valor ?>">
+                      <button type="submit" class="dropdown-item text-dark">
+                        <?= $texto ?>
+                      </button>
                     </form>
-                </li>
-            <?php endforeach; ?>
-        </ul>
-    </div>
-</td>
-
-
-
-                    </tr>
+                  </li>
                 <?php endforeach; ?>
-            </tbody>
-        </table>
-    </div>
+              </ul>
+            </div>
+          </td>
+        </tr>
+      <?php endforeach; ?>
+    </tbody>
+  </table>
 </div>
+
+
 
                   <!-- Paginador -->
         <?php if (isset($paginador)) : ?>
@@ -151,7 +149,6 @@
                 <?= $paginador->simpleLinks('default', 'bootstrap') ?>
             </div>
         <?php endif; ?>
-            </div>
-        </div>
-    </div>
-</section>
+      
+
+<?= $this->endSection() ?>

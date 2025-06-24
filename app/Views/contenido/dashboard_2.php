@@ -210,54 +210,70 @@
         </div>
     </div>
 </section>
-<section class="container my-5">
-  <h3 class="text-center fw-bold text-secondary mb-4">Resumen de Actividad</h3>
-  <div class="row g-4">
+<section class="container-fluid py-5" style="background-color: #f8f9fa;">
+  <h3 class="text-center fw-bold text-secondary mb-5">Resumen de Actividad</h3>
 
-    <!-- Card: Total Gastado -->
-    <aside class="col-12 col-md-4 col-xl-3">
-      <div class="card-custom shadow-sm">
-        <h4 class="card-title">Total Gastado</h4>
-        <h6 class="card-value text-dark">$<?= number_format($total_gastado, 2); ?></h6>
-      </div>
-    </aside>
+  <div class="container">
+    <div class="row g-4">
 
-    <!-- Card: Mis Compras -->
-    <aside class="col-12 col-md-4 col-xl-3">
-      <div class="card-custom shadow-sm">
-        <h6 class="card-title">Mis Compras</h6>
-        <div class="table-responsive small">
-          <table class="table table-sm table-borderless table-hover mb-0">
-            <thead>
-              <tr><th>Producto</th></tr>
-            </thead>
-            <tbody>
-              <?php foreach ($productos_comprados as $producto): ?>
-                <tr><td><?= $producto['nombre_producto']; ?></td></tr>
-              <?php endforeach; ?>
-            </tbody>
-          </table>
+      <!-- Card: Total Gastado -->
+      <aside class="col-12 col-md-6 col-xl-4">
+        <div class="card h-100 border-0 shadow-sm bg-light border-start border-success">
+          <div class="card-body d-flex flex-column justify-content-between">
+            <div>
+              <h6 class="fw-semibold text-muted mb-2">💰 Total Gastado</h6>
+              <h4 class="text-dark fw-bold">$<?= number_format($total_gastado, 2); ?></h4>
+            </div>
+          </div>
         </div>
-      </div>
-    </aside>
+      </aside>
 
-    <!-- Card: Últimas Compras -->
-    <aside class="col-12 col-md-4 col-xl-3">
-      <div class="card-custom shadow-sm">
-        <h6 class="card-title">Últimas Compras</h6>
-        <?php if (!empty($ultimas_compras)): ?>
-          <?php foreach(array_slice($ultimas_compras, 0, 3) as $producto): ?>
-            <p class="text-muted mb-1">🛍️ <?= esc($producto['nombre_producto']) ?></p>
-          <?php endforeach; ?>
-        <?php else: ?>
-          <p class="text-muted">No hay compras recientes.</p>
-        <?php endif; ?>
-      </div>
-    </aside>
+      <!-- Card: Mis Compras -->
+      <aside class="col-12 col-md-6 col-xl-4">
+        <div class="card h-100 border-0 shadow-sm bg-white border-start border-primary">
+          <div class="card-body d-flex flex-column">
+            <h6 class="fw-semibold text-muted mb-2">🛒 Mis Compras</h6>
+            <div class="table-responsive small" style="max-height: 200px; overflow-y: auto;">
+              <table class="table table-sm table-borderless table-hover mb-0">
+                <thead>
+                  <tr><th>Producto</th></tr>
+                </thead>
+                <tbody>
+                  <?php foreach ($productos_comprados as $producto): ?>
+                    <tr><td><?= esc($producto['nombre_producto']); ?></td></tr>
+                  <?php endforeach; ?>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </aside>
 
+      <!-- Card: Últimas Compras -->
+      <aside class="col-12 col-md-6 col-xl-4">
+        <div class="card h-100 border-0 shadow-sm bg-light border-start border-info">
+          <div class="card-body d-flex flex-column justify-content-between">
+            <div>
+              <h6 class="fw-semibold text-muted mb-2">📦 Últimas Compras</h6>
+              <?php if (!empty($ultimas_compras)): ?>
+                <?php foreach(array_slice($ultimas_compras, 0, 3) as $producto): ?>
+                  <p class="text-muted mb-1">🛍️ <?= esc($producto['nombre_producto']) ?></p>
+                <?php endforeach; ?>
+              <?php else: ?>
+                <p class="text-muted">No hay compras recientes.</p>
+              <?php endif; ?>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+    </div>
   </div>
 </section>
 
+
+            
+        </div>
 
 <?php if (session('errors')): ?>
 <script>

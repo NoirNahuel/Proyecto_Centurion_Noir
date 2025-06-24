@@ -17,6 +17,7 @@
 <div >
 <div>
 <?php if(session("msg")):?>
+    <br>
    <div class="container alert alert-success text-center" style="width: 30%;">
       <?php echo session("msg"); ?>
       <i class="bi bi-check-lg text-success"></i>

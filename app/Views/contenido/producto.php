@@ -150,7 +150,7 @@
             </ul>
             <?php if (!empty($search)) : ?>
                 <a href="<?= site_url('/productos') ?>" class="btn btn-sm btn-success rounded-pill px-4 shadow-sm ms-lg-3 mt-2 mt-lg-0">
-                    <i class="bi bi-arrow-left-circle me-2"></i> Volver al catálogo
+                    <i class="bi bi-arrow-left-circle me-2"></i> Todos los Productos
                 </a>
             <?php endif; ?>
         </div>
@@ -165,7 +165,7 @@
             let botones = document.querySelectorAll(".categoria-btn");
             botones.forEach(btn => {
                 if (btn.dataset.id === categoriaActiva) {//guarda id
-                    btn.classList.add("text-primary", "fw-bold");
+                    btn.classList.add("text-dark", "fw-bold");
                 }
             });
         }
@@ -188,7 +188,7 @@
             <i class="bi bi-list-check"></i> Catálogo de Productos
         </h1>
 
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 g-4">
             <?php foreach ($producto as $producto) : ?>
                 <div class="col">
                     <div class="card h-100 shadow-sm tech-card small-card">

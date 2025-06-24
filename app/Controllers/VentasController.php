@@ -98,11 +98,11 @@ class VentasController extends BaseController
              'fecha_hasta' => $fecha_hasta
          ];
      
-         $dato['titulo'] = 'Ventas';
-         echo view('plantillas/head', $dato);
-         echo view('plantillas/nav');
+         $data['titulo'] = 'Ventas';
+    
+       
          echo view('contenido/vista_ventas', $data);
-         echo view('plantillas/footer');
+    
      }
     public function buscarVentas()
 {
@@ -163,7 +163,7 @@ public function comprar_carrito()
     $idcabecera = $ventaCabecera->insert([
         "total_venta" => $montoTotal,
         "usuario_id" => $id_session,
-        "fecha" => $fechaActual // Agregar la fecha actual al array de datos
+        "fecha" => date('Y-m-d H:i:s'), // Agregar la fecha actual al array de datos
     ]);
     $ventaDetalle = new VentasModel();
     $productModel = new productosModel();

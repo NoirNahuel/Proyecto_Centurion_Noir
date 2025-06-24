@@ -85,15 +85,15 @@
 
         <div class="d-flex justify-content-between fw-bold mt-3 px-1">
             <span class="text-dark">Total:</span>
-            <span class="text-primary">$<?= number_format($gran_total, 2) ?></span>
+            <span class="text-dark">$<?= number_format($gran_total, 2) ?></span>
         </div>
 
         <div class="d-flex justify-content-end gap-2 mt-3">
-            <button class="btn btn-sm btn-outline-danger px-3" onclick="window.location = '<?= base_url('borrar') ?>'">
-                🗑 Vaciar
+            <button class="btn btn-sm btn-danger px-3" onclick="window.location = '<?= base_url('borrar') ?>'">
+                 Vaciar
             </button>
-            <button class="btn btn-sm btn-primary px-3" onclick="window.location = '<?= base_url('carrito') ?>'">
-                🛍 Ir al Carrito
+            <button class="btn btn-sm btn-success px-3" onclick="window.location = '<?= base_url('carrito') ?>'">
+                 Ir al Carrito
             </button>
         </div>
     <?php endif; ?>
