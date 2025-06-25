@@ -165,14 +165,18 @@ public function resumen_compras()
     $datosPersona = $personaModel->where('id_usuario', $id_usuario)->first();
       $carrito = $cart->contents(); // Obtener contenido del carrito
     // Pasar los datos a la vista
- 
+     $cart =\Config\Services::cart();
+         $cartTotal=['cartTotal'=>count($cart->contents())] ; // Obtiene el total de productos para nav
+         $datosCart = [
+            'cartTotal' => count($cart->contents()),
+        ];
     $datos = [
         'usuario' => $usuario,
         'datosPersona' => $datosPersona, // También pasamos los datos adicionales de la persona
         'carrito' => $carrito 
     ];
     $data['titulo'] = 'Confirmar Compra ';
-    return view('plantillas/head', $data).view('plantillas/nav').view('contenido/GestionCompras/resumen_compra',$datos).view('plantillas/footer');
+    return view('plantillas/head', $data).view('plantillas/nav',$datosCart).view('contenido/GestionCompras/resumen_compra',$datos).view('plantillas/footer');
 }
 
 

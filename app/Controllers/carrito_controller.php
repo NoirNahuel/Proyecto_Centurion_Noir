@@ -21,7 +21,7 @@ class carrito_controller extends BaseController{
             'cartTotal' => count($cart->contents()),
         ];
         $cart->contents();
-        $data['titulo'] = 'Carrito MateCamp';
+        $data['titulo'] = 'Carrito GuitarNCent';
         return view('plantillas/head', $data).view('plantillas/nav',$datos).view('contenido/Carrito/carrito').view('plantillas/footer');
     }
     public function cart_drop(){

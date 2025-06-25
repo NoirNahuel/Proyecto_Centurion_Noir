@@ -5,7 +5,8 @@
  </footer>
  <?php endif; ?>
  <!-- Footer para Usuario perfil 2-Cliente -->
-     <?php if (session()->get('id_perfil') == 2): ?> 
+   
+       <?php if (!(session()->get('id_perfil') == 1 )): ?>
 <!-- Footer -->
 <footer class="fs-6 text-white bg-body-tertiary text-center degradado">
   <!-- Footer content -->

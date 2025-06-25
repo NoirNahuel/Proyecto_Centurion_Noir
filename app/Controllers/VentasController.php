@@ -186,7 +186,7 @@ public function comprar_carrito()
     }
     $cart->destroy();
     session()->setFlashdata('msg', '¡La compra se ha realizado Exitosamente!');
-    return redirect()->to(base_url('/carrito'));
+    return redirect()->to(base_url('/listar-compras'));
 }
 
 

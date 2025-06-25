@@ -1,7 +1,15 @@
 
 <div class="container mt-5">
     <h1 class="text-center fw-bold">Mis compras</h1>
-
+    <div>
+        <?php if(session("msg")):?>
+            <br>
+        <div class="container alert alert-success text-center" style="width: 30%;">
+            <?php echo session("msg"); ?>
+            <i class="bi bi-check-lg text-success"></i>
+            </div>
+            <?php endif?>
+      </div>
     <!-- Formulario para el filtro -->
     <form method="GET" action="<?= base_url('listar-compras'); ?>" class="d-flex mb-3">
     <label class="me-2 fw-bold">Fecha desde:</label>
