@@ -105,41 +105,28 @@ class consulta_controller extends BaseController{
 
     
     public function consultas()
-    {
-        helper(['form']);
-        $consultaModel = new ConsultaModel();
-        
-        // Capturar fechas desde el formulario (GET)
-        $fecha_desde = $this->request->getGet('fecha_desde');
-        $fecha_hasta = $this->request->getGet('fecha_hasta');
-    
-        // Verificar si hay filtros de fecha
-        if (!empty($fecha_desde) && !empty($fecha_hasta)) {
-            $consultas = $consultaModel->where('fecha_consulta >=', $fecha_desde)
-                                       ->where('fecha_consulta <=', $fecha_hasta)
-                                       ->paginate(5);
-        } elseif (!empty($fecha_desde)) {
-            $consultas = $consultaModel->where('fecha_consulta >=', $fecha_desde)->paginate(5);
-        } else {
-            $consultas = $consultaModel->paginate(5);
-        }
-                $consultaModel = new ConsultaModel();
+{
+    helper(['form']);
+    $consultaModel = new ConsultaModel();
 
-            // Obtener datos paginados con join
-            $consultas = $consultaModel->obtenerConsultasConUsuarioPaginadas(10);
+    // Capturar fechas desde el formulario (GET)
+    $fecha_desde = $this->request->getGet('fecha_desde');
+    $fecha_hasta = $this->request->getGet('fecha_hasta');
 
-            $data = [
-                'consultas'     => $consultas,
-                'paginador'     => $consultaModel->pager,
-                'fecha_desde'   => $fecha_desde,
-                'fecha_hasta'   => $fecha_hasta,
-                'titulo'        => 'Consultas de Clientes',
-            ];
+    // Usar la función actualizada con filtro por fechas
+    $consultas = $consultaModel->obtenerConsultasConUsuarioPaginadas(10, $fecha_desde, $fecha_hasta);
 
-            echo view('contenido/Gestion_consulta/consultas', $data);
+    $data = [
+        'consultas'     => $consultas,
+        'paginador'     => $consultaModel->pager,
+        'fecha_desde'   => $fecha_desde,
+        'fecha_hasta'   => $fecha_hasta,
+        'titulo'        => 'Consultas de Clientes',
+    ];
 
-    
-    }
+    echo view('contenido/Gestion_consulta/consultas', $data);
+}
+
      public function ajaxLista()
     {
         helper(['form']);
@@ -212,19 +199,39 @@ class consulta_controller extends BaseController{
     
 public function buscar()
 {
-    $consultaModel = new ConsultaModel();
+     $consultaModel = new ConsultaModel();
     $search = $this->request->getPost('search');
 
+    // Crear el builder y hacer join con usuarios
+    $builder = $consultaModel->select('consultas.*, usuarios.nombre AS nombre_usuario, usuarios.apellido AS apellido_usuario, usuarios.email AS email_usuario')
+        ->join('usuarios', 'usuarios.id_usuario = consultas.id_usuario', 'left')
+        ->orderBy('consultas.id_consulta', 'DESC');
+
     if ($search) {
-        $resultados = $consultaModel
-            ->orLike('id_consulta', $search)
-            ->orLike('nombre', $search)
-            ->orLike('email', $search)
-            ->orLike('fecha_consulta', $search)
-             ->paginate(5);
-    } else {
-        $resultados = $consultaModel->paginate(5);
+        $builder->groupStart()
+            // Campos de la tabla consultas (consultas hechas por invitados o registrados)
+            ->orLike('consultas.id_consulta', $search)
+            ->orLike('consultas.nombre', $search)
+            ->orLike('consultas.email', $search)
+            ->orLike('consultas.mensaje', $search)
+            ->orLike('consultas.fecha_consulta', $search)
+
+            // Campos de usuarios registrados (si la consulta está vinculada a un usuario)
+            ->orLike('usuarios.nombre', $search)
+            ->orLike('usuarios.apellido', $search)
+            ->orLike('usuarios.email', $search)
+        ->groupEnd();
     }
+
+    $resultados = $builder->paginate(5);
+    $pager = $consultaModel->pager;
+
+    $data = [
+        'consultas' => $resultados,
+        'paginador' => $pager,
+        'search'    => $search,
+        'titulo'    => 'Consultas (Búsqueda)'
+    ];
 
     // Si es una petición AJAX, devolvés solo las filas
     if ($this->request->isAJAX()) {

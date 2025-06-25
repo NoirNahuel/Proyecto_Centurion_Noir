@@ -7,7 +7,7 @@
 <h1 class="text-center mt-3">Tabla de Productos Eliminados</h1>
 
 <section class="container mt-4 text-center">
-<form action="<?= base_url('/buscar_producto') ?>" method="post" class="d-flex">
+<form action="<?= base_url('/buscar_eliminado') ?>" method="post" class="d-flex">
         <input class="form-control me-2" type="text" name="search" 
         placeholder="🔍 Buscar producto..." 
                value="<?= esc($search ?? '') ?>" 
@@ -16,12 +16,12 @@
              Buscar
         </button>
     </form>
-
+<br>
 <?php if (!empty($search)) : ?>
 
-  
-    <a href="<?= site_url('/productos_eliminados') ?>"  class="btn  btn-sm custom-btn">Ver todos los eliminados</a>
+    <a href="<?= site_url('/productos_eliminados') ?>"  class="custom-btn btn btn-sm btn-dark rounded-pill px-4 shadow-sm ms-lg-3 mt-2 mt-lg-0">Ver todos los eliminados</a>
 <?php endif; ?>
+
 <a href="<?= site_url('/productosadmin') ?>"  class="custom-btn btn btn-sm btn-dark rounded-pill px-4 shadow-sm ms-lg-3 mt-2 mt-lg-0"><i class="bi bi-reply"></i>volver a productos</a>
 </section>
 

@@ -14,12 +14,8 @@ class VentasController extends BaseController
         $session=session();
          $cart = \Config\Services::cart();
          $cart->contents();
-
-
      }
-
-
-     public function factura($venta_id)
+  public function factura($venta_id)
      {
          $detalleModel = new VentasModel();
          $ventaCabeceraModel = new VentasHeadModel();
@@ -74,13 +70,14 @@ class VentasController extends BaseController
          // Construir la consulta con filtros de fecha si es necesario
          $query = $ventaCabeceraModel->orderBy('id', 'DESC');
      
-         if (!empty($fecha_desde) && !empty($fecha_hasta)) {
-             $query->where('fecha >=', $fecha_desde)
-                   ->where('fecha <=', $fecha_hasta);
-         } elseif (!empty($fecha_desde)) {
-             $query->where('fecha >=', $fecha_desde);
-         }
-     
+        if (!empty($fecha_desde) && !empty($fecha_hasta)) {
+            $fecha_hasta_completa = $fecha_hasta . ' 23:59:59';
+            $query->where('fecha >=', $fecha_desde)
+                ->where('fecha <=', $fecha_hasta_completa);
+                } elseif (!empty($fecha_desde)) {
+                    $query->where('fecha >=', $fecha_desde);
+                }
+
          // Obtener los resultados paginados
          $ventaDetalle = $query->paginate(5);
          $paginador = $ventaCabeceraModel->pager;
@@ -237,55 +234,7 @@ public function guardar_venta()
    return redirect()->back()->withInput('msg','Compra realizada');
  }
 } 
-public function registrar_venta()
-{
-     $session = session();
-       
-     require(APPPATH . 'Controllers/carrito_controller.php');
-    //hago esto porque tengo que traer el contenido del carrito desde el controlador.
-      $cart = new carrito_controller();
-      $carrito_contents = $cart->add(); //función dentro de carrito_controller 
-   
-      $ventas = new VentasHeadModel();
-      $detalleventas = new VentasModel();
-      $producto = new productosModel();
-      
-   //recorro el carrito de compras para calcular el total
-    $total = 0;
-    foreach ($carrito_contents as $row) {
-        $total += $row['subtotal'];
-    }
-    // guardo la venta en un array
-    $nueva_venta = [
-       'usuario_id' => $session->get('usuario_id'),
-       'total_venta' => $total
-    ];
-    $venta_id = $ventas->insert($nueva_venta); //inserta en la tabla (ventas_cabecera)
-   
-    foreach ($carrito_contents as $row) {
-        $detalle = array(
-            'venta_id' => $venta_id,
-            'producto_id' => $row['id'],
-            'cantidad' => $row['qty'],
-            'precio' => $row['subtotal']
-        );
-         //pasamos el id del producto al modelo método getProducto() para que me recupere ese registro con ese id
-        $producto_actual = $producto->getProducto($row['id']);
-    
-      if($producto_actual['stock'] >= $row['qty']){
-           $detalleventas->insert($detalle);//guarda el detalle en tabla ventas_detalle
-             //actualiza el stock
-          $producto->updateStock($row['id'], $producto_actual['stock'] - $row['qty']);
-       }else{
-            $session->setFlashdata('mensaje', 'No hay stock disponible para el producto "'.$row['name'].'"');
-             return redirect()->to(base_url('muestro'));
-        }
-      }
-    $cart->borrar_carrito();
-    $session =session();
-    $session->setFlashdata('mensaje', "Venta registrada Exitosamente");
-    return redirect()->to(base_url('vista_compras/'. $venta_id));
-}
+
 public function actualizarEstado()
 {
     $ventaId = $this->request->getPost('venta_id');

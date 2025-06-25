@@ -77,11 +77,12 @@ $routes->match(['get', 'post'], '/buscar_consulta', 'consulta_controller::buscar
 $routes->post('marcar', 'consulta_controller::marcarComoLeida');
 $routes->get('/consultas/ajaxLista', 'consulta_controller::ajaxLista');//revisar ruta 
 
-//Gestion Producto
+//Gestion Producto 
 $routes->get('/alta_productos', 'producto_controller::new');
 $routes->match(['get', 'post'], '/validar_producto', 'producto_controller::store');
 $routes->get('/productosadmin', 'producto_controller::index');
 $routes->match(['get', 'post'], '/buscar_producto', 'producto_controller::buscar');
+$routes->match(['get', 'post'], '/buscar_eliminado', 'producto_controller::buscars');
 $routes->match(['get', 'post'], '/buscarDesdeHasta', 'producto_controller::buscarDesdeHasta');
 $routes->get('/Baja-Producto/(:num)', 'producto_controller::delete/$1');
 $routes->get('/productos_eliminados', 'producto_controller::baja');
@@ -104,7 +105,7 @@ $routes->group('', ['filter' => 'AuthFilter'], function ($routes) {
 //Modificat usuario
 $routes->match(['get', 'post'],'userCliente/editar_user/(:num)', 'login_controller::editar_user/$1');  
 $routes->match(['get', 'post'],'userCliente/editar/(:num)', 'login_controller::editarUser_cliente/$1');
-//Gestion Carrito
+//Gestion Carrito 
 $routes->get('/carrito', 'carrito_controller::carrito_view');
 $routes->get('/cart_drop', 'carrito_controller::cart_drop');
 $routes->add('/carrito_actualiza','carrito_controller::actualiza_carrito');

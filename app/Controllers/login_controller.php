@@ -108,41 +108,38 @@ public function buscar()
 {
     $usersModel = new UsersModel();
     $search = $this->request->getPost('search');
-     $perfiles = $usersModel->perfilUsuario();
-    
-        // Crear un mapa de perfiles para acceder fácilmente por id_perfil
-        $perfilMap = [];
-        foreach ($perfiles as $perfil) {
-            $perfilMap[$perfil['id_perfil']] = $perfil['descripcion'];
-        }
-       
-    if ($search) {
-        $resultados = $usersModel
+
+    // Obtener perfiles de usuario
+    $perfiles = $usersModel->perfilUsuario();
+    $perfilMap = [];
+
+    foreach ($perfiles as $perfil) {
+        $perfilMap[$perfil['id_perfil']] = $perfil['descripcion'];
+    }
+
+    // Builder para mejor control de la query
+    $builder = $usersModel->select('*')->orderBy('id_usuario', 'DESC');
+
+    // Si hay búsqueda, agrupar condiciones
+    if (!empty($search)) {
+        $builder->groupStart()
             ->orLike('id_usuario', $search)
             ->orLike('nombre', $search)
             ->orLike('apellido', $search)
             ->orLike('email', $search)
             ->orLike('estado', $search)
-             ->orLike('fecha_modificacion', $search)
-            ->paginate(5);
-    } else {
-        $resultados = $usersModel->paginate(5);
+            ->orLike('fecha_modificacion', $search)
+        ->groupEnd();
     }
 
-    // Si es una petición AJAX, devolvés solo las filas
-    if ($this->request->isAJAX()) {
-    return view('contenido/Gestion_usuarios/usuarios_filas', [
-    'users' => $resultados,
-    'perfilMap' => $perfilMap
-]);
-    }
+    $resultados = $builder->paginate(5);
+    $paginador = $usersModel->pager;
 
     // Si no es AJAX, cargás la vista completa
     $data = [
     'users' => $resultados,
     'search' => $search,
-    'paginador' => $usersModel->pager,
-    'titulo' => 'Usuarios de GuitarN Cent',
+  
     'perfilMap' => $perfilMap
 ];
  return view('contenido/Gestion_usuarios/usuarios_filas', $data);
@@ -202,7 +199,6 @@ public function index()
         echo view('plantillas/nav');
         echo view('contenido/login', ['mensaje' => $mensaje]);
         echo view('plantillas/footer');
-	
 	}
     
     public function loginAuth()

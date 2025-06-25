@@ -77,7 +77,7 @@
       </li>
      
       <li class="nav-item mb-3">
-        <a href="Gestion_Producto" class="nav-link" data-bs-toggle="tooltip" data-bs-custom-class="custom-tooltip"
+        <a href="<?php echo base_url('/Gestion_Producto') ?>" class="nav-link" data-bs-toggle="tooltip" data-bs-custom-class="custom-tooltip"
         data-bs-title="Productos"  data-bs-placement="right">
         <i class="bi bi-box-seam fs-5"></i>
         <span class="sidebar-text ms-2" >Productos</span>
@@ -85,14 +85,14 @@
 
       </li>
       <li class="nav-item mb-3">
-         <a href="usuarios" class="nav-link" data-bs-toggle="tooltip" data-bs-custom-class="custom-tooltip"
+         <a href="<?php echo base_url('/usuarios') ?>" class="nav-link" data-bs-toggle="tooltip" data-bs-custom-class="custom-tooltip"
         data-bs-title="Usuarios"  data-bs-placement="right" >
           <i class="bi bi-people-fill fs-5"></i>
           <span class="sidebar-text ms-2">Usuarios</span>
         </a>
       </li>
        <li class="nav-item mb-3">
-          <a href="consultas" class="nav-link" data-bs-toggle="tooltip" data-bs-custom-class="custom-tooltip"
+          <a href="<?php echo base_url('/consultas') ?>" class="nav-link" data-bs-toggle="tooltip" data-bs-custom-class="custom-tooltip"
         data-bs-title="Consultas"  data-bs-placement="right" >
             <i class="bi bi-question-circle-fill fs-5"></i>
             

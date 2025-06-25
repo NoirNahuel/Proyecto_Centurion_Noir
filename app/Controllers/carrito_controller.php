@@ -67,14 +67,14 @@ class carrito_controller extends BaseController{
          }
          
          $cart->insert([
-        'id'    => $productId,
-        'qty'   => 1,
-        'name'  => $request->getPost('nombre_producto'),
-        'price' => $request->getPost('precio'),
-        'options' => [
+            'id'    => $productId,
+            'qty'   => 1,
+            'name'  => $request->getPost('nombre_producto'),
+            'price' => $request->getPost('precio'),
+            'options' => [
             'stock'     => $request->getPost('stock'),
             'stock_min' => $request->getPost('stock_min'),
-            'imagen'    => $request->getPost('imagen'), // 🔥 esta es la línea clave
+            'imagen'    => $request->getPost('imagen'), //  esta es la línea clave
         ]
     ]);
          // Actualizar el total de productos en la sesión
@@ -85,27 +85,7 @@ class carrito_controller extends BaseController{
           return redirect()->back()->with('mensaje', 'Producto agregado al carrito');
          
         }
-
- 
-     public function agregar_carrito(){
-        $cart = \Config\Services::cart();
-        $request = \Config\Services::request();
-       
-        
-        // Verificar si el producto ya está en el carrito
-        $data=array(
-            'id' => $request->getPost('idProducto'),
-            'name' => $request->getPost('nombre_producto'),
-            'price' => $request->getPost('precio'),
-            'stock' => $request->getPost('stock'),
-            'stock_min' => $request->getPost('stock_min'),
-            'qty' => 1
-        );
-       $cart->insert($data);
-    
-        return redirect()->back()->withInput();
-    }
-     
+  
  public function actualiza_carrito(){
      $cart = \Config\Services::cart();
      $request = \Config\Services::request();
@@ -141,28 +121,6 @@ class carrito_controller extends BaseController{
      $cart->destroy();
      return redirect()->back()->withInput();
  
- }
- 
- 
- public function muestra(){
-     helper(['form','url','cart']);
-  
-     $cart =\Config\Services::cart();
-     $cart->contents();
-     $session = session();
-     $id=$session->get('usuario_id');
-     $perfil=$session->get('id_perfil');
-     
-         $detalle_ventas = new VentasHeadModel();
-         $dates['ventaDetalle'] = $detalle_ventas->orderBy('id', 'DESC')->findAll();
- 
-     $dato['titulo']='Carrito';
-
-     echo view('plantillas/head',$dato);
-     echo view('plantillas/nav');
-     echo view('contenido/Carrito/carrito', $dates);
-     echo view('plantillas/footer');
-     
  }
  
  public function comprar_carrito(){
@@ -231,38 +189,6 @@ class carrito_controller extends BaseController{
      
          return redirect()->to(base_url('carrito')); // Redirige de nuevo al carrito
      }
-     
-     public function agregarCarrito(){
-        $cart = \Config\Services::cart();
-        $productos= $cart->contents();
-        $request=\Config\Services::request();
-
-        $montoTotal= 0;
-
-        foreach($productos as $producto){
-            $montoTotal+= $producto['price'] * $producto['qty'];
-        }
-
-        $ventaCabecera= new VentasHeadModel();
-        $idCabecera= $ventaCabecera->insert([
-            "total_venta"=> $montoTotal,
-            "usuario_id"=> session()->id
-           
-        ]);
-        $ventaDetalle= new VentasModel();
-        $productoModel= new productosModel();
-
-        foreach($producotos as $producto){
-
-            $ventaDetalle->insert([
-                "venta_id" => $ventaCabecera,
-                "producto_id" => $producto["id"],
-                "stock"=> $producto["qty"],
-                "precio"=> $producto['price']
-            ]);
-            $productoModel->update($producto["id"],["stock"=> $producto["stock"] - $producto["qty"]]);
-        }
-        return redirect()->back()->withInput();
-     }
+    
 
 }

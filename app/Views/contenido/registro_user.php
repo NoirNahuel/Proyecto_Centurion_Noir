@@ -165,9 +165,9 @@
         <div class="form-right">
             <h6 class="fw-bold mb-3">ℹ️ ¿Qué necesito para registrarme?</h6>
             <ul class="list-unstyled">
-                <li>✔ Nombre y Apellido reales</li>
+                <li>✔ Nombre y Apellido</li>
                 <li>✔ Correo electrónico válido</li>
-                <li>✔ Contraseña de mínimo 8 caracteres</li>
+                <li>✔ Contraseña de mínimo 4 caracteres</li>
                 <li>✔ Confirmación de contraseña</li>
             </ul>
             <p class="mt-3 small text-success">💡 Tus datos estarán protegidos según nuestra política de privacidad.</p>

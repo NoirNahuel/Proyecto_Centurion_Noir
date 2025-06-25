@@ -307,19 +307,13 @@ class producto_controller extends Controller{
         'search' => $search
     ];
 
-    $data['titulo'] = 'Gestión de Productos';
+    $data['titulo'] = 'Gestión Productos de Baja';
 
-   
-
-    $vista = $this->request->getVar('vista');
-    if ($vista == '1') {
-        echo view('backend/productos/producto_eliminado', $data);
-    } else {
-        echo view('contenido/Gestion_productos/gestion_producto', $data);
+        echo view('contenido/Gestion_productos/eliminar_producto', $data);
     }
 
    
-}
+
 public function buscar(){
     $search = $this->request->getPost('search');
     $productModel = new productosModel();
@@ -349,8 +343,6 @@ public function buscar(){
     $data = [
     'producto' => $resultados,
     'search' => $search,
-    'paginador' =>  $productModel->pager,
-    'titulo' => 'Productos de GuitarN',
     'categoriaMap' => $categoriaMap
 ];
  return view('contenido/Gestion_productos/productos_filas', $data);
@@ -528,14 +520,14 @@ public function buscar(){
             
          $paginateData = $productModel->select('*')
           ->orLike('id_categoria', $search)
-          ->paginate(4);
+          ->paginate(6);
           $data = [
             'producto' => $paginateData,
             'paginador' => $productModel->pager,
             'search' => $search, // Agregar el campo 'search' al array $data con el valor recibido
         ];
         } else {            
-            $paginateData = $productModel->paginate(4);
+            $paginateData = $productModel->paginate(6);
             $data = [
                 'producto' => $paginateData,
                 'paginador' => $productModel->pager,

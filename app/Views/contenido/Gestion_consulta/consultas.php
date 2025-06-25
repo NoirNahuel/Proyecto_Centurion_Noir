@@ -107,6 +107,16 @@
     <button type="submit" class="btn btn-dark" data-bs-toggle="tooltip"
           data-bs-custom-class="custom-tooltip" data-bs-title="Filtrar Fecha" data-bs-placement="top"><i class="fas fa-filter"></i> </button>
 </form>
+<!-- Mostrar mensaje si no hay registros encontrados -->
+<?php if ($_SERVER['REQUEST_METHOD'] === 'GET' && (isset($fecha_desde) || isset($fecha_hasta))) : ?>
+    <?php if (empty($fecha_desde) || empty($fecha_hasta)) : ?>
+        <p class="alert alert-warning text-center">Por favor, ingrese un rango de fechas completo para la búsqueda.</p>
+    <?php elseif (isset($consultas) && count($consultas) === 0) : ?>
+        <p class="alert alert-warning text-center">No se encontraron registros en ese periodo de tiempo.</p>
+    <?php endif; ?>
+<?php endif; ?>
+
+
 <div class="table-responsive">
         <table class="table table-hover">
             <thead>

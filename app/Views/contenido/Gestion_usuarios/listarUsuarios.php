@@ -70,14 +70,16 @@
     </span>
     <input type="text" id="searchInput" class="form-control border-start-0" placeholder="Buscar usuario..." aria-label="Buscar usuario" aria-describedby="search-icon">
 </div>
+
 <!-- Mostrar mensaje si no hay registros encontrados -->
 <?php if ($_SERVER['REQUEST_METHOD'] === 'GET' && isset($_GET['fecha_desde']) && isset($_GET['fecha_hasta'])) : ?>
     <?php if (empty($_GET['fecha_desde']) || empty($_GET['fecha_hasta'])) : ?>
         <p class="alert alert-warning text-center">Por favor, ingrese un rango de fechas para la búsqueda.</p>
-    <?php elseif (empty($ventas)) : ?>
+    <?php elseif (empty($users)) : ?>
         <p class="alert alert-warning text-center">No se encontraron registros en ese periodo de tiempo.</p>
     <?php endif; ?>
 <?php endif; ?>
+
 <!-- Resto de tu contenido de usuarios -->
 
    

@@ -58,6 +58,7 @@
             <?php endif; ?>
           </div>
            <?php endif; ?>
+           
           <div class="mb-3">
             <label for="mensaje" class="form-label">Mensaje</label>
             <textarea class="form-control <?= $validation->getError('mensaje') ? 'is-invalid' : '' ?>" name="mensaje" id="mensaje" rows="4"><?= set_value('mensaje') ?></textarea>

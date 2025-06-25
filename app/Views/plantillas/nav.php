@@ -92,35 +92,46 @@
 <?php endif; ?>
                 <!-- Menú de usuario -->
     <?php if (session()->get('id_perfil') == 2): ?> 
-    <div class="btn-group">
-       <button 
-            class="btn btn-dark btn-sm dropdown-toggle " 
-            type="button" data-bs-toggle="dropdown" aria-expanded="false">
-            <i class="fa-solid fa-user-circle me-2"></i> Bienvenido, <strong><?= esc(session('nombre')); ?></strong>
-         </button>
 
-         <ul class="dropdown-menu shadow-sm">
-            <!-- Información de usuario -->
-            <li><h6 class="dropdown-header text-muted">Información de la cuenta</h6></li>
-            <li><span class="dropdown-item-text"><i class="fa-solid fa-envelope me-2"></i><?= esc(session('email')); ?></span></li>
-            <li><span class="dropdown-item-text"><i class="fa-solid fa-id-card me-2"></i><?= esc(session('apellido')); ?> <?= esc(session('nombre')); ?></span></li>
-            
-            <li><hr class="dropdown-divider"></li>
-            <!-- Opciones -->
-            <li>
-               <a class="dropdown-item text-warning" href="<?= base_url('userCliente/editar_user/'.esc(session('id_usuario')));?>"> 
-                     <i class="fa-solid fa-user-edit me-2"></i>Editar perfil
-               </a>
-            </li>
-            <li>
-               <a class="dropdown-item text-danger" href="<?= base_url('/Cerrar-Sesion'); ?>">
-                     <i class="fa-solid fa-sign-out-alt me-2"></i>Cerrar sesión
-               </a>
-            </li>
-         </ul>
+         <div class="btn-group" style="z-index: 1055; position: relative;">
+    <button 
+        class="btn btn-dark btn-sm dropdown-toggle" 
+        type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <i class="fa-solid fa-user-circle me-2"></i> Bienvenido, 
+        <strong><?= esc(session('nombre')); ?></strong>
+    </button>
 
-        
-        </div>
+    <ul class="dropdown-menu shadow-sm" style="z-index: 1056; position: absolute;">
+        <!-- Información de usuario -->
+        <li>
+            <h6 class="dropdown-header text-muted">Información de la cuenta</h6>
+        </li>
+        <li>
+            <span class="dropdown-item-text text-truncate d-block" title="<?= esc(session('email')); ?>">
+                <i class="fa-solid fa-envelope me-2"></i><?= esc(session('email')); ?>
+            </span>
+        </li>
+        <li>
+            <span class="dropdown-item-text text-truncate d-block" title="<?= esc(session('apellido').' '.session('nombre')); ?>">
+                <i class="fa-solid fa-id-card me-2"></i><?= esc(session('apellido')); ?> <?= esc(session('nombre')); ?>
+            </span>
+        </li>
+
+        <li><hr class="dropdown-divider"></li>
+
+        <!-- Opciones -->
+        <li>
+            <a class="dropdown-item text-warning text-truncate" href="<?= base_url('userCliente/editar_user/'.esc(session('id_usuario')));?>">
+                <i class="fa-solid fa-user-edit me-2"></i>Editar perfil
+            </a>
+        </li>
+        <li>
+            <a class="dropdown-item text-danger text-truncate" href="<?= base_url('/Cerrar-Sesion'); ?>">
+                <i class="fa-solid fa-sign-out-alt me-2"></i>Cerrar sesión
+            </a>
+        </li>
+    </ul>
+</div>
         <div >
             
                 <a 
